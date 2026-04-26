@@ -115,7 +115,7 @@ AGQF or dressed-factorial constructions may be studied as future candidate selec
 
 Any such mechanism must be fixed before comparison and must not be used as an adjustable curve-fitting device. In other words, mechanism complexity is acceptable only if it increases out-of-sample predictive power under predeclared protocols.
 
-## 9. Scope and Limitations, and Conclusion
+## 9. Conclusion and Interpretive Boundaries
 
 - No proof of RH.
 - No claim that zeta zeros are particles.

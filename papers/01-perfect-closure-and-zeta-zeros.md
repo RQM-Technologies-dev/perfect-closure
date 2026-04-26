@@ -95,7 +95,7 @@ A closure event is
 \\]
 This establishes the global target carried forward to Papers 2--4.
 
-## 6. Scope and Limitations
+## 6. Interpretive Boundaries
 
 - We do **not** claim a proof of the Riemann Hypothesis.
 - We do **not** claim that local prime balance alone determines zero locations.
