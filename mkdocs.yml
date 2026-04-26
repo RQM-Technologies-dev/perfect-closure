@@ -22,6 +22,8 @@ nav:
   - Quaternionic Closure: quaternionic-closure.md
   - Faro Shuffle: faro-shuffle.md
   - Cautions: cautions.md
+  - Glossary: glossary.md
+  - Quaternionic Factorial Kernel: quaternionic-factorial-completion-kernel.md
 
 markdown_extensions:
   - admonition

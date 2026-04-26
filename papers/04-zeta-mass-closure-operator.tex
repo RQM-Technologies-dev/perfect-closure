@@ -7,44 +7,30 @@
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
 
-\newtheorem{definition}{Definition}
-\newtheorem{proposition}{Proposition}
-\newtheorem{theorem}{Theorem}
 \newtheorem{remark}{Remark}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We present the operator bridge of the Perfect Closure series. Define
+This paper gives the main synthesis of the series. The same value $t_n$ appears in three aligned forms:
 \[
-\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right),\qquad
-\chi_t(\rho)=\rho^{-1/2-\mathbf u t},
+\Xi(t_n)=0,\qquad
+\mathcal A_{\mathbf u}\chi_t=t\chi_t,\qquad
+P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2.
 \]
-with eigenvalue relation $\mathcal A_{\mathbf u}\chi_t=t\chi_t$. Let $\Xi(t)=\xi(\tfrac12+it)$ and $\mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u})$. If $\Xi(t_n)=0$, then $\mathcal Z_{\mathbf u}\chi_{t_n}=0$. After scale lift $L_*$, the same eigenvalue appears in mass-shell form,
-\[
-P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2,
-\qquad
-m_n=\frac{\hbar}{cL_*}|t_n|.
-\]
-Thus the critical line may be interpreted as a complex spectral slice of a broader quaternionic closure-mass-shell structure. This is a formal bridge, not a proof of RH or a particle-mass derivation.
+So a zeta zero is read as a complex spectral trace of a quaternionic closure eigenvalue, while the mass shell is the physical norm realization after scale conversion by $L_*$. This is a formal bridge, not a proof of RH and not a particle-mass derivation.
 \end{abstract}
 
 \section*{Reader Guide}
-This paper is the bridge: it shows how one closure eigenvalue can appear both as a zeta-zero condition and as a mass-shell norm after scaling. Keep the non-claim boundary in view throughout.
+Paper 4 answers: how does the same eigenvalue have a zeta face and a mass-shell face?
 
-\section{Introduction}
-Papers 1--3 prepared zeta residuals, quaternionic geometry, and mass-shell norm form. We now connect them through one operator pipeline.
-
-\section{Internal scale space}
-Let $\rho>0$ and $y=\log\rho$. Prime phases depend on $\log p$, so dilation in $\rho$ is the natural variable.
-
-\section{Quaternionic closure generator and eigenmodes}
-Define
+\section{Internal scale operator and eigenmodes}
+Let $\rho>0$ and define
 \[
-\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right).
+\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right),\qquad \mathbf u^2=-1.
 \]
-Set
+Take
 \[
 \chi_t(\rho)=\rho^{-1/2-\mathbf u t}.
 \]
@@ -52,77 +38,66 @@ Then
 \[
 \mathcal A_{\mathbf u}\chi_t=t\chi_t.
 \]
-This introduces closure eigenvalues in the internal scale space.
 
-\section{Zeta closure selector}
+\section{Complex zeta-slice condition and selector}
 Define
 \[
-\Xi(t)=\xi\!\left(\frac12+it\right),
-\qquad
+\Xi(t)=\xi\!\left(\frac12+it\right).
+\]
+The complex spectral-trace condition is
+\[
+\Xi(t_n)=0.
+\]
+Define
+\[
 \mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u}).
 \]
-If $\Xi(t_n)=0$, then
+Then
 \[
-\mathcal Z_{\mathbf u}\chi_{t_n}=0.
+\Xi(\mathcal A_{\mathbf u})\chi_{t_n}=0
 \]
-This is the kernel condition linking zeta-slice zeros to quaternionic closure modes.
+whenever $\Xi(t_n)=0$.
 
-\section{Mass-shell lift and resolved scale}
-With
+\section{Mass-shell norm realization after scaling}
+Use
 \[
-\log\rho=\frac{\ell}{L_*},
+P\bar P=m^2c^2.
 \]
-we obtain
+With $\log\rho=\ell/L_*$, matching to Compton curvature gives
 \[
 m_n=\frac{\hbar}{cL_*}|t_n|,
+\]
+so
+\[
+P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2,
 \qquad
 L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C.
 \]
-These formulas convert formal eigenvalue scale into physical curvature scale. Calibration remains external.
-
-\section{Biquaternionic mass-shell realization}
-Using
-\[
-P\bar P=m^2c^2,
-\]
-the lift is
-\[
-P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2.
-\]
-This gives the mass-shell face of the same eigenvalue $t_n$.
 
 \section{Complex Spectral Slices of Quaternionic Mass Shells}
-The synthesis is encoded by three aligned conditions:
-\begin{align*}
-\Xi(t_n)&=0,\\
-\Xi(\mathcal A_{\mathbf u})\chi_{t_n}&=0,\\
-P\bar P&=\left(\frac{\hbar t_n}{L_*}\right)^2.
-\end{align*}
-So one eigenvalue has a zeta face and a mass-shell face within this framework.
+The central synthesis is that $t_n$ has two faces. In the zeta sector, $t_n$ appears through the complex residual $\Xi(t_n)=0$. In the quaternionic sector, it appears as the eigenvalue of $\mathcal A_{\mathbf u}$. In the physical sector, after the scale map $L_*$, it appears as a mass-shell norm $P\bar P=(\hbar t_n/L_*)^2$. Thus, zeta zeros may be interpreted as complex spectral traces of quaternionic closure eigenvalues, not as particles themselves.
 
 \begin{remark}
-This is a formal bridge. It does not claim that zeta zeros are particles or that known masses are already derived.
+The zeta zero is not the mass shell itself. It is the complex spectral trace of a closure eigenvalue. The mass shell is the physical norm realization after scale conversion.
 \end{remark}
 
-\section{Main theorem}
-\begin{theorem}[Closure eigenvalue lift]
-If $\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}$ and $\Xi(t_n)=0$, then
-\begin{enumerate}
-  \item $\chi_{t_n}\in\ker\Xi(\mathcal A_{\mathbf u})$;
-  \item under scale map $L_*$, $m_n=\hbar|t_n|/(cL_*)$.
-\end{enumerate}
-\end{theorem}
-
-\begin{proof}
-First,
+\section{Optional supporting mechanisms}
+\subsection*{Closure Cadence (optional)}
 \[
-\Xi(\mathcal A_{\mathbf u})\chi_{t_n}=\Xi(t_n)\chi_{t_n}=0.
+\Lambda_n=\frac{2\pi}{t_n},\qquad \Delta_n=\frac{\pi}{3t_n}.
 \]
-Second, define $k_n=t_n/L_*$ and identify with $k_C=mc/\hbar$.
-\end{proof}
+This is optional geometric context and not part of the core bridge.
 
-\section{Non-claims}
+\subsection*{Completion layer inside $\Xi$ (optional)}
+\[
+\xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s).
+\]
+This is a completion layer inside $\Xi$, but not a separate main mechanism for the bridge.
+
+\section{Non-claims and bridge to Paper 5}
 No proof of RH, no claim that zeta zeros are particles, no fixed universal $L_*$ in this paper, and no Standard Model mass derivation.
+
+Paper 5 asks whether $L_*$ can be fixed independently or stabilizes across predeclared families.
 
 \section*{References}
 \begin{enumerate}

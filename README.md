@@ -12,7 +12,30 @@ This is a research-program claim about formal structure. It is **not** a proof o
 
 **One-line map:** zeta zero \(\to\) complex spectral trace \(\to\) quaternionic closure eigenmode \(\to\) mass-shell norm after scaling.
 
-This repository is organized as a staged research program moving from safest mathematical claims to bolder synthesis claims.
+## Clean Spine
+
+$$
+\Xi(t_n)=0
+\rightarrow
+\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}
+\rightarrow
+P\bar P=\left(\frac{\hbar t_n}{L_\ast}\right)^2.
+$$
+
+Paper 1 identifies the complex spectral trace. Paper 2 lifts the trace into quaternionic closure geometry. Paper 3 defines the mass-shell norm. Paper 4 connects them through a shared eigenvalue. Paper 5 asks whether the scale \(L_\ast\) can be fixed well enough to make predictions.
+
+## Completion Layer (supporting)
+
+Perfect Closure can also be viewed in three layers:
+
+$$
+\text{phase} \rightarrow \text{completion} \rightarrow \text{norm},
+$$
+$$
+p^{-q} \rightarrow ◎(q) \rightarrow P\bar P.
+$$
+
+This completion layer is supportive context for the series, not a separate proof mechanism.
 
 ## Current Series Order
 
@@ -41,20 +64,6 @@ This repository is organized as a staged research program moving from safest mat
 - Markdown: [`papers/05-closure-spectra-and-physical-calibration.md`](papers/05-closure-spectra-and-physical-calibration.md)
 - LaTeX: [`papers/05-closure-spectra-and-physical-calibration.tex`](papers/05-closure-spectra-and-physical-calibration.tex)
 
-## Series Arc
-
-$$
-\text{Zeta zeros}
-\rightarrow
-\text{Quaternionic closure}
-\rightarrow
-\text{Mass shell}
-\rightarrow
-\text{Closure eigenvalues}
-\rightarrow
-\text{Physical calibration}.
-$$
-
 ## Supporting Documentation
 
 - Glossary: [`docs/glossary.md`](docs/glossary.md)
@@ -68,12 +77,6 @@ $$
 ## Important Disclaimer
 
 This repository **does not claim to prove the Riemann Hypothesis**. The series presents a formalization framework and research program, with explicit non-claim boundaries in each paper.
-
-## Archive
-
-The original broad draft is preserved at:
-
-- [`archive/original-broad-perfect-closure-draft.md`](archive/original-broad-perfect-closure-draft.md)
 
 ## License
 
