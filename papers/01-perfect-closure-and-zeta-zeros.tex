@@ -2,7 +2,9 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{hyperref}
+\usepackage{needspace}
 \usepackage{graphicx}
+\usepackage[section]{placeins}
 
 \title{Perfect Closure and Zeta Zeros: The Critical Line as a Square-Root Mirror}
 \author{John Van Geem / RQM Technologies}
@@ -26,13 +28,16 @@ B_p\!\left(\frac12+\delta\right)=2p^{-1/2}|\sinh(\delta\log p)|,
 so $B_p(\sigma)=0$ iff $\sigma=\tfrac12$. We then set $\Xi(t)=\xi(\tfrac12+it)$ and $C(t)=|\Xi(t)|^2$, using $\Xi(t_n)=0$ as the complex spectral trace condition carried by later papers. No proof of RH is claimed.
 \end{abstract}
 
+\Needspace{10\baselineskip}
 \section*{Reader Guide}
 This paper answers one question: what is the complex spectral trace? The point is not to locate zeros, but to identify $\Xi(t_n)=0$ as the completed critical-line residual condition used later.
 
+\Needspace{10\baselineskip}
 \section{Perfect Closure in the zeta setting}
 Perfect Closure means vanishing of a selected residual built from zeta data.
 Local residual: $B_p$. Global residual: $C(t)=|\Xi(t)|^2$.
 
+\Needspace{10\baselineskip}
 \section{Prime route and square-root balance}
 For prime $p>1$ and $s=\sigma+it$,
 \[
@@ -51,6 +56,7 @@ In plain language, the critical line is the balance line where conjugate prime-r
   \caption{The square-root mirror. On $\Re(s)=\tfrac12$, conjugate prime routes $p^{-(1/2\pm it)}$ have equal magnitude $1/\sqrt p$ and opposite phase direction. This supports local amplitude-balance intuition and does not imply that any single prime cancels $\zeta$.}
 \end{figure}
 
+\Needspace{10\baselineskip}
 \section{Local imbalance theorem}
 Define
 \[
@@ -79,6 +85,7 @@ B_p\!\left(\frac12+\delta\right)=0\iff \sinh(\delta\log p)=0.
 Because $\log p\neq0$ and $\sinh x=0$ iff $x=0$, we get $\delta=0$, i.e. $\sigma=\tfrac12$. The converse is immediate.
 \end{proof}
 
+\Needspace{10\baselineskip}
 \section{Optional finite-prime support}
 For primes $p_1<\cdots<p_N$, let
 \[
@@ -90,6 +97,7 @@ Then $B_N(\sigma)=0$ iff $\sigma=\tfrac12$ by applying Proposition 3.1 to each n
 This finite-prime statement is supporting context, not the main endpoint of the paper.
 \end{remark}
 
+\Needspace{10\baselineskip}
 \section{Prime-power echo (brief context)}
 In $\Re(s)>1$,
 \[
@@ -97,6 +105,7 @@ In $\Re(s)>1$,
 \]
 We mention this only as bookkeeping context.
 
+\Needspace{10\baselineskip}
 \section{Completed residual and complex spectral trace}
 Define
 \[
@@ -107,11 +116,13 @@ The complex closure condition used later is
 \Xi(t_n)=0.
 \]
 
+\Needspace{10\baselineskip}
 \section{Non-claims and bridge}
 No proof of RH, no zero-location algorithm, and no single-prime cancellation claim are made.
 
 Paper 2 lifts the complex trace variable $\tfrac12+it$ to quaternionic slices $\tfrac12+\mathbf u t$.
 
+\Needspace{10\baselineskip}
 \section*{References}
 \begin{enumerate}
   \item B. Riemann, \emph{Ueber die Anzahl der Primzahlen unter einer gegebenen Gr"osse} (1859).
