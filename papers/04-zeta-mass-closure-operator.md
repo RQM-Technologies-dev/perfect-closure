@@ -101,7 +101,7 @@ We define this map as a **compatibility bridge**. It aligns scalar closure label
 
 The role of the \\( +1/2 \\) shift is especially important: it aligns mode exponents with the half-line structure inherited from Papers 1 and 2. Removing it introduces offsets that weaken the direct \\(t\\)-label correspondence.
 
-## 6. Scope and Limitations
+## 6. Interpretive Boundaries
 
 - We do **not** claim a proof of RH.
 - We do **not** claim zeta zeros are particles.

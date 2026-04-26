@@ -73,7 +73,7 @@ To prepare Paper 4, define reduced Compton quantities:
 \\]
 Here \\(k_C\\) is the bridge variable connecting invariant mass to inverse-length scale. This is the dimensional interface where spectral parameters from the closure operator can be compared with physical norms.
 
-## 6. Scope and Limitations
+## 6. Interpretive Boundaries
 
 - We do **not** derive observed particle masses.
 - We do **not** replace QFT or the Standard Model.
