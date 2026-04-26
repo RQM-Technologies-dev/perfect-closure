@@ -5,161 +5,83 @@
 
 ## Abstract
 
-This paper sets the calibration and falsifiability layer for the Perfect Closure research program. From Papers 1–4, the formal bridge is
+This paper sets the predictive standard for the zeta-to-mass-shell bridge. From Paper 4,
 $$
-m_n=\frac{\hbar}{cL_*}|t_n|.
+m_n=\frac{\hbar}{cL_*}|t_n|,
 $$
-The central question is whether \(L_*\) is independently fixed or stably shared by a physical family. Without that, the bridge is structural calibration rather than prediction. We define resolved closure triples, calibration regimes, ratio and stability tests, failure modes, and falsification criteria.
+so predictive content depends on whether \(L_*\) is fixed independently or stabilizes across a predeclared physical family. We define resolved closure triples, calibration regimes, ratio tests, scale-stability tests, and falsification criteria.
 
 ## Reader Guide
 
-This paper asks whether the bridge predicts anything testable or merely restates known structures. It does not add a new formal operator; it evaluates when the operator bridge from Paper 4 becomes a candidate predictive structure.
+Paper 5 answers: **when does the bridge become predictive?**
 
-## 1. Introduction
-
-Papers 1–4 built a chain from zeta ordinates to closure eigenmodes and then to mass-shell expressions. This final paper asks the scientific question: when does that chain become predictive rather than post hoc?
-
-## 2. Recap of the formal bridge
-
-Let \(t_n\) be a critical-line closure ordinate and define
-$$
-k_n=\frac{t_n}{L_*},\qquad k_C=\frac{mc}{\hbar}.
-$$
-Matching \(k_n=k_C\) gives
-$$
-m_n=\frac{\hbar}{cL_*}|t_n|.
-$$
-This equation is the calibration target. It does not by itself pick \(n\) or determine \(L_*\).
-
-## 3. Deriving \(L_*\) from resolved closure
+## 1. Core calibration relation
 
 From
 $$
 \frac{t_n}{L_*}=\frac{mc}{\hbar},
 $$
-one obtains
+we get
 $$
-L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C,
+L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C.
 $$
-where
-$$
-\bar\lambda_C=\frac{\hbar}{mc}
-$$
-is the reduced Compton length.
+This is the closure-conversion length relation used for calibration.
 
-Interpretation: \(L_*\) is a closure-conversion length from internal log-scale closure to physical curvature scale. This is a consistency relation, not independent evidence for the bridge.
+The present theory becomes predictive only when \(L_*\) is fixed before comparison or stabilizes across a predeclared physical family.
 
-## 4. Resolved Perfect Closure
+## 2. Resolved closure triple
 
-### Definition 4.1 (Resolved closure triple)
-
-A triple \((t_n,L_*,m_n)\) is a **resolved closure** if
+A triple \((t_n,L_*,m_n)\) is resolved when:
 - \(\Xi(t_n)=0\),
 - \(\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}\),
 - \(P\bar P=m_n^2c^2=(\hbar t_n/L_*)^2\).
 
-This definition bundles the three faces of the same eigenvalue. It still does not imply that the mapping is predictive in nature.
+This is consistency of one eigenvalue across zeta, operator, and mass-shell faces.
 
-## 5. Calibration regimes
+## 3. Calibration regimes
 
-### A. Particle-specific \(L_*\)
-Always fit-able; weakest predictive content.
+1. Particle-specific \(L_*\): weakest predictive content.
+2. Family-specific \(L_*\): meaningful if stable under predeclared assignment.
+3. Universal \(L_*\): strongest and most falsifiable.
 
-### B. Family-specific \(L_*\)
-Potentially meaningful if stability appears within predeclared families.
+## 4. Ratio and scale-stability tests
 
-### C. Universal \(L_*\)
-Strongest and most falsifiable regime.
-
-The progression above tells the reader what level of constraint is being tested. Only constrained regimes can support strong claims.
-
-## 6. Ratio tests
-
-If one \(L_*\) is shared in a family, then
+If one \(L_*\) is shared in a family,
 $$
-\frac{m_a}{m_b}=\frac{t_m}{t_n}.
+\frac{m_a}{m_b}\approx\frac{t_m}{t_n}.
 $$
-This is the simplest consequence to test experimentally. It does not work as evidence unless assignments are predeclared.
-
-Protocol requirements:
-- predeclare assignments;
-- forbid cherry-picking;
-- include measurement uncertainty and tolerance rules;
-- use enough points to penalize free choices.
-
-## 7. Scale-stability tests
-
-For assigned pairings \((\text{particle},n)\), compute
+For assigned pairings, compute
 $$
 L_*(\text{particle},n)=\frac{\hbar t_n}{m_{\text{particle}}c}.
 $$
-A credible family should show clustering/stability in inferred \(L_*\). If no stable scale appears, the zeta–mass link remains structural rather than predictive.
+Prediction requires stable clustering of inferred \(L_*\) under predeclared rules.
 
-### Proposed algorithm (pseudocode)
+## 5. Falsification standards
 
-1. Input zeta ordinates list \(\{t_n\}\) and particle masses \(\{m_j\}\).
-2. Predeclare assignment map \(j\mapsto n(j)\).
-3. Compute inferred \(L_*^{(j)}=\hbar t_{n(j)}/(m_jc)\).
-4. Report dispersion metrics (mean, median absolute deviation, robust CV).
-5. Hold out one or more masses and test out-of-sample prediction.
+The bridge fails as a predictive law in its present form if:
+- no stable \(L_*\) appears in natural predeclared families,
+- only post hoc assignments succeed,
+- tolerance inflation is needed to keep fits,
+- no out-of-sample predictive success appears.
 
-No numerical claims are made in this paper.
+## 6. Possible Future Selection Mechanism (supporting)
 
-## 8. What the Synthesis Would Predict
+AGQF/dressed factorials may be studied as a future candidate selection mechanism, for example through node-gating prefactors. This is optional and not required for the core zeta-to-mass-shell bridge.
 
-If a shared \(L_*\) is real for a physical family, then mass ratios should track closure-eigenvalue ratios through
-\(m_a/m_b=t_m/t_n\) after assignment.
+AGQF is not required for the core zeta-to-mass-shell bridge.
 
-If no stable \(L_*\) appears under predeclared protocols, then the zeta–mass connection remains a structural correspondence and not a predictive law.
+Any such mechanism must be fixed before comparison and must not be used as adjustable curve fitting.
 
-This is the point where the series becomes falsifiable: either calibration stabilizes and predicts, or it fails and remains interpretive.
+## 7. Non-claims and conclusion
 
-## 9. Avoiding curve fitting
+- No proof of RH.
+- No claim that zeta zeros are particles.
+- No established derivation of Standard Model masses.
 
-Failure modes include:
-- arbitrary zero assignment after seeing data,
-- too many adjustable parameters,
-- tolerance inflation,
-- ratio coincidences without mechanism,
-- selective reporting.
-
-This section is included to protect the non-claim boundary and keep inference standards clear.
-
-## 10. Physical mechanism requirement
-
-A predictive theory still requires independent dynamics, including:
-- stable quaternionic closed-loop field solutions,
-- principled choice of zeta-zero subsets,
-- mechanism fixing \(L_*\) (or family scales),
-- additional observables beyond fitted masses.
-
-## 11. Evidence standards
-
-Evidence would include:
-- predeclared assignment yielding stable \(L_*\),
-- successful prediction of withheld masses,
-- additional predicted quantum numbers/selection rules,
-- independent field simulation recovering the same scale.
-
-## 12. Falsification criteria
-
-The program is falsified (in current form) if:
-- no stable \(L_*\) exists for any natural family,
-- only post hoc fits are possible,
-- no independent mechanism is found,
-- no predictions arise beyond re-expression of known masses.
-
-## 13. Conclusion
-
-The disciplined endpoint of the series is:
-
-> Perfect Closure becomes physically meaningful only when closure eigenvalues resolve into stable Compton-scale curvature through an independently justified \(L_*\).
-
-Until then, the bridge remains a formal structural framework requiring calibration, not a completed predictive theory.
+Conclusion: the framework is structurally coherent, but predictive status depends on independent or stable determination of \(L_*\).
 
 ## References
 
 1. K. G. Wilson, “The renormalization group and critical phenomena,” *Rev. Mod. Phys.* 55 (1983).
 2. R. P. Feynman, *QED: The Strange Theory of Light and Matter*, Princeton Univ. Press, 1985.
 3. S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields*, Oxford Univ. Press, 1995.
-4. A. M. Odlyzko, tables and computations of zeta zero ordinates (for future computational tests).

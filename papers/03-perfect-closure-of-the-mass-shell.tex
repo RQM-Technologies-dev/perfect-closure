@@ -7,46 +7,34 @@
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
 
-\newtheorem{definition}{Definition}
-\newtheorem{proposition}{Proposition}
 \newtheorem{remark}{Remark}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We formalize a closure interpretation of the relativistic mass shell in biquaternionic variables. Writing $P=E/c+I\mathbf p$ with commuting scalar imaginary $I^2=-1$, the invariant relation becomes $P\bar P=m^2c^2$. Null modes satisfy $P\bar P=0$ and massive modes satisfy $P\bar P>0$. This is a formal interpretation, not a derivation of known particle masses.
+This paper defines the mass shell in quaternionic norm language. With biquaternionic momentum
+\[
+P=\frac{E}{c}+I\mathbf p,\qquad I^2=-1,
+\]
+the invariant relation becomes
+\[
+P\bar P=m^2c^2.
+\]
+Null modes satisfy $P\bar P=0$ and massive modes satisfy $P\bar P>0$. We also record Compton curvature $k_C=mc/\hbar$. The zeta bridge is deferred to Paper 4.
 \end{abstract}
 
 \section*{Reader Guide}
-This paper shifts from spectral closure to physical closure by writing the mass shell as a quaternionic norm. It prepares the norm form that Paper 4 connects to closure eigenvalues.
+The bridge to zeta does not happen in this paper. This paper prepares the mass-shell norm that Paper 4 will connect to the closure eigenvalue $t_n$.
 
-\section{Introduction}
-Papers 1 and 2 treated zeta and quaternionic closure geometry. Here we translate to relativistic norm form.
-
-\section{Standard relativistic mass shell}
+\section{Relativistic mass shell}
 \[
 E^2=p^2c^2+m^2c^4,
 \qquad
 \frac{E^2}{c^2}-|\mathbf p|^2=m^2c^2.
 \]
-These equations anchor notation in standard physics; they do not introduce a zeta claim.
 
-\section{Biquaternionic spacetime}
-Let $\mathbf r=xi+yj+zk$ and $I^2=-1$ commute with $i,j,k$. Define
-\[
-X=ct+I\mathbf r.
-\]
-Then
-\[
-X\bar X=(ct+I\mathbf r)(ct-I\mathbf r)=c^2t^2-|\mathbf r|^2.
-\]
-
-\begin{remark}
-This is a compact algebraic representation of Minkowski signature, not a new dynamics.
-\end{remark}
-
-\section{Biquaternionic momentum and norm}
+\section{Biquaternionic momentum norm}
 Define
 \[
 P=\frac{E}{c}+I\mathbf p.
@@ -57,27 +45,22 @@ P\bar P=\left(\frac{E}{c}\right)^2-|\mathbf p|^2,
 \qquad
 P\bar P=m^2c^2.
 \]
-This is the physical norm form used by Paper 4.
 
-\section{Closure interpretation}
-\begin{proposition}
-$P\bar P=0$ corresponds to null/open flow; $P\bar P>0$ corresponds to massive/closed invariant flow.
-\end{proposition}
+\section{Open/null and closed/massive interpretation}
+\begin{remark}
+$P\bar P=0$ corresponds to null/open propagation, while $P\bar P>0$ corresponds to massive/closed invariant norm. This is kinematic, not yet predictive dynamics.
+\end{remark}
 
-\begin{proof}
-Directly from $P\bar P=E^2/c^2-|\mathbf p|^2$, null propagation has zero invariant norm while massive propagation has positive norm $m^2c^2$.
-\end{proof}
-
-\section{Compton closure scale}
+\section{Compton curvature scale}
 \[
 \bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{mc}{\hbar}=\bar\lambda_C^{-1}.
 \]
-The reader should note this scale, because Paper 4 will match it against lifted closure eigenvalues.
+Paper 4 will match this scale to lifted closure eigenvalues.
 
-\section{Non-claim boundary and transition}
-No claim is made that known particle masses are derived in this paper, or that QFT is replaced.
+\section{Non-claims and transition}
+No derivation of known particle masses, no replacement of QFT, and no Standard Model completion claim are made.
 
-The mass shell gives the physical norm form that Paper 4 will connect to closure eigenvalues.
+Paper 4 connects $\Xi(t_n)=0$ and $P\bar P=m^2c^2$ through a shared closure eigenvalue.
 
 \section*{References}
 \begin{enumerate}

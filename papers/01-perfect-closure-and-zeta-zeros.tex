@@ -7,7 +7,6 @@
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
 
-\newtheorem{definition}{Definition}
 \newtheorem{proposition}{Proposition}
 \newtheorem{remark}{Remark}
 
@@ -15,61 +14,45 @@
 \maketitle
 
 \begin{abstract}
-We formalize a zeta-specific notion of \emph{Perfect Closure} and isolate a rigorous local statement: for each prime route, the critical line $\Re(s)=\tfrac12$ is the unique amplitude-balance line. We define $\Xi(t)=\xi(\tfrac12+it)$ and $C(t)=|\Xi(t)|^2$ as global residual language for the series. The main proved result remains local and finite-prime balance; no proof of RH is claimed.
+This entry paper defines Perfect Closure in the zeta setting and isolates the key local theorem: for each prime route, the critical line $\Re(s)=\tfrac12$ is the unique amplitude-balance line. With
+\[
+B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|,
+\]
+one gets
+\[
+B_p\!\left(\frac12+\delta\right)=2p^{-1/2}|\sinh(\delta\log p)|,
+\]
+so $B_p(\sigma)=0$ iff $\sigma=\tfrac12$. We then set $\Xi(t)=\xi(\tfrac12+it)$ and $C(t)=|\Xi(t)|^2$, using $\Xi(t_n)=0$ as the complex spectral trace condition carried by later papers. No proof of RH is claimed.
 \end{abstract}
 
 \section*{Reader Guide}
-This paper introduces Perfect Closure in the safest setting: the zeta critical line. The main proven result is local prime-route balance, not RH. Later papers reinterpret this residual structure in quaternionic and mass-shell language.
-
-\section{Introduction}
-This note develops a constrained closure formalization for the zeta setting. The goal is to separate proven local balance theorems from interpretive language.
+This paper answers one question: what is the complex spectral trace? The point is not to locate zeros, but to identify $\Xi(t_n)=0$ as the completed critical-line residual condition used later.
 
 \section{Perfect Closure in the zeta setting}
-\begin{definition}[Perfect Closure, zeta form]
-A \emph{Perfect Closure event} is the vanishing of a designated closure residual built from zeta data.
-\end{definition}
+Perfect Closure means vanishing of a selected residual built from zeta data.
+Local residual: $B_p$. Global residual: $C(t)=|\Xi(t)|^2$.
 
-At local prime level we use imbalance functionals; at global level we use $C(t)=|\Xi(t)|^2$.
-
-\begin{remark}
-This definition introduces workflow language and does not by itself prove RH or any global zero-distribution claim.
-\end{remark}
-
-\section{Three reflections in the critical strip}
-Let $s=\sigma+it$ and define
-\[
-J(s)=\overline{s},\qquad F(s)=1-s,\qquad R(s)=1-\overline{s}=F\circ J=J\circ F.
-\]
-These involutions organize symmetry in the strip. In particular,
-\[
-R\!\left(\tfrac12+it\right)=\tfrac12+it,
-\]
-so $\Re(s)=\tfrac12$ is the fixed-point set of $R$.
-
-\section{Prime routes and the square-root mirror}
-For prime $p>1$,
+\section{Prime route and square-root balance}
+For prime $p>1$ and $s=\sigma+it$,
 \[
 p^{-s}=p^{-\sigma}e^{-it\log p}.
 \]
-On $\sigma=\tfrac12$,
+On the critical line,
 \[
-p^{-(1/2+it)}=\frac{1}{\sqrt p}e^{-it\log p},\qquad
-p^{-(1/2-it)}=\frac{1}{\sqrt p}e^{+it\log p}.
+p^{-(1/2+it)}=\frac1{\sqrt p}e^{-it\log p},\qquad
+p^{-(1/2-it)}=\frac1{\sqrt p}e^{+it\log p}.
 \]
-The reader should notice equal amplitude and opposite phase direction (the square-root mirror). This is a local symmetry statement.
+In plain language, the critical line is the balance line where conjugate prime-route amplitudes match.
 
-\section{Local prime imbalance}
+\section{Local imbalance theorem}
 Define
 \[
 B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
 \]
 With $\sigma=\tfrac12+\delta$,
-\begin{align*}
-B_p\!\left(\tfrac12+\delta\right)
-&=\left|p^{-1/2-\delta}-p^{-1/2+\delta}\right|\\
-&=2p^{-1/2}\left|\sinh(\delta\log p)\right|.
-\end{align*}
-This reduction shows the balance question is equivalent to where $\sinh$ vanishes.
+\[
+B_p\!\left(\frac12+\delta\right)=2p^{-1/2}|\sinh(\delta\log p)|.
+\]
 
 \begin{proposition}
 For every $p>1$, $B_p(\sigma)=0$ iff $\sigma=\tfrac12$.
@@ -78,49 +61,43 @@ For every $p>1$, $B_p(\sigma)=0$ iff $\sigma=\tfrac12$.
 \begin{proof}
 Since $p^{-1/2}>0$,
 \[
-B_p\!\left(\tfrac12+\delta\right)=0
-\iff \sinh(\delta\log p)=0.
+B_p\!\left(\frac12+\delta\right)=0\iff \sinh(\delta\log p)=0.
 \]
-Because $\log p\neq 0$ and $\sinh x=0$ iff $x=0$, we get $\delta=0$, hence $\sigma=\tfrac12$.
+Because $\log p\neq0$ and $\sinh x=0$ iff $x=0$, we get $\delta=0$, i.e. $\sigma=\tfrac12$. The converse is immediate.
 \end{proof}
 
-\section{Finite global imbalance}
-For primes $p_1<\cdots<p_N$, define
+\section{Optional finite-prime support}
+For primes $p_1<\cdots<p_N$, let
 \[
 B_N(\sigma)^2=\sum_{j=1}^{N}B_{p_j}(\sigma)^2.
 \]
-This aggregates local imbalance into a finite global residual.
-
-\begin{proposition}
-For every finite prime set with $p_j>1$,
-\[
-B_N(\sigma)=0 \iff \sigma=\tfrac12.
-\]
-\end{proposition}
-
-\begin{proof}
-If $\sigma=\tfrac12$, each summand vanishes. Conversely, if $B_N(\sigma)=0$, each nonnegative summand is zero, so Proposition 5 forces $\sigma=\tfrac12$.
-\end{proof}
+Then $B_N(\sigma)=0$ iff $\sigma=\tfrac12$ by applying Proposition 3.1 to each nonnegative term.
 
 \begin{remark}
-This is a finite-prime theorem and does not prove RH.
+This finite-prime statement is supporting context, not the main endpoint of the paper.
 \end{remark}
 
-\section{Completed zeta and global closure residual}
+\section{Prime-power echo (brief context)}
+In $\Re(s)>1$,
+\[
+\log\zeta(s)=\sum_p\sum_{k\ge1}\frac{p^{-ks}}{k}.
+\]
+We mention this only as bookkeeping context.
+
+\section{Completed residual and complex spectral trace}
 Define
 \[
 \Xi(t)=\xi\!\left(\frac12+it\right),\qquad C(t)=|\Xi(t)|^2.
 \]
-A global closure event is written as
+The complex closure condition used later is
 \[
 \Xi(t_n)=0.
 \]
-This notation prepares later operator work; it does not claim all nontrivial zeros lie on $\Re(s)=\tfrac12$.
 
-\section{Interpretation boundary and transition}
-The zeta closure residual of this paper becomes one face of the later operator framework in Paper 4.
+\section{Non-claims and bridge}
+No proof of RH, no zero-location algorithm, and no single-prime cancellation claim are made.
 
-\textbf{Not claimed:} no proof of RH, no Euler-product convergence claim on $\Re(s)=\tfrac12$, and no single-prime cancellation claim.
+Paper 2 lifts the complex trace variable $\tfrac12+it$ to quaternionic slices $\tfrac12+\mathbf u t$.
 
 \section*{References}
 \begin{enumerate}
