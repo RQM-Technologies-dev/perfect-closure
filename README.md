@@ -38,7 +38,7 @@ $$
 P\bar P=\left(\frac{\hbar t_n}{L_\ast}\right)^2.
 $$
 
-Paper 1 identifies the complex spectral trace. Paper 2 lifts the trace into quaternionic closure geometry. Paper 3 defines the mass-shell norm. Paper 4 connects them through a shared eigenvalue. Paper 5 asks whether the scale \(L_\ast\) can be fixed well enough to make predictions.
+Paper 1 establishes zeta-zero Perfect Closure through the square-root mirror and the completed residual condition $\Xi(t_n)=0$. Paper 2 lifts the trace into quaternionic closure geometry. Paper 3 defines the mass-shell norm. Paper 4 connects them through a shared eigenvalue. Paper 5 asks whether the scale \(L_\ast\) can be fixed well enough to make predictions.
 
 ## Completion Layer (supporting)
 
@@ -56,22 +56,22 @@ This completion layer is supportive context for the series, not a separate proof
 ## Current Series Order
 
 ### Paper 1 (entry / safest)
-**Perfect Closure and Zeta Zeros: The Critical Line as a Square-Root Mirror**
+**Zeta-Zero Perfect Closure: The Critical Line as a Square-Root Mirror**
 - Markdown: [`papers/01-perfect-closure-and-zeta-zeros.md`](papers/01-perfect-closure-and-zeta-zeros.md)
 - LaTeX: [`papers/01-perfect-closure-and-zeta-zeros.tex`](papers/01-perfect-closure-and-zeta-zeros.tex)
 
 ### Paper 2
-**Perfect Closure Is Quaternionic: The Riemann Critical Line as a Complex Shadow**
+**Quaternionic Closure Slices: The Critical Line as a Complex Trace of Re(q)=1/2 Geometry**
 - Markdown: [`papers/02-perfect-closure-is-quaternionic.md`](papers/02-perfect-closure-is-quaternionic.md)
 - LaTeX: [`papers/02-perfect-closure-is-quaternionic.tex`](papers/02-perfect-closure-is-quaternionic.tex)
 
 ### Paper 3
-**The Perfect Closure of the Mass Shell: Mass as Closed Quaternionic Light**
+**Mass Shell Perfect Closure: Closed Quaternionic Light and Relativistic Norm Structure**
 - Markdown: [`papers/03-perfect-closure-of-the-mass-shell.md`](papers/03-perfect-closure-of-the-mass-shell.md)
 - LaTeX: [`papers/03-perfect-closure-of-the-mass-shell.tex`](papers/03-perfect-closure-of-the-mass-shell.tex)
 
 ### Paper 4
-**The Zeta–Mass Closure Operator: Perfect Closure as an Eigenvalue Law**
+**Zeta-Mass Closure Operator: Perfect Closure as a Shared Spectral Eigenvalue Law**
 - Markdown: [`papers/04-zeta-mass-closure-operator.md`](papers/04-zeta-mass-closure-operator.md)
 - LaTeX: [`papers/04-zeta-mass-closure-operator.tex`](papers/04-zeta-mass-closure-operator.tex)
 
