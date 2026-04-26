@@ -53,6 +53,7 @@ Perfect Closure is the condition in which a system and its conjugate partner ful
 - [Quaternionic Closure](quaternionic-closure.md) — q^6 = 1 and spinor closure
 - [Faro Shuffle](faro-shuffle.md) — S^8 = I as a finite closure model
 - [Cautions](cautions.md) — What this work does not claim
+- [Visual Guide](visual-guide.md) — Series architecture and synthesis pipeline figures
 
 ---
 

@@ -1,7 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
 \usepackage{hyperref}
+\usepackage{needspace}
 
 \title{The Zeta--Mass Closure Operator: Perfect Closure as an Eigenvalue Law}
 \author{John Van Geem / RQM Technologies}
@@ -22,9 +25,17 @@ P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2.
 So a zeta zero is read as a complex spectral trace of a quaternionic closure eigenvalue, while the mass shell is the physical norm realization after scale conversion by $L_*$. This is a formal bridge, not a proof of RH and not a particle-mass derivation.
 \end{abstract}
 
+\Needspace{10\baselineskip}
 \section*{Reader Guide}
 Paper 4 answers: how does the same eigenvalue have a zeta face and a mass-shell face?
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.88\textwidth]{../assets/figures/zeta-to-mass-shell-pipeline.png}
+  \caption{Main synthesis pipeline from complex spectral trace \(\Xi(t_n)=0\) to quaternionic closure eigenvalue \(\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}\) to mass-shell norm \(P\bar P=(\hbar t_n/L_*)^2\). This visual summarizes the bridge and does not by itself prove RH or derive observed particle masses.}
+\end{figure}
+
+\Needspace{10\baselineskip}
 \section{Internal scale operator and eigenmodes}
 Let $\rho>0$ and define
 \[
@@ -39,6 +50,13 @@ Then
 \mathcal A_{\mathbf u}\chi_t=t\chi_t.
 \]
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.92\textwidth]{../assets/figures/closure-operator-bridge.png}
+  \caption{Operator bridge chain \(\rho \rightarrow \chi_t(\rho)=\rho^{-1/2-\mathbf u t} \rightarrow \mathcal A_{\mathbf u} \rightarrow \Xi(\mathcal A_{\mathbf u}) \rightarrow\) kernel mode at \(t_n \rightarrow\) mass-shell lift through \(L_*\). This supports the map in Sections 1--3 and is not a standalone proof.}
+\end{figure}
+
+\Needspace{10\baselineskip}
 \section{Complex zeta-slice condition and selector}
 Define
 \[
@@ -58,6 +76,7 @@ Then
 \]
 whenever $\Xi(t_n)=0$.
 
+\Needspace{10\baselineskip}
 \section{Mass-shell norm realization after scaling}
 Use
 \[
@@ -74,6 +93,7 @@ P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2,
 L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C.
 \]
 
+\Needspace{10\baselineskip}
 \section{Complex Spectral Slices of Quaternionic Mass Shells}
 The central synthesis is that $t_n$ has two faces. In the zeta sector, $t_n$ appears through the complex residual $\Xi(t_n)=0$. In the quaternionic sector, it appears as the eigenvalue of $\mathcal A_{\mathbf u}$. In the physical sector, after the scale map $L_*$, it appears as a mass-shell norm $P\bar P=(\hbar t_n/L_*)^2$. Thus, zeta zeros may be interpreted as complex spectral traces of quaternionic closure eigenvalues, not as particles themselves.
 
@@ -81,24 +101,29 @@ The central synthesis is that $t_n$ has two faces. In the zeta sector, $t_n$ app
 The zeta zero is not the mass shell itself. It is the complex spectral trace of a closure eigenvalue. The mass shell is the physical norm realization after scale conversion.
 \end{remark}
 
+\Needspace{10\baselineskip}
 \section{Optional supporting mechanisms}
+\Needspace{6\baselineskip}
 \subsection*{Closure Cadence (optional)}
 \[
 \Lambda_n=\frac{2\pi}{t_n},\qquad \Delta_n=\frac{\pi}{3t_n}.
 \]
 This is optional geometric context and not part of the core bridge.
 
+\Needspace{6\baselineskip}
 \subsection*{Completion layer inside $\Xi$ (optional)}
 \[
 \xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s).
 \]
 This is a completion layer inside $\Xi$, but not a separate main mechanism for the bridge.
 
+\Needspace{10\baselineskip}
 \section{Non-claims and bridge to Paper 5}
 No proof of RH, no claim that zeta zeros are particles, no fixed universal $L_*$ in this paper, and no Standard Model mass derivation.
 
 Paper 5 asks whether $L_*$ can be fixed independently or stabilizes across predeclared families.
 
+\Needspace{10\baselineskip}
 \section*{References}
 \begin{enumerate}
   \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 1986.

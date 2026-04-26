@@ -32,6 +32,11 @@ q_{\mathbf u}(t)=\frac12+\mathbf u t.
 $$
 For \(\mathbf u=i\), this is exactly the classical critical line \(1/2+it\).
 
+![Quaternionic critical slices](../assets/figures/quaternionic-critical-slices.svg)
+
+*Figure: The classical critical line \(s=1/2+it\) is highlighted as one slice (\(\mathbf u=i\)) inside the quaternionic family \(q_{\mathbf u}(t)=1/2+\mathbf u t\). This supports the slice-lift viewpoint and does not prove any zeta zero statement by itself.*
+
+
 ## 2. Affine slice versus unit phase
 
 Keep two objects distinct:
@@ -48,6 +53,11 @@ $$
 Q^3=-1,\qquad Q^6=1.
 $$
 This cadence helps visualize closure at real part \(1/2\), but the main bridge to mass shells comes through the eigenvalue operator in Paper 4.
+
+![Six-step closure gate](../assets/figures/six-step-closure-gate.svg)
+
+*Figure: Six-step unit-phase cadence at \(60^\circ\) increments for \(Q=e^{\mathbf u\pi/3}\), showing \(Q^3=-1\) and \(Q^6=1\). This cadence is geometric intuition and is not the proof of the zeta-mass bridge.*
+
 
 ## 4. Quaternionic lift of the prime phase and residual
 

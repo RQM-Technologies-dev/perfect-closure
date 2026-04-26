@@ -55,6 +55,10 @@ This is the main identity of the paper.
 
 This interpretation is kinematic. It does not by itself provide particle-mass prediction.
 
+![Mass-shell norm diagram](../assets/figures/mass-shell-norm.svg)
+
+*Figure: Conceptual split between null/open propagation \(P\bar P=0\) and massive/closed invariant norm \(P\bar P=m^2c^2>0\). It clarifies the interpretation of Section 3 and is not a full spacetime derivation.*
+
 ## 4. Compton curvature scale
 
 Define

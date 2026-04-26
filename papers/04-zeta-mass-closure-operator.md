@@ -21,6 +21,10 @@ So a zeta zero is read as a complex spectral trace of a quaternionic closure eig
 
 Paper 4 answers: **how does the same eigenvalue have a zeta face and a mass-shell face?**
 
+![Main zeta-to-mass-shell pipeline](../assets/figures/zeta-to-mass-shell-pipeline.svg)
+
+*Figure: Main synthesis pipeline from complex spectral trace \(\Xi(t_n)=0\) to quaternionic closure eigenvalue \(\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}\) to mass-shell norm \(P\bar P=(\hbar t_n/L_\ast)^2\). It summarizes the bridge logic and does not by itself prove RH or derive observed masses.*
+
 ## 1. Internal scale operator and eigenmodes
 
 Let \(\rho>0\) and define
@@ -36,6 +40,11 @@ $$
 \mathcal A_{\mathbf u}\chi_t=t\chi_t.
 $$
 So \(t\) is the quaternionic closure eigenvalue.
+
+![Closure operator bridge](../assets/figures/closure-operator-bridge.svg)
+
+*Figure: Operator bridge chain \(\rho \rightarrow \chi_t(\rho)=\rho^{-1/2-\mathbf u t} \rightarrow \mathcal A_{\mathbf u} \rightarrow \Xi(\mathcal A_{\mathbf u}) \rightarrow\) kernel mode at \(t_n\rightarrow\) mass-shell lift through \(L_\ast\). This supports the map in Sections 1-3 and is not a standalone proof.*
+
 
 ## 2. Complex zeta-slice condition and selector
 

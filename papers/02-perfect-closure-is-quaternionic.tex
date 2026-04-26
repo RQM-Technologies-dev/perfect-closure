@@ -1,7 +1,10 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
 \usepackage{hyperref}
+\usepackage{needspace}
 
 \title{Perfect Closure Is Quaternionic: The Riemann Critical Line as a Complex Shadow}
 \author{John Van Geem / RQM Technologies}
@@ -17,9 +20,11 @@
 This paper gives the geometry layer of the series. The complex variable $\tfrac12+it$ is lifted to quaternionic slices $q_{\mathbf u}(t)=\tfrac12+\mathbf u t$ with $\mathbf u^2=-1$, where the classical line is the slice $\mathbf u=i$. We separate affine slice location from unit-phase motion and record the six-step cadence $Q^3=-1$, $Q^6=1$ at $\Re(Q)=\tfrac12$ as geometric intuition only. No proof of RH is claimed.
 \end{abstract}
 
+\Needspace{10\baselineskip}
 \section*{Reader Guide}
 The role of Paper 2 is not to prove zeta facts, but to show that the complex spectral trace $\tfrac12+it$ can be lifted to the quaternionic family $\tfrac12+\mathbf u t$.
 
+\Needspace{10\baselineskip}
 \section{Quaternionic slices and critical hyperslice}
 \begin{definition}[Complex slice]
 For a unit imaginary quaternion $\mathbf u$ with $\mathbf u^2=-1$,
@@ -38,6 +43,13 @@ q_{\mathbf u}(t)=\frac12+\mathbf u t.
 \]
 For $\mathbf u=i$, this is the classical critical line.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.80\textwidth]{../assets/figures/quaternionic-critical-slices.png}
+\caption{The classical complex critical line is highlighted as one slice ($\mathbf u=i$) inside the quaternionic family $q_{\mathbf u}(t)=\tfrac12+\mathbf u t$. This supports slice geometry intuition and does not by itself prove any zeta-zero statement.}
+\end{figure}
+
+\Needspace{10\baselineskip}
 \section{Affine slice versus unit phase}
 Keep distinct
 \[
@@ -45,6 +57,7 @@ q=\frac12+\mathbf u t \quad(\text{affine slice}),\qquad
 Q=e^{\mathbf u\phi}=\cos\phi+\mathbf u\sin\phi \quad(\text{unit phase}).
 \]
 
+\Needspace{10\baselineskip}
 \section{Six-step cadence as geometric intuition}
 If $\Re(Q)=\tfrac12$, then $\cos\phi=\tfrac12$, hence $\phi=\pi/3$ modulo $2\pi$, so
 \[
@@ -54,6 +67,13 @@ Q^3=-1,\qquad Q^6=1.
 This cadence helps visualize closure at real part $\tfrac12$, but the bridge to mass shells is carried by the eigenvalue operator in Paper 4.
 \end{remark}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.56\textwidth]{../assets/figures/six-step-closure-gate.png}
+\caption{Six-step phase cadence for $Q=e^{\mathbf u\pi/3}$ showing $Q^3=-1$ and $Q^6=1$. This cadence is geometric intuition and is not the proof of the zeta--mass bridge.}
+\end{figure}
+
+\Needspace{10\baselineskip}
 \section{Quaternionic lift of prime phase and residual}
 \[
 p^{-(1/2+\mathbf u t)}=p^{-1/2}e^{-\mathbf u t\log p}.
@@ -71,11 +91,13 @@ with
 \|\xi_{\mathbb H}(1/2+\mathbf u t)\|^2=|\Xi(t)|^2.
 \]
 
+\Needspace{10\baselineskip}
 \section{Non-claims and bridge}
 No RH proof, no full quaternionic analytic continuation claim, and no mass prediction are made here.
 
 Paper 3 defines mass-shell norm language, and Paper 4 connects that norm to the same closure eigenvalue $t_n$.
 
+\Needspace{10\baselineskip}
 \section*{References}
 \begin{enumerate}
   \item W. R. Hamilton, \emph{Elements of Quaternions}, 1866.

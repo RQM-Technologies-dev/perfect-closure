@@ -44,6 +44,10 @@ This is consistency of one eigenvalue across zeta, operator, and mass-shell face
 2. Family-specific \(L_*\): meaningful if stable under predeclared assignment.
 3. Universal \(L_*\): strongest and most falsifiable.
 
+![Calibration regimes chart](../assets/figures/calibration-regimes.svg)
+
+*Figure: Calibration hierarchy from particle-specific \(L_\ast\) (weakest), to family-specific \(L_\ast\) (potentially predictive), to universal \(L_\ast\) (strongest and most falsifiable). This is a methodological guide, not a fit result.*
+
 ## 4. Ratio and scale-stability tests
 
 If one \(L_*\) is shared in a family,
@@ -55,6 +59,11 @@ $$
 L_*(\text{particle},n)=\frac{\hbar t_n}{m_{\text{particle}}c}.
 $$
 Prediction requires stable clustering of inferred \(L_*\) under predeclared rules.
+
+![Mass-to-zeta inverse test](../assets/figures/mass-to-zeta-inverse-test.svg)
+
+*Figure: Inverse test pipeline \(P\bar P=m^2c^2 \rightarrow k_C=mc/\hbar \rightarrow \tau=mcL_\ast/\hbar \rightarrow R_\zeta(m;L_\ast)=|\Xi(\tau)|^2\). This supports falsifiability workflow and does not imply that zeta zeros are particles.*
+
 
 ## 5. Falsification standards
 

@@ -12,6 +12,18 @@ This is a research-program claim about formal structure. It is **not** a proof o
 
 **One-line map:** zeta zero \(\to\) complex spectral trace \(\to\) quaternionic closure eigenmode \(\to\) mass-shell norm after scaling.
 
+## Visual Guide
+
+These figures are visual guides to the structure of the paper series. They are not additional claims.
+
+![Perfect Closure series architecture](assets/figures/perfect-closure-series-arc.svg)
+
+*Figure: Series architecture across Papers 1–5, from complex trace to calibration tests. This supports the narrative ordering of the program and does not by itself establish any operator or physical result.*
+
+![Zeta-to-mass-shell synthesis pipeline](assets/figures/zeta-to-mass-shell-pipeline.svg)
+
+*Figure: Core synthesis map \(\Xi(t_n)=0 \rightarrow \mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n} \rightarrow P\bar P=(\hbar t_n/L_\ast)^2\). This visual supports the shared-eigenvalue interpretation and does not claim RH or particle-mass derivation.*
+
 ## Clean Spine
 
 $$
