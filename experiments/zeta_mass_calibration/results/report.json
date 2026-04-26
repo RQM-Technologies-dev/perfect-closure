@@ -1,0 +1,13 @@
+{
+  "seed": 314159,
+  "bootstrap_rounds": 400,
+  "null_rounds": 600,
+  "falsification_criteria": {
+    "criterion_1": "MAPE <= p95 permutation null",
+    "criterion_2": "MAPE <= p95 log-uniform synthetic null",
+    "criterion_3": "MAPE <= p95 Poisson-spaced gamma null",
+    "criterion_4": "bootstrap CV(L*) <= 0.10",
+    "criterion_5": "max abs relative pullback error <= 0.35"
+  },
+  "overall": "do_not_claim_success"
+}
