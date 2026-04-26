@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
+\title{Perfect Closure and Zeta Zeros: The Critical Line as a Square-Root Mirror}
+\author{John Van Geem / RQM Technologies}
+\date{April 2026}
+
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper develops a focused formalization of \emph{Perfect Closure} in the setting of the Riemann zeta function. Perfect Closure is defined as the condition in which conjugate displacement resolves without residue. We show that, for each prime route, the line $\Re(s)=\tfrac12$ is the unique local amplitude-balance line: it is the square-root mirror where conjugate routes have equal magnitude. We introduce a local imbalance functional and prove a primewise proposition characterizing this uniqueness. We then frame zeta zeros as global closure events of the completed zeta structure via the residual $C(t)=|\xi(\tfrac12+it)|^2$. This paper does not claim a proof of the Riemann Hypothesis.
+\end{abstract}
+
+\section{Introduction}
+
+This note studies the Riemann critical line through a constrained interpretive framework.
+
+\begin{definition}[Perfect Closure]
+Perfect Closure is the condition in which conjugate displacement resolves without residue.
+\end{definition}
+
+\section{Prime Routes and the Square-Root Mirror}
+
+Let $s=\sigma+it$ and let $p>1$ be prime. Then
+\[
+p^{-s}=p^{-\sigma}e^{-it\log p}.
+\]
+On $\sigma=\tfrac12$,
+\[
+p^{-(1/2+it)}=\frac{1}{\sqrt p}e^{-it\log p},
+\]
+and the conjugate route is
+\[
+p^{-(1/2-it)}=\frac{1}{\sqrt p}e^{+it\log p}.
+\]
+Both have equal magnitude $p^{-1/2}$.
+
+\section{Local Imbalance Functional}
+
+Define
+\[
+B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
+\]
+With $\sigma=\tfrac12+\delta$,
+\[
+B_p\!\left(\frac12+\delta\right)
+=2p^{-1/2}\left|\sinh(\delta\log p)\right|.
+\]
+
+\begin{proposition}
+For every prime $p>1$, $B_p(\sigma)=0$ if and only if $\sigma=\tfrac12$.
+\end{proposition}
+
+\begin{proof}
+Since $p^{-1/2}>0$,
+\[
+B_p\!\left(\frac12+\delta\right)=0
+\iff \sinh(\delta\log p)=0.
+\]
+Because $\log p\neq 0$ and $\sinh x=0$ iff $x=0$, we get $\delta=0$, hence $\sigma=\tfrac12$. The converse is immediate.
+\end{proof}
+
+\begin{remark}
+This proposition establishes unique local prime-route amplitude balance. It does not prove the Riemann Hypothesis.
+\end{remark}
+
+\section{Completed Zeta and Global Closure Residual}
+
+Define
+\[
+\xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma\!\left(\frac s2\right)\zeta(s),
+\]
+and
+\[
+C(t)=\left|\xi\!\left(\frac12+it\right)\right|^2.
+\]
+A Perfect Closure event is $C(t)=0$. In this interpretation, zeros are global closure events of the completed zeta structure, not cancellation of any single prime.
+
+\section{Bridge to Quaternionic Closure}
+
+Let
+\[
+Q=e^{u\phi}=\cos\phi+u\sin\phi,\qquad u^2=-1.
+\]
+If $\Re(Q)=\tfrac12$, then $\phi=\pi/3$ and therefore
+\[
+Q^3=-1,\qquad Q^6=1.
+\]
+The real part $\tfrac12$ also appears as a closure gate in unit complex and quaternionic phase, where $\Re(Q)=\tfrac12$ implies a six-step return. This motivates the companion paper.
+
+\section{What This Does and Does Not Claim}
+
+\textbf{Does not claim:}
+\begin{itemize}
+  \item A proof of the Riemann Hypothesis.
+  \item Convergence of the Euler product on the critical line.
+  \item Cancellation of $\zeta$ by a single prime factor.
+\end{itemize}
+
+\textbf{Does claim:}
+\begin{itemize}
+  \item $\Re(s)=\tfrac12$ is the unique local amplitude-balance line for prime conjugate routes.
+  \item Zeros are interpreted as global Perfect Closure events in the completed zeta structure.
+\end{itemize}
+
+\section*{References}
+\begin{enumerate}
+  \item B. Riemann, \emph{Ueber die Anzahl der Primzahlen unter einer gegebenen Gr"osse} (1859).
+  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., Oxford Univ. Press, 1986.
+  \item H. M. Edwards, \emph{Riemann's Zeta Function}, Dover, 2001.
+\end{enumerate}
+
+\end{document}

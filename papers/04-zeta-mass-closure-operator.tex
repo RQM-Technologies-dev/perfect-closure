@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\title{The Zeta--Mass Closure Operator: Perfect Closure as an Eigenvalue Law}
+\author{John Van Geem / RQM Technologies}
+\date{April 2026}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\begin{document}
+\maketitle
+\begin{abstract}
+This paper proposes an operator-level synthesis in which zeta closure and mass-shell closure are expressed as eigenvalue/kernel conditions of a shared formalism.
+\end{abstract}
+\section{Quaternionic dilation operator}
+\[
+\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right),\quad \mathbf u^2=-1.
+\]
+Eigenmodes:
+\[
+\chi_t(\rho)=\rho^{-1/2-\mathbf u t},\qquad \mathcal A_{\mathbf u}\chi_t=t\chi_t.
+\]
+At prime scale:
+\[
+\chi_t(p)=p^{-1/2-\mathbf u t}=\frac1{\sqrt p}e^{-\mathbf u t\log p}.
+\]
+\section{Zeta closure selector}
+\[
+\Xi(t)=\xi\left(\frac12+it\right),\qquad \mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u}).
+\]
+If $\Xi(t_n)=0$, then
+\[
+\mathcal Z_{\mathbf u}\chi_{t_n}=0.
+\]
+\section{Mass-shell lift}
+\[
+P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2,
+\qquad
+m_n=\frac{\hbar}{cL_*}|t_n|.
+\]
+\section{Claims and non-claims}
+No claim is made that zeta zeros are particles, RH is proved, or $L_*$ is already derived.
+\section*{References}
+\begin{enumerate}
+\item E. C. Titchmarsh and D. R. Heath-Brown (1986).
+\item H. M. Edwards (2001).
+\item S. L. Adler (1995).
+\end{enumerate}
+\end{document}

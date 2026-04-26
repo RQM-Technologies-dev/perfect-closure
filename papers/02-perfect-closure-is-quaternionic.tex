@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
+\title{Perfect Closure Is Quaternionic: The Riemann Critical Line as a Complex Shadow}
+\author{John Van Geem / RQM Technologies}
+\date{April 2026}
+
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper advances the thesis that Perfect Closure is native to quaternionic geometry and that the classical critical line $\Re(s)=\tfrac12$ is its complex trace. We define quaternionic critical slices $q_u(t)=\tfrac12+ut$ across unit imaginary directions $u^2=-1$, distinguish affine slices from unit phase elements, and derive a six-step closure gate at real part $\tfrac12$ in phase form. We then formalize a slice-lifted completed zeta representation and a quaternionic closure residual. The proposal is interpretive and programmatic: it does not prove the Riemann Hypothesis and does not replace analytic number theory.
+\end{abstract}
+
+\section{Thesis}
+
+\begin{quote}
+Perfect Closure is visible in complex phase, but native to quaternionic orientation space. The Riemann critical line is one complex shadow of the quaternionic closure slice $\Re(q)=\tfrac12$.
+\end{quote}
+
+\section{Quaternionic and Complex Slices}
+
+Let $u$ be a unit imaginary quaternion with $u^2=-1$.
+
+\begin{definition}[Quaternionic critical slice]
+\[
+q_u(t)=\frac12+ut,\qquad t\in\mathbb R.
+\]
+\end{definition}
+
+\begin{definition}[Complex slice associated to $u$]
+\[
+\mathbb C_u=\{a+ub:\;a,b\in\mathbb R,\;u^2=-1\}.
+\]
+\end{definition}
+
+The usual critical line $s=\tfrac12+it$ is the special case $u=i$.
+
+\begin{remark}
+$\Re(s)=\tfrac12$ is not the whole closure geometry; it is the complex trace of the quaternionic hyperplane $\Re(q)=\tfrac12$.
+\end{remark}
+
+\section{Affine Slice vs. Unit Phase Form}
+
+We distinguish:
+\begin{itemize}
+  \item Affine slice: $q=\tfrac12+ut$.
+  \item Unit phase form: $Q=e^{u\phi}=\cos\phi+u\sin\phi$.
+\end{itemize}
+
+\section{Six-Step Closure Gate}
+
+If $\Re(Q)=\tfrac12$, then $\cos\phi=\tfrac12$ and $\phi=\pi/3$. Hence
+\[
+Q=e^{u\pi/3},\qquad Q^3=e^{u\pi}=-1,\qquad Q^6=e^{u2\pi}=1.
+\]
+So $\Re(q)=\tfrac12$ acts as a closure gate in quaternionic phase geometry. This six-step law is already visible on the ordinary complex unit circle; quaternionic space makes it axis-free across imaginary directions.
+
+\section{Slice-Lifted Completed Zeta and Residual}
+
+Define
+\[
+\xi_H\!\left(\frac12+ut\right)
+=
+\Re\,\xi\!\left(\frac12+it\right)+u\Im\,\xi\!\left(\frac12+it\right),
+\]
+and
+\[
+C_{H,u}(t)=\left\|\xi_H\!\left(\frac12+ut\right)\right\|^2.
+\]
+A Perfect Closure event is $C_{H,u}(t)=0$.
+
+\begin{remark}
+The complex residual $|\xi(\tfrac12+it)|^2$ is one slice representation of this quaternionic residual.
+\end{remark}
+
+\section{Why the Complex Line Appears First Historically}
+
+Classical analytic number theory is formulated in $\mathbb C$, where $\xi$ and its functional equation are studied. The QSG/RQM research program lifts this structure into a family of quaternionic slices indexed by $u$; it does not replace the classical theory.
+
+\section{Relationship to Paper 1}
+
+\begin{itemize}
+  \item Paper 1 localizes the square-root mirror in the complex zeta setting.
+  \item Paper 2 lifts the closure geometry into quaternionic space.
+  \item The complex critical line is interpreted as the visible trace of the quaternionic closure slice.
+\end{itemize}
+
+\section{What This Does and Does Not Claim}
+
+\textbf{Does not claim:}
+\begin{itemize}
+  \item A proof of the Riemann Hypothesis.
+  \item A replacement for analytic number theory.
+  \item That all quaternionic slice lifts are classical zeta functions.
+\end{itemize}
+
+\textbf{Does claim:}
+\begin{itemize}
+  \item A quaternionic-native interpretation of why $\Re=\tfrac12$ appears as a closure condition.
+\end{itemize}
+
+\section*{References}
+\begin{enumerate}
+  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., Oxford Univ. Press, 1986.
+  \item H. M. Edwards, \emph{Riemann's Zeta Function}, Dover, 2001.
+  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, Oxford Univ. Press, 1995.
+\end{enumerate}
+
+\end{document}
