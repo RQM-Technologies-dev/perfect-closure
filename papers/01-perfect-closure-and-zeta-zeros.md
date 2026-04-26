@@ -53,6 +53,11 @@ p^{-(1/2-it)}=\frac1{\sqrt p}e^{+it\log p}.
 $$
 In plain language: the critical line is the balance line where conjugate prime-route amplitudes match.
 
+![Square-root mirror prime routes](../assets/figures/square-root-mirror-prime-routes.svg)
+
+*Figure: The square-root mirror. On the critical line, the two conjugate prime routes have equal magnitude \(1/\sqrt p\) and opposite phase direction, matching \(p^{-(1/2\pm it)}=(1/\sqrt p)e^{\mp it\log p}\). This visualizes local amplitude balance and does not imply that an individual prime cancels \(\zeta\).* 
+
+
 ## 3. Local imbalance theorem
 
 Define
@@ -64,6 +69,11 @@ $$
 B_p\!\left(\frac12+\delta\right)
 =2p^{-1/2}|\sinh(\delta\log p)|.
 $$
+
+![Prime imbalance curve](../assets/figures/prime-imbalance-curve.svg)
+
+*Figure: Illustrative imbalance curves for \(B_p(1/2+\delta)=2p^{-1/2}|\sinh(\delta\log p)|\) at \(p=2,5,11\), with \(\delta=0\) marked as the zero-imbalance point. The chart supports Proposition 3.1 qualitatively and is not a numerical claim about zero locations.*
+
 
 ### Proposition 3.1
 For every \(p>1\),

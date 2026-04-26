@@ -2,6 +2,7 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \title{Perfect Closure and Zeta Zeros: The Critical Line as a Square-Root Mirror}
 \author{John Van Geem / RQM Technologies}
@@ -44,6 +45,12 @@ p^{-(1/2-it)}=\frac1{\sqrt p}e^{+it\log p}.
 \]
 In plain language, the critical line is the balance line where conjugate prime-route amplitudes match.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{../assets/figures/square-root-mirror-prime-routes.png}
+  \caption{The square-root mirror. On $\Re(s)=\tfrac12$, conjugate prime routes $p^{-(1/2\pm it)}$ have equal magnitude $1/\sqrt p$ and opposite phase direction. This supports local amplitude-balance intuition and does not imply that any single prime cancels $\zeta$.}
+\end{figure}
+
 \section{Local imbalance theorem}
 Define
 \[
@@ -53,6 +60,12 @@ With $\sigma=\tfrac12+\delta$,
 \[
 B_p\!\left(\frac12+\delta\right)=2p^{-1/2}|\sinh(\delta\log p)|.
 \]
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.80\textwidth]{../assets/figures/prime-imbalance-curve.png}
+  \caption{Illustrative imbalance curves for $B_p(1/2+\delta)=2p^{-1/2}|\sinh(\delta\log p)|$ at $p=2,5,11$, with $\delta=0$ shown as the zero-imbalance point. This visual supports Proposition 3.1 qualitatively and is not a numerical claim about zero locations.}
+\end{figure}
 
 \begin{proposition}
 For every $p>1$, $B_p(\sigma)=0$ iff $\sigma=\tfrac12$.

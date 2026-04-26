@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \title{Closure Spectra and Physical Calibration: From Eigenvalues to Testable Mass Scales}
@@ -54,6 +55,11 @@ A triple $(t_n,L_*,m_n)$ is resolved when
   \item Family-specific $L_*$.
   \item Universal $L_*$.
 \end{enumerate}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.85\textwidth]{../assets/figures/calibration-regimes.png}
+  \caption{Calibration hierarchy from particle-specific $L_*$ (weakest), to family-specific $L_*$ (potentially predictive), to universal $L_*$ (strongest and most falsifiable). This visual is methodological guidance and not a fitted result.}
+\end{figure}
 
 \section{Ratio and scale-stability tests}
 If one $L_*$ is shared,
@@ -64,6 +70,11 @@ Also compute
 \[
 L_*(\text{particle},n)=\frac{\hbar t_n}{m_{\text{particle}}c}.
 \]
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.90\textwidth]{../assets/figures/mass-to-zeta-inverse-test.png}
+  \caption{Inverse test pipeline: $P\bar P=m^2c^2 \rightarrow k_C=mc/\hbar \rightarrow \tau=mcL_*/\hbar \rightarrow R_\zeta(m;L_*)=|\Xi(\tau)|^2$. This supports the falsifiability workflow and does not imply that zeta zeros are particles.}
+\end{figure}
 
 \section{Falsification standards}
 Predictive status fails in current form if no stable constrained $L_*$ emerges under predeclared protocols and only post hoc fits survive.

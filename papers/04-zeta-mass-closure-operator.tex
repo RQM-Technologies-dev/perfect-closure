@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \title{The Zeta--Mass Closure Operator: Perfect Closure as an Eigenvalue Law}
@@ -25,6 +26,12 @@ So a zeta zero is read as a complex spectral trace of a quaternionic closure eig
 \section*{Reader Guide}
 Paper 4 answers: how does the same eigenvalue have a zeta face and a mass-shell face?
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.88\textwidth]{../assets/figures/zeta-to-mass-shell-pipeline.png}
+  \caption{Main synthesis pipeline from complex spectral trace \(\Xi(t_n)=0\) to quaternionic closure eigenvalue \(\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}\) to mass-shell norm \(P\bar P=(\hbar t_n/L_*)^2\). This visual summarizes the bridge and does not by itself prove RH or derive observed particle masses.}
+\end{figure}
+
 \section{Internal scale operator and eigenmodes}
 Let $\rho>0$ and define
 \[
@@ -38,6 +45,12 @@ Then
 \[
 \mathcal A_{\mathbf u}\chi_t=t\chi_t.
 \]
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.92\textwidth]{../assets/figures/closure-operator-bridge.png}
+  \caption{Operator bridge chain \(\rho \rightarrow \chi_t(\rho)=\rho^{-1/2-\mathbf u t} \rightarrow \mathcal A_{\mathbf u} \rightarrow \Xi(\mathcal A_{\mathbf u}) \rightarrow\) kernel mode at \(t_n \rightarrow\) mass-shell lift through \(L_*\). This supports the map in Sections 1--3 and is not a standalone proof.}
+\end{figure}
 
 \section{Complex zeta-slice condition and selector}
 Define

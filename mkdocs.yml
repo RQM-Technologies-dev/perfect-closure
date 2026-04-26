@@ -17,6 +17,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Visual Guide: visual-guide.md
   - Perfect Closure: perfect-closure.md
   - Square-Root Mirror: square-root-mirror.md
   - Quaternionic Closure: quaternionic-closure.md
