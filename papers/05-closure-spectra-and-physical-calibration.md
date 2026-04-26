@@ -11,13 +11,18 @@ m_n=\frac{\hbar}{cL_*}|t_n|,
 $$
 so predictive content depends on whether \(L_*\) is fixed independently or stabilizes across a predeclared physical family. To make that criterion operational, this paper defines resolved closure triples, calibration regimes, ratio tests, scale-stability tests, and falsification standards.
 
-## Reader Guide
+## 1. Introduction
 
-Paper 5 answers: **when does the bridge become predictive rather than merely interpretable?**
+This paper asks when the bridge becomes predictive rather than merely interpretable. The short answer is: only when the conversion scale is constrained before fitting. If \(L_*\) is allowed to float freely per datapoint, the map can remain descriptive but has little falsifiable power.
 
-The short answer is: only when the conversion scale is constrained before fitting. If \(L_*\) is allowed to float freely per datapoint, the map can remain descriptive but has little falsifiable power.
+## 2. Contributions
 
-## 1. Core calibration relation
+1. We define a resolved closure triple across spectral, operator, and physical faces.
+2. We classify calibration regimes by falsifiability strength.
+3. We specify ratio tests and scale-stability diagnostics.
+4. We state explicit falsification standards.
+
+## 3. Core calibration relation
 
 From the bridge equation
 $$
@@ -37,7 +42,7 @@ If \(L_*\) is fixed in advance, the equation predicts \(m\) from \(t_n\). If \(m
 
 The theory is therefore predictive only when \(L_*\) is independently fixed or demonstrably stable under predeclared assignment rules.
 
-## 2. Resolved closure triple
+## 4. Resolved closure triple
 
 A triple \((t_n,L_*,m_n)\) is resolved when all three faces of the same value are satisfied:
 
@@ -55,7 +60,7 @@ Interpretively:
 
 A resolved triple is still not a proof of uniqueness or ontology. It is a consistency checkpoint.
 
-## 3. Calibration regimes
+## 5. Calibration regimes
 
 Three regimes have different predictive strength:
 
@@ -69,7 +74,7 @@ Three regimes have different predictive strength:
 
 The regimes should be predeclared before numerical comparison. Changing regime definitions after seeing results weakens evidential value.
 
-## 4. Ratio and scale-stability tests
+## 6. Ratio and scale-stability tests
 
 If one \(L_*\) is shared in a family, then
 $$
@@ -93,7 +98,7 @@ Recommended diagnostics include:
 
 *Figure: Inverse test pipeline \(P\bar P=m^2c^2 \rightarrow k_C=mc/\hbar \rightarrow \tau=mcL_\ast/\hbar \rightarrow R_\zeta(m;L_\ast)=|\Xi(\tau)|^2\). This supports falsifiability workflow and does not imply that zeta zeros are particles.*
 
-## 5. Falsification standards
+## 7. Falsification standards
 
 The bridge fails as a predictive law in its present form if one or more of the following persist:
 
@@ -104,13 +109,13 @@ The bridge fails as a predictive law in its present form if one or more of the f
 
 These standards matter because they separate structural coherence from predictive content. A coherent map can still fail as a forecasting model.
 
-## 6. Possible Future Selection Mechanism (supporting)
+## 8. Possible Future Selection Mechanism (supporting)
 
 AGQF or dressed-factorial constructions may be studied as future candidate selection mechanisms, for example as node-gating prefactors that pre-screen candidate pairings. This remains optional support and is not required for the core zeta-to-mass-shell bridge.
 
 Any such mechanism must be fixed before comparison and must not be used as an adjustable curve-fitting device. In other words, mechanism complexity is acceptable only if it increases out-of-sample predictive power under predeclared protocols.
 
-## 7. Non-claims and conclusion
+## 9. Scope and Limitations, and Conclusion
 
 - No proof of RH.
 - No claim that zeta zeros are particles.

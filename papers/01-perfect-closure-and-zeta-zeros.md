@@ -1,162 +1,113 @@
-# Perfect Closure and Zeta Zeros: The Critical Line as a Square-Root Mirror
+# Zeta-Zero Perfect Closure: The Critical Line as a Square-Root Mirror
 
 **John Van Geem / RQM Technologies**  
-*Research Note - April 2026*
+*Technical Manuscript - April 2026*
 
 ## Abstract
 
-This entry paper defines Perfect Closure in the zeta setting and isolates the key local theorem: for each prime route, the critical line \(\operatorname{Re}(s)=1/2\) is the unique amplitude-balance line. The point is not to claim that a local prime equation proves global zero placement. The point is to state, with explicit algebra, why the half-line is the only place where conjugate amplitudes line up in magnitude for each prime route.
+We define Perfect Closure in the zeta setting as a two-level structure: local prime-route amplitude balance and global completed-residual vanishing. We show that for each prime route, the critical line \\(\sigma=1/2\\) is the unique amplitude-balance location because the conjugate amplitudes are exactly square-root weighted, \\(p^{-1/2}\\). We then define the completed residual \\(\Xi(t)=\xi(1/2+it)\\), and we treat \\(\Xi(t_n)=0\\) as the global closure condition. This establishes a conservative hierarchy: local balance supports the geometric plausibility of closure, while global vanishing remains an analytic property of the completed function. This paper does not claim a proof of the Riemann Hypothesis.
 
-We use
-$$
-p^{-s}=p^{-\sigma}e^{-it\log p}
-$$
-for \(s=\sigma+it\), and define the local imbalance
-$$
-B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
-$$
-Writing \(\sigma=1/2+\delta\) gives
-$$
-B_p(1/2+\delta)=2p^{-1/2}|\sinh(\delta\log p)|,
-$$
-so \(B_p(\sigma)=0\) if and only if \(\sigma=1/2\). We then define
-$$
-\Xi(t)=\xi\!\left(\frac12+it\right),\qquad C(t)=|\Xi(t)|^2,
-$$
-and use \(\Xi(t_n)=0\) as the complex closure condition referenced by later papers. No proof of RH is claimed.
+## Keywords
 
-## Reader Guide
+Riemann zeta function; critical line; perfect closure; square-root mirror; completed zeta function; spectral trace.
 
-This paper answers one question: **what is the complex spectral trace?**  
-Paper 1 is intentionally narrow. It prepares language and algebra that later papers reuse, and it does so without claiming more than the equations establish.
+## 1. Introduction
 
-When this paper says "complex spectral trace," it means a value \(t_n\) such that
-$$
-\Xi(t_n)=0,
-$$
-where \(\Xi(t)=\xi(1/2+it)\) is the completed residual on the critical line. The sections below build the local-amplitude story first, then define this global residual condition.
+This paper sets the technical foundation for the series by clarifying what is local, what is global, and what is only interpretive language. We define **Perfect Closure** as vanishing residual structure in a chosen representation. In the zeta setting, we separate two residuals: a local prime-route imbalance and a global completed residual. This distinction is the key to maintaining mathematical caution.
 
-## 1. Perfect Closure in the zeta setting
+The central thesis is: on the critical line, each prime route is square-rooted into equal-magnitude conjugate phase routes, and a zeta zero is a completed global closure event where \\(\Xi(t)\\) vanishes. The phrase "complex spectral trace" is retained only as a diagnostic label for the condition \\(\Xi(t_n)=0\\), not as the primary framing.
 
-A **Perfect Closure event** is the vanishing of a chosen closure residual built from zeta data.
+## 2. Contributions
 
-- Local residual: prime-route imbalance \(B_p\).
-- Global residual: completed critical-line magnitude \(C(t)=|\Xi(t)|^2\).
+We make four concrete contributions:
 
-The local residual tells us where amplitude symmetry is possible route-by-route. The global residual tells us where the completed object reaches zero. Keeping these levels separate helps avoid over-claiming: local balance is structural support, while zero formation is global analytic behavior.
+1. We define a local prime-route imbalance \\(B_p(\sigma)\\) and prove that its unique zero occurs at \\(\sigma=1/2\\).
+2. We explain why \\(p^{-s}=p^{-\sigma}e^{-it\log p}\\) separates amplitude from phase and why this separation matters structurally.
+3. We formalize the global closure condition as \\(\Xi(t_n)=0\\) with \\(\Xi(t)=\xi(1/2+it)\\).
+4. We establish a conservative bridge to Paper 2: local square-root balance is necessary structural support but does not imply a proof of RH.
 
-## 2. Prime route and square-root balance
+## 3. Mathematical Setup
 
-For prime \(p>1\) and \(s=\sigma+it\),
-$$
-p^{-s}=p^{-\sigma}e^{-it\log p}.
-$$
-This factorization splits each route into:
+Let
+\\[
+s=\sigma+it,\qquad p^{-s}=p^{-\sigma}e^{-it\log p}.
+\\]
+The factor \\(p^{-\sigma}\\) controls amplitude and the factor \\(e^{-it\log p}\\) controls phase rotation. This decomposition is essential because it separates two mechanisms that are often conflated in informal arguments.
 
-1. an amplitude part, \(p^{-\sigma}\), controlled by the real coordinate \(\sigma\), and
-2. a phase part, \(e^{-it\log p}\), controlled by the height variable \(t\).
-
-On the critical line,
-$$
-p^{-(1/2+it)}=\frac1{\sqrt p}e^{-it\log p},
-$$
-and the conjugate route is
-$$
-p^{-(1/2-it)}=\frac1{\sqrt p}e^{+it\log p}.
-$$
-The key point is not that these two routes literally cancel one another term-by-term. The key point is that at \(\sigma=1/2\) they carry equal amplitude \(1/\sqrt p\) and opposite phase direction. This makes \(\sigma=1/2\) the unique local balance line.
-
-Another way to say the same thing: changing \(t\) rotates phase, while changing \(\sigma\) rescales amplitude. The critical line is where the conjugate pair has matched rescaling.
+On the critical line \\(\sigma=1/2\\),
+\\[
+p^{-(1/2\pm it)}=\frac{1}{\sqrt p}e^{\mp it\log p}.
+\\]
+Thus conjugate routes have equal amplitude \\(1/\sqrt p\\) and opposite phase direction. Off the critical line, \\(p^{-\sigma}\\neq p^{-(1-\sigma)}\\), so the two conjugate routes are not equally weighted. We interpret this as broken local mirror balance.
 
 ![Square-root mirror prime routes](../assets/figures/square-root-mirror-prime-routes.svg)
 
-*Figure: The square-root mirror. On the critical line, the two conjugate prime routes have equal magnitude \(1/\sqrt p\) and opposite phase direction, matching \(p^{-(1/2\pm it)}=(1/\sqrt p)e^{\mp it\log p}\). This visualizes local amplitude balance and does not imply that an individual prime cancels \(\zeta\).* 
+*Figure 1. Prime-route square-root mirror on \\(\sigma=1/2\\). Equal amplitudes and opposite phases visualize local balance; this does not imply termwise cancellation of \\(\zeta\\).* 
 
-## 3. Local imbalance theorem
+## 4. Formal Definitions and Proposition
 
-Define
-$$
+We define the local imbalance
+\\[
 B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
-$$
-This residual compares two amplitudes reflected around \(1/2\): one at \(\sigma\), one at \(1-\sigma\). If they are equal, local imbalance is zero.
-
-Now write \(\sigma=1/2+\delta\). Then
-$$
+\\]
+Write \\(\sigma=1/2+\delta\\). Then
+\\[
 \begin{aligned}
-B_p\!\left(\frac12+\delta\right)
-&=\left|p^{-1/2-\delta}-p^{-1/2+\delta}\right| \\
-&=p^{-1/2}\left|p^{-\delta}-p^{\delta}\right| \\
-&=p^{-1/2}\left|e^{-\delta\log p}-e^{\delta\log p}\right| \\
+B_p(1/2+\delta)
+&=\left|p^{-1/2-\delta}-p^{-1/2+\delta}\right|\\
+&=p^{-1/2}\left|p^{-\delta}-p^{\delta}\right|\\
+&=p^{-1/2}\left|e^{-\delta\log p}-e^{\delta\log p}\right|\\
 &=2p^{-1/2}|\sinh(\delta\log p)|.
 \end{aligned}
-$$
-Each line has a simple role: factor out \(p^{-1/2}\), rewrite powers as exponentials, then identify the hyperbolic sine form. The last line makes the zero condition transparent.
+\\]
+
+### Proposition 1
+For every prime \\(p>1\\),
+\\[
+B_p(\sigma)=0 \iff \sigma=1/2.
+\\]
+
+**Proof.** Since \\(p^{-1/2}>0\\), we have \\(B_p(1/2+\delta)=0\\iff\sinh(\delta\log p)=0\\). Because \\(\log p\neq0\\) and \\(\sinh x=0\\iff x=0\\), it follows that \\(\delta=0\\), hence \\(\sigma=1/2\\). Converse is immediate. \\(\square\\)
+
+For finite sets of primes, \\(B_N^2(\sigma)=\sum_{j=1}^N B_{p_j}(\sigma)^2\\) has the same unique zero at \\(\sigma=1/2\\). This confirms that aggregating local balances does not move the local mirror line.
 
 ![Prime imbalance curve](../assets/figures/prime-imbalance-curve.svg)
 
-*Figure: Illustrative imbalance curves for \(B_p(1/2+\delta)=2p^{-1/2}|\sinh(\delta\log p)|\) at \(p=2,5,11\), with \(\delta=0\) marked as the zero-imbalance point. The chart supports Proposition 3.1 qualitatively and is not a numerical claim about zero locations.*
+*Figure 2. Typical behavior of \\(B_p(1/2+\delta)\\) for several primes, with zero at \\(\delta=0\\).* 
 
-### Proposition 3.1
-For every \(p>1\),
-$$
-B_p(\sigma)=0 \iff \sigma=\frac12.
-$$
+## 5. Interpretation and Discussion
 
-**Proof.** Since \(p^{-1/2}>0\),
-\(B_p(1/2+\delta)=0\iff \sinh(\delta\log p)=0\).
-Because \(\log p\neq0\) and \(\sinh x=0\iff x=0\), we get \(\delta=0\), i.e. \(\sigma=1/2\). The converse is immediate. \(\square\)
+The proposition is intentionally local: it identifies where conjugate amplitudes are matched route-by-route. It does not identify where the completed zeta function must vanish. This distinction matters because local mirror support is a structural input, while zeta zeros are global outcomes of analytic continuation and completion.
 
-What this proposition gives is a clean local uniqueness statement. What it does not give is a global theorem about nontrivial zeros. It says where local amplitude mismatch vanishes, not where the full analytic continuation must vanish.
+Composite and prime-power terms do not invalidate the local result. In the expansion
+\\[
+\log\zeta(s)=\sum_p\sum_{k\ge1}\frac{p^{-ks}}{k}\qquad (\Re(s)>1),
+\\]
+we may interpret \\(k=1\\) as primary prime routes and \\(k\ge2\\) as echo terms. Echo terms enrich global structure, but the unique local mirror statement for each prime remains unchanged.
 
-## 4. Optional finite-prime support
-
-For a finite set \(p_1<\cdots<p_N\), define
-$$
-B_N(\sigma)^2=\sum_{j=1}^{N}B_{p_j}(\sigma)^2.
-$$
-Because each summand is nonnegative, \(B_N(\sigma)=0\) if and only if every term is zero. By Proposition 3.1, that happens exactly at \(\sigma=1/2\).
-
-This finite statement is useful as an intuition check: aggregating finitely many local imbalances does not move the unique zero-imbalance line away from \(1/2\).
-
-## 5. Prime-power echo (brief context)
-
-In \(\operatorname{Re}(s)>1\),
-$$
-\log\zeta(s)=\sum_p\sum_{k\ge1}\frac{p^{-ks}}{k}.
-$$
-In this bookkeeping language, \(k=1\) terms are primary prime routes and \(k\ge2\) terms are echo routes. The equation is included to remind the reader that the prime structure enters through layered harmonics, not through one isolated factor.
-
-This section is context only. The local imbalance theorem does not rely on this expansion.
-
-## 6. Completed residual and complex spectral trace
-
-Define
-$$
+Global closure is therefore defined using the completed residual:
+\\[
 \Xi(t)=\xi\!\left(\frac12+it\right),\qquad C(t)=|\Xi(t)|^2.
-$$
-The first equation chooses a completed residual on the critical line. The second turns it into a nonnegative scalar closure score. A closure event is then written as
-$$
-\Xi(t_n)=0.
-$$
-Equivalently, \(C(t_n)=0\). This is the exact complex spectral trace condition that Papers 2-5 carry forward.
+\\]
+A closure event is
+\\[
+\Xi(t_n)=0 \quad\Leftrightarrow\quad C(t_n)=0.
+\\]
+This establishes the global target carried forward to Papers 2--4.
 
-The naming convention matters for readability in later papers:
+## 6. Scope and Limitations
 
-- "trace" refers to the observed complex-line condition \(\Xi(t_n)=0\),
-- "eigenvalue" will refer to operator-side \(t_n\) (Paper 4),
-- "mass-shell realization" will refer to physical norm mapping after scale conversion (Papers 4-5).
+- We do **not** claim a proof of the Riemann Hypothesis.
+- We do **not** claim that local prime balance alone determines zero locations.
+- We do **not** claim that an isolated prime route cancels \\(\zeta\\).
+- We do **not** claim that "complex spectral trace" is the core thesis; it is a secondary diagnostic phrase for \\(\Xi(t_n)=0\\).
 
-## 7. Non-claims and bridge
+## 7. Conclusion
 
-- No proof of RH.
-- No claim of a zero-location algorithm.
-- No claim that a single prime route cancels \(\zeta\).
-
-Bridge sentence: Paper 2 lifts the complex trace variable \(1/2+it\) into quaternionic slice geometry \(1/2+\mathbf u t\), so the same trace variable can be discussed across orientation slices.
+We defined Perfect Closure in a conservative two-level form: local square-root mirror balance and global completed-residual vanishing. We proved that local prime-route imbalance vanishes uniquely at \\(\sigma=1/2\\), and we set \\(\Xi(t_n)=0\\) as the global closure condition. This establishes the formal handoff to Paper 2, where the same closure variable is lifted from the classical complex line into quaternionic slice geometry.
 
 ## References
 
-1. B. Riemann, *Ueber die Anzahl der Primzahlen unter einer gegebenen Groesse* (1859).
-2. E. C. Titchmarsh and D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, 2nd ed., Oxford Univ. Press, 1986.
-3. H. M. Edwards, *Riemann's Zeta Function*, Dover, 2001.
-
+[1] B. Riemann, *Ueber die Anzahl der Primzahlen unter einer gegebenen Groesse*, 1859.  
+[2] E. C. Titchmarsh and D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, 2nd ed., Oxford Univ. Press, 1986.  
+[3] H. M. Edwards, *Riemann's Zeta Function*, Dover, 2001.
