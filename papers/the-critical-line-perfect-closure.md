@@ -9,6 +9,8 @@
 
 This paper proposes *Perfect Closure* as a structural principle that may illuminate why the nontrivial zeros of the Riemann zeta function appear on the critical line Re(s) = 1/2. Perfect Closure is defined as the condition in which conjugate displacement fully resolves, leaving no unresolved residue. On the critical line, every prime is square-rooted into equal-magnitude conjugate phase routes: `p^{-(1/2+it)} = (1/sqrt(p)) * e^{-it log p}` and its conjugate `p^{-(1/2-it)} = (1/sqrt(p)) * e^{+it log p}`. This paper does not claim a proof of the Riemann Hypothesis. Rather, it proposes a conceptual and structural interpretation: that zeta zeros may be understood as global Perfect Closure events of the analytically continued prime-generated phase structure. Analogies are drawn to quaternionic closure (q^6 = 1), Pauli antisymmetric cancellation (ψ(a,a) = 0), matter/antimatter annihilation, and the Faro shuffle return (S^8 = I). These analogies are interpretive and structural; they are not proofs.
 
+**Source-manuscript metadata (retained for completeness):** Draft v0.1; Working author: John Van Geem / RQM Technologies; Framework orientation: Resonant Quantum Mechanics (RQM) / Quaternionic Spectral Geometry (QSG).
+
 ---
 
 ## 1. Introduction
@@ -294,6 +296,70 @@ The Perfect Closure framework suggests several directions for future work:
 5. **Random matrix theory.** The statistical distribution of zeta zeros is known to match the distribution of eigenvalues of random unitary matrices (GUE). Is there a formulation of this connection in terms of Perfect Closure?
 
 These directions are speculative and are offered as invitations to further investigation.
+
+### 12.1 Additional formalization scaffold (from the source paper draft)
+
+To preserve the full technical intent of the source manuscript, the following explicit scaffold is included.
+
+**Step 1 — Prime-phase space.**  
+Associate to each prime \(p\) a primitive logarithmic frequency
+\[
+\omega_p := \log p.
+\]
+On the critical line \(s=\tfrac12+it\), prime phases are represented by the conjugate pair
+\[
+e^{+it\log p}, \quad e^{-it\log p},
+\]
+with equal magnitude \(p^{-1/2}\).
+
+**Step 2 — Conjugacy/reflection operator.**  
+Define a reflection on spectral parameter space by
+\[
+\mathcal{C}_t:\ t \mapsto -t,
+\]
+and on the critical strip by
+\[
+\mathcal{C}_s:\ s \mapsto 1-\overline{s}.
+\]
+The critical line is the fixed-mirror locus:
+\[
+s = 1-\overline{s}
+\quad\Longleftrightarrow\quad
+\Re(s)=\tfrac12.
+\]
+
+**Step 3 — Local prime-balance functional.**  
+For \(s=\sigma+it\), define local prime imbalance
+\[
+B_p(\sigma):=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
+\]
+Then
+\[
+B_p(\sigma)=0
+\quad\Longleftrightarrow\quad
+\sigma=\tfrac12.
+\]
+Hence, the critical line is the unique vertical line of local conjugate-amplitude balance prime-by-prime.
+
+**Step 4 — Global closure functional.**  
+Local balance is necessary but not sufficient; define global closure through the completed zeta function \(\Xi\):
+\[
+\mathcal{C}(t):=\left|\Xi\!\left(\tfrac12+it\right)\right|^2.
+\]
+Zeros correspond exactly to
+\[
+\mathcal{C}(t)=0.
+\]
+In this framework, such points are interpreted as global Perfect Closure events.
+
+**Step 5 — Spectral-operator target.**  
+A rigorous program would seek a self-adjoint operator \(H\) with spectrum matching imaginary parts of nontrivial zeros. In Perfect Closure language, \(H\) would encode admissible global closure modes of the prime-phase braid (Hilbert–Pólya style motivation), though no such operator is constructed here.
+
+### 12.2 Additional interpretive slogans preserved from the source draft
+
+- *A zeta zero is not “nothing”; it is completed return after conjugate displacement.*  
+- *Primes meet their conjugate routes as primitive frequencies; composites meet the echo-field.*  
+- *Square-rooting an irreducible object does not split it into integer factors; it opens conjugate phase directions.*
 
 ---
 
