@@ -1,48 +1,120 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
 \title{The Zeta--Mass Closure Operator: Perfect Closure as an Eigenvalue Law}
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
+
 \newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
 \newtheorem{remark}{Remark}
+
 \begin{document}
 \maketitle
+
 \begin{abstract}
-This paper proposes an operator-level synthesis in which zeta closure and mass-shell closure are expressed as eigenvalue/kernel conditions of a shared formalism.
+We present the operator bridge of the Perfect Closure series. A quaternionic dilation generator $A_u=u(\rho\tfrac{d}{d\rho}+\tfrac12)$ has eigenmodes $\chi_t(\rho)=\rho^{-1/2-ut}$. Defining $Z_u=\Xi(A_u)$ with $\Xi(t)=\xi(\tfrac12+it)$, each critical-line ordinate $t_n$ gives a kernel mode $Z_u\chi_{t_n}=0$. A scale map then yields $m_n=\hbar|t_n|/(cL_*)$. The construction is formal and does not prove RH or derive Standard Model masses.
 \end{abstract}
-\section{Quaternionic dilation operator}
+
+\section{Introduction}
+Papers 1--3 established zeta closure, quaternionic closure geometry, and mass-shell closure interpretation. This paper gives the operator coupling.
+
+\section{Internal scale space}
+Let $\rho>0$ and $y=\log\rho$. Prime phases naturally involve $\log p$.
+
+\section{Quaternionic dilation generator}
+Define
 \[
-\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right),\quad \mathbf u^2=-1.
+A_u=u\left(\rho\frac{d}{d\rho}+\frac12\right),\qquad u^2=-1.
 \]
-Eigenmodes:
+Set
 \[
-\chi_t(\rho)=\rho^{-1/2-\mathbf u t},\qquad \mathcal A_{\mathbf u}\chi_t=t\chi_t.
+\chi_t(\rho)=\rho^{-1/2-ut}=\rho^{-1/2}e^{-ut\log\rho}.
 \]
-At prime scale:
+Then
 \[
-\chi_t(p)=p^{-1/2-\mathbf u t}=\frac1{\sqrt p}e^{-\mathbf u t\log p}.
+\left(\rho\frac{d}{d\rho}+\frac12\right)\chi_t=-ut\chi_t,
+\qquad
+A_u\chi_t=t\chi_t.
 \]
+
+\section{Prime evaluation}
+At $\rho=p$,
+\[
+\chi_t(p)=p^{-1/2-ut}=p^{-1/2}e^{-ut\log p}.
+\]
+For $u=i$, this recovers the complex square-root prime phase.
+
 \section{Zeta closure selector}
+Define
 \[
-\Xi(t)=\xi\left(\frac12+it\right),\qquad \mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u}).
+\Xi(t)=\xi\!\left(\frac12+it\right),\qquad Z_u=\Xi(A_u)
 \]
+(formal functional calculus on a suitable spectral domain).
 If $\Xi(t_n)=0$, then
 \[
-\mathcal Z_{\mathbf u}\chi_{t_n}=0.
+Z_u\chi_{t_n}=\Xi(A_u)\chi_{t_n}=\Xi(t_n)\chi_{t_n}=0.
 \]
-\section{Mass-shell lift}
+
+\section{Closure period in log-scale}
+Mode phase is $e^{-ut_n\log\rho}$. Full closure and six-step increment are
 \[
-P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2,
-\qquad
-m_n=\frac{\hbar}{cL_*}|t_n|.
+\Lambda_n=\frac{2\pi}{t_n},\qquad \Delta_n=\frac{\pi}{3t_n}.
 \]
-\section{Claims and non-claims}
-No claim is made that zeta zeros are particles, RH is proved, or $L_*$ is already derived.
+
+\section{Mass-shell lift}
+Let
+\[
+\log\rho=\frac{\ell}{L_*},\qquad k_n=\frac{t_n}{L_*}.
+\]
+Matching $k_C=mc/\hbar$ gives
+\[
+m_n=\frac{\hbar|t_n|}{cL_*}.
+\]
+With $P=E/c+I\mathbf p$,
+\[
+P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2.
+\]
+
+\section{Coupled closure system}
+\[
+\Xi(A_u)\Psi=0,
+\qquad
+P\bar P\,\Psi=\frac{\hbar^2}{L_*^2}A_u^2\Psi.
+\]
+
+\section{Main theorem}
+
+\begin{theorem}[Closure eigenvalue lift]
+If $A_u\chi_{t_n}=t_n\chi_{t_n}$ and $\Xi(t_n)=0$, then $\chi_{t_n}\in\ker\Xi(A_u)$. Under scale map $L_*$, the same eigenvalue defines
+\[
+m_n=\frac{\hbar|t_n|}{cL_*}.
+\]
+\end{theorem}
+
+\begin{proof}
+First,
+\[
+\Xi(A_u)\chi_{t_n}=\Xi(t_n)\chi_{t_n}=0.
+\]
+Second, define $k_n=t_n/L_*$. Identifying $k_n$ with Compton curvature $k_C=mc/\hbar$ gives $m_n=\hbar|t_n|/(cL_*)$.
+\end{proof}
+
+\section{Non-claims}
+No proof of RH, no claim zeta zeros are particles, no derivation of $L_*$, no Standard Model spectrum derivation.
+
+\section{Bridge to Paper 5}
+Paper 5 addresses calibration, pre-registered testing, and falsifiability of $L_*$.
+
 \section*{References}
 \begin{enumerate}
-\item E. C. Titchmarsh and D. R. Heath-Brown (1986).
-\item H. M. Edwards (2001).
-\item S. L. Adler (1995).
+  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 1986.
+  \item H. M. Edwards, \emph{Riemann's Zeta Function}, 2001.
+  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, 1995.
+  \item M. V. Berry and J. P. Keating, “$H=xp$ and the Riemann zeros.”
 \end{enumerate}
+
 \end{document}

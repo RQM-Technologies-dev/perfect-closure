@@ -1,47 +1,107 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
 \title{The Perfect Closure of the Mass Shell: Mass as Closed Quaternionic Light}
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
+
 \newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
 \newtheorem{remark}{Remark}
+
 \begin{document}
 \maketitle
+
 \begin{abstract}
-This paper introduces a mass-shell interpretation of Perfect Closure in a quaternionic formalization. Starting from $E^2-p^2c^2=m^2c^4$, we write momentum-energy in biquaternionic form and separate null propagation from massive closure by invariant norm.
+We formalize a closure interpretation of the relativistic mass shell in biquaternionic variables. Writing $P=E/c+I\mathbf p$ with commuting scalar imaginary $I^2=-1$, the invariant relation becomes $P\bar P=m^2c^2$. Null modes satisfy $P\bar P=0$ and massive modes satisfy $P\bar P>0$. This is an interpretation and formalization, not a derivation of Standard Model masses.
 \end{abstract}
-\section{Thesis}
-\textbf{Mass is the Perfect Closure of light.}
-\section{Mass shell and quaternionic form}
+
+\section{Introduction}
+
+Papers 1 and 2 treated zeta and quaternionic closure geometries. We now ask whether mass-shell structure can be expressed as closure.
+
+\section{Standard relativistic mass shell}
 \[
-E^2-p^2c^2=m^2c^4,\qquad
+E^2=p^2c^2+m^2c^4,
+\qquad
 \frac{E^2}{c^2}-|\mathbf p|^2=m^2c^2.
 \]
-Set
+$m=0$ is null/lightlike; $m>0$ gives nonzero invariant norm.
+
+\section{Biquaternionic spacetime}
+
+Let $\mathbf r=xi+yj+zk$ and $I^2=-1$ commute with $i,j,k$.
+Define
 \[
-P=\frac{E}{c}+I\mathbf p,\qquad I^2=-1,
+X=ct+I\mathbf r.
 \]
-then
+Then
+\[
+X\bar X=(ct+I\mathbf r)(ct-I\mathbf r)=c^2t^2-|\mathbf r|^2.
+\]
+
+\begin{remark}
+Biquaternionic/paravector structure is used to encode Minkowski signature.
+\end{remark}
+
+\section{Biquaternionic momentum}
+
+Define
+\[
+P=\frac{E}{c}+I\mathbf p,
+\]
+with $\mathbf p=p_x i+p_y j+p_z k$. Then
 \[
 P\bar P=\frac{E^2}{c^2}-|\mathbf p|^2,
 \]
-so
+so the mass shell is
 \[
 P\bar P=m^2c^2.
 \]
-\section{Interpretation}
+
+\section{Closure interpretation}
+
+\begin{proposition}
+$P\bar P=0$ corresponds to null/open flow; $P\bar P>0$ corresponds to massive/closed invariant flow.
+\end{proposition}
+
+\begin{proof}
+Directly from $P\bar P=E^2/c^2-|\mathbf p|^2$, null propagation has zero Minkowski norm, while massive states have positive invariant norm $m^2c^2$.
+\end{proof}
+
+\section{Compton closure scale}
+
+\[
+\bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{mc}{\hbar}.
+\]
+$k_C$ is interpreted as the curvature scale of a massive closure mode.
+
+\section{Claims and non-claims}
+
+\textbf{Claims:}
 \begin{itemize}
-\item $P\bar P=0$: null/open lightlike propagation.
-\item $P\bar P>0$: nonzero invariant norm (massive closure).
+  \item The mass shell is expressible as a biquaternionic norm condition.
+  \item The null/massive split admits an open/closed interpretation.
 \end{itemize}
-\section{What this does and does not claim}
-\textbf{Does not claim:} derivation of masses from first principles or a full QFT.\\
-\textbf{Does claim:} the mass shell is a closure law in invariant norm form.
+
+\textbf{Non-claims:}
+\begin{itemize}
+  \item No derivation of electron/proton masses.
+  \item No replacement of QFT.
+  \item No proof all mass is electromagnetic.
+\end{itemize}
+
+\section{Bridge}
+Paper 4 will connect these invariant norms to zeta-closure eigenvalues through an operator lift.
+
 \section*{References}
 \begin{enumerate}
-\item A. Einstein (1905).
-\item W. R. Hamilton, \emph{Elements of Quaternions} (1866).
-\item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields} (1995).
+  \item A. Einstein, \emph{Zur Elektrodynamik bewegter K"orper} (1905).
+  \item W. R. Hamilton, \emph{Elements of Quaternions} (1866).
+  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, 1995.
+  \item W. Rindler, \emph{Introduction to Special Relativity}.
 \end{enumerate}
+
 \end{document}
