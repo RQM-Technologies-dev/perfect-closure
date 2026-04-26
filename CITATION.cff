@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+type: article
+title: "The Critical Line: The Square-Root Mirror Where Perfect Closure Becomes Possible"
+authors:
+  - family-names: Van Geem
+    given-names: John
+    affiliation: "RQM Technologies"
+abstract: >
+  A conceptual-mathematical research note proposing Perfect Closure as a
+  structural principle connecting the Riemann critical line Re(s)=1/2,
+  square-rooted prime conjugate phase routes, zeta zeros as completed
+  cancellation, quaternionic closure q^6=1, Pauli exclusion as antisymmetric
+  cancellation, matter/antimatter as conjugate closure directions, and the
+  Faro shuffle return S^8=I.
+date-released: 2026-04-26
+license: CC-BY-4.0
+repository-code: "https://github.com/RQM-Technologies-dev/perfect-closure"
+keywords:
+  - Riemann hypothesis
+  - critical line
+  - perfect closure
+  - zeta function
+  - quaternions
+  - Faro shuffle
+  - Pauli exclusion
+  - number theory
+  - RQM Technologies
