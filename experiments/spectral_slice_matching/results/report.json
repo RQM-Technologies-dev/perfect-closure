@@ -1,0 +1,30 @@
+{
+  "family_tested": [
+    "electron",
+    "muon",
+    "tau"
+  ],
+  "anchor_particle": "electron",
+  "anchor_scan_range": [
+    1,
+    40
+  ],
+  "zero_ordinate_method": "exact_first_40_from_calibration_script_plus_riemann_von_mangoldt_inverse_approximation_for_n_gt_40",
+  "best_anchor_index": 13,
+  "best_mape": 5.685488887572763e-07,
+  "best_max_abs_rel": 1.680139281170713e-06,
+  "best_L_cv": 7.860825279037483e-07,
+  "best_assignment_indices": {
+    "electron": 13,
+    "muon": 12846,
+    "tau": 308716
+  },
+  "null_percentile_best_zeta_mape_vs_poisson": 76.83333333333333,
+  "null_percentile_best_zeta_mape_vs_lattice": 85.66666666666667,
+  "claim_boundary": "no_support_under_current_test",
+  "constants": {
+    "hbar_c_mev_fm": 197.3269804
+  },
+  "null_trials": 600,
+  "seed": 314159
+}

@@ -1,73 +1,63 @@
-# Spectral Slice Matching Experiment
+# Spectral Slice Matching
 
-**Run date:** 2026-04-26  
-**Status:** first-pass direct matching test complete.
+This experiment asks:
 
-This experiment tests the direct question behind the Perfect Closure series:
+**Which zeta-zero spectral slices, if any, align with known charged-lepton mass shells under a shared closure scale \(L_\ast\)?**
 
-> If zeta zeros are complex spectral traces of quaternionic closure eigenvalues, which zeta-zero ordinates can match known mass-shell values under a shared closure scale \(L_\ast\)?
+It is intentionally different from `experiments/zeta_mass_calibration`:
 
-The previous `zeta_mass_calibration` experiment tested fixed rank-lock assignments. This experiment instead performs a direct spectral-slice match.
+- `zeta_mass_calibration` tests fixed **rank-lock** assignments.
+- `spectral_slice_matching` tests direct **anchor-scan spectral-slice matching**.
 
-## Core map
-
-For a zeta-zero ordinate \(t_n\), the mass-shell energy scale is
+## Core equation
 
 \[
-E_n(L_\ast)=\frac{\hbar c}{L_\ast}t_n.
+E_n(L_\ast) = \frac{\hbar c}{L_\ast} t_n,
 \]
 
-For a known rest energy \(E_j\), the inferred closure length is
+with:
 
-\[
-L_{\ast,j,n}=\frac{\hbar c\,t_n}{E_j}.
-\]
+- \(E\) in MeV,
+- \(\hbar c = 197.3269804\ \text{MeV fm}\),
+- \(L_\ast\) in fm.
 
-A shared closure family requires the same \(L_\ast\) to work across multiple particles.
+## Family and scan
 
-## First test: charged leptons
+The first family is charged leptons loaded from:
 
-The first clean target family is the charged leptons:
+- `experiments/zeta_mass_calibration/data/particle_masses_mev.csv`
 
-\[
-e,\quad \mu,\quad \tau.
-\]
+using:
 
-The scan anchors the electron to one of the first ten zeta zeros, then finds the nearest zeta zero to the implied muon and tau targets.
+- electron = 0.51099895 MeV
+- muon = 105.6583755 MeV
+- tau = 1776.86 MeV
 
-## First-run result
+Anchor scan:
 
-The best electron anchor among \(t_1\) through \(t_{10}\) was:
+- anchor particle: electron
+- anchor index range: \(a=1\) to \(40\)
+- for each anchor, set electron \(\to t_a\), infer \(L_\ast\), then nearest-match muon and tau targets.
 
-\[
-e\to t_{10},\qquad \mu\to t_{10486},\qquad \tau\to t_{254072}.
-\]
+## Zeta-zero ordinates used
 
-This gives a shared closure length around
+This run uses:
 
-\[
-L_\ast \approx 1.92206\times 10^4\ \mathrm{fm}.
-\]
+- exact first 40 ordinates copied from the existing calibration script;
+- Riemann–von Mangoldt inverse approximation for higher indices (
+  Newton inversion of
+  \(N(T)\approx\frac{T}{2\pi}(\log(\frac{T}{2\pi})-1)+\frac78\)
+  ) when nearest targets exceed index 40.
 
-The relative errors are small:
+So high-index assignments in this first run are **approximate** and should be treated as exploratory.
 
-- electron: exact by anchor construction;
-- muon: \(-9.64\times 10^{-6}\);
-- tau: \(-7.12\times 10^{-7}\).
+## Null comparisons
 
-However, the null comparison says this is **not statistically exceptional** under a local-density Poisson nearest-zero model. In the first null test, approximately 71% of null runs produced a best error as good as or better than the zeta result.
+For each of 600 trials, the script computes the best anchor MAPE under two null spectra:
 
-## Interpretation
-
-This experiment answers the “which one?” question for the first charged-lepton scan:
-
-| Particle | Zeta-zero index |
-|---|---:|
-| electron | 10 |
-| muon | 10486 |
-| tau | 254072 |
-
-But it does **not** support a success claim. The match is visually striking but not statistically meaningful yet, because high zeta zeros are dense enough that nearest-zero matching can produce close ratios by chance.
+1. Poisson-spacing null with local mean spacing
+   \(\Delta(T)\approx\frac{2\pi}{\log(T/(2\pi))}\).
+2. Lattice null with matched local spacing and random phase offset.
 
 ## Run
 
@@ -75,15 +65,19 @@ But it does **not** support a success claim. The match is visually striking but 
 python experiments/spectral_slice_matching/scripts/run_spectral_slice_matching.py
 ```
 
-The script requires `mpmath`.
-
 ## Outputs
 
-- `results/anchor_scan_leptons.csv`
-- `results/best_matches.csv`
-- `results/null_report.json`
-- `results/report.md`
+- `results/anchor_scan_top10.csv`
+- `results/best_assignment.csv`
+- `results/report.json`
+- `outputs/figures/` (reserved for figures)
 
 ## Non-claim boundary
 
-This experiment does **not** claim zeta zeros are particles. It does **not** derive lepton masses. It does **not** prove RH. It only tests whether a shared \(L_\ast\) spectral-slice interpretation survives a first direct matching and null comparison.
+This experiment does **not** claim:
+
+- zeta zeros are particles,
+- particle masses are derived,
+- RH is proved.
+
+It only reports whether direct spectral-slice matching survives this exploratory test and null comparison.

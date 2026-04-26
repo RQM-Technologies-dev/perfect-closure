@@ -80,6 +80,11 @@ This completion layer is supportive context for the series, not a separate proof
 - Markdown: [`papers/05-closure-spectra-and-physical-calibration.md`](papers/05-closure-spectra-and-physical-calibration.md)
 - LaTeX: [`papers/05-closure-spectra-and-physical-calibration.tex`](papers/05-closure-spectra-and-physical-calibration.tex)
 
+## Experiments
+
+- `zeta_mass_calibration`: fixed rank-lock calibration test
+- `spectral_slice_matching`: direct anchor-scan spectral slice matching test
+
 ## Supporting Documentation
 
 - Glossary: [`docs/glossary.md`](docs/glossary.md)
