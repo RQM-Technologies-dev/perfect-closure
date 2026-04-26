@@ -89,6 +89,10 @@ $$
 
 The central synthesis is that \(t_n\) has two faces. In the zeta sector, \(t_n\) appears through the complex residual \(\Xi(t_n)=0\). In the quaternionic sector, it appears as the eigenvalue of \(\mathcal A_{\mathbf u}\). In the physical sector, after the scale map \(L_\ast\), it appears as a mass-shell norm \(P\bar P=(\hbar t_n/L_\ast)^2\). Thus, zeta zeros may be interpreted as complex spectral traces of quaternionic closure eigenvalues, not as particles themselves.
 
+![Two faces of \(t_n\)](../assets/figures/tn-two-faces-bridge.svg)
+
+*Figure: The same ordinate \(t_n\) read in two sectors: complex spectral face \(\Xi(t_n)=0\) and mass-shell face \(P\bar P=(\hbar t_n/L_\ast)^2\). The figure is interpretive guidance and does not claim that zeta zeros are particles or that RH is proven.*
+
 The zeta zero is not the mass shell itself. It is the complex spectral trace of a closure eigenvalue. The mass shell is the physical norm realization after scale conversion.
 
 ## 5. Optional supporting mechanisms

@@ -24,6 +24,10 @@ These figures are visual guides to the structure of the paper series. They are n
 
 *Figure: Core synthesis map \(\Xi(t_n)=0 \rightarrow \mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n} \rightarrow P\bar P=(\hbar t_n/L_\ast)^2\). This visual supports the shared-eigenvalue interpretation and does not claim RH or particle-mass derivation.*
 
+![Two faces of the shared ordinate](assets/figures/tn-two-faces-bridge.svg)
+
+*Figure: The same ordinate \(t_n\) appears as a complex spectral trace face \(\Xi(t_n)=0\) and a mass-shell face \(P\bar P=(\hbar t_n/L_\ast)^2\). This is an interpretive aid, not a proof claim.*
+
 ## Clean Spine
 
 $$
