@@ -4,6 +4,14 @@
 
 > **Perfect Closure is the condition where conjugate displacement resolves into a zero-residual, identity-return, or invariant norm. Across zeta zeros, quaternionic phase, and mass shells, the recurring structure is represented as an eigenvalue or kernel condition of a closure operator.**
 
+### Central Synthesis
+
+Zeta zeros may be interpreted as complex spectral traces of quaternionic Perfect Closure eigenmodes. When such eigenmodes are lifted into biquaternionic spacetime through a physical scale \(L_\ast\), they take the form of mass-shell norms. Thus, the Riemann critical line may be understood as a complex spectral slice of a broader quaternionic closure-mass-shell structure.
+
+This is a research-program claim about formal structure. It is **not** a proof of the Riemann Hypothesis and **not** a derivation of known particle masses.
+
+**One-line map:** zeta zero \(\to\) complex spectral trace \(\to\) quaternionic closure eigenmode \(\to\) mass-shell norm after scaling.
+
 This repository is organized as a staged research program moving from safest mathematical claims to bolder synthesis claims.
 
 ## Current Series Order
@@ -46,6 +54,10 @@ $$
 \rightarrow
 \text{Physical calibration}.
 $$
+
+## Supporting Documentation
+
+- Glossary: [`docs/glossary.md`](docs/glossary.md)
 
 ## Future Separate Notes (not in the main sequence)
 

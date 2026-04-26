@@ -15,12 +15,14 @@
 \maketitle
 
 \begin{abstract}
-We formalize a closure interpretation of the relativistic mass shell in biquaternionic variables. Writing $P=E/c+I\mathbf p$ with commuting scalar imaginary $I^2=-1$, the invariant relation becomes $P\bar P=m^2c^2$. Null modes satisfy $P\bar P=0$ and massive modes satisfy $P\bar P>0$. This is an interpretation and formalization, not a derivation of Standard Model masses.
+We formalize a closure interpretation of the relativistic mass shell in biquaternionic variables. Writing $P=E/c+I\mathbf p$ with commuting scalar imaginary $I^2=-1$, the invariant relation becomes $P\bar P=m^2c^2$. Null modes satisfy $P\bar P=0$ and massive modes satisfy $P\bar P>0$. This is a formal interpretation, not a derivation of known particle masses.
 \end{abstract}
 
-\section{Introduction}
+\section*{Reader Guide}
+This paper shifts from spectral closure to physical closure by writing the mass shell as a quaternionic norm. It prepares the norm form that Paper 4 connects to closure eigenvalues.
 
-Papers 1 and 2 treated zeta and quaternionic closure geometries. We now ask whether mass-shell structure can be expressed as closure.
+\section{Introduction}
+Papers 1 and 2 treated zeta and quaternionic closure geometry. Here we translate to relativistic norm form.
 
 \section{Standard relativistic mass shell}
 \[
@@ -28,12 +30,10 @@ E^2=p^2c^2+m^2c^4,
 \qquad
 \frac{E^2}{c^2}-|\mathbf p|^2=m^2c^2.
 \]
-$m=0$ is null/lightlike; $m>0$ gives nonzero invariant norm.
+These equations anchor notation in standard physics; they do not introduce a zeta claim.
 
 \section{Biquaternionic spacetime}
-
-Let $\mathbf r=xi+yj+zk$ and $I^2=-1$ commute with $i,j,k$.
-Define
+Let $\mathbf r=xi+yj+zk$ and $I^2=-1$ commute with $i,j,k$. Define
 \[
 X=ct+I\mathbf r.
 \]
@@ -43,65 +43,47 @@ X\bar X=(ct+I\mathbf r)(ct-I\mathbf r)=c^2t^2-|\mathbf r|^2.
 \]
 
 \begin{remark}
-Biquaternionic/paravector structure is used to encode Minkowski signature.
+This is a compact algebraic representation of Minkowski signature, not a new dynamics.
 \end{remark}
 
-\section{Biquaternionic momentum}
-
+\section{Biquaternionic momentum and norm}
 Define
 \[
-P=\frac{E}{c}+I\mathbf p,
+P=\frac{E}{c}+I\mathbf p.
 \]
-with $\mathbf p=p_x i+p_y j+p_z k$. Then
+Then
 \[
-P\bar P=\frac{E^2}{c^2}-|\mathbf p|^2,
-\]
-so the mass shell is
-\[
+P\bar P=\left(\frac{E}{c}\right)^2-|\mathbf p|^2,
+\qquad
 P\bar P=m^2c^2.
 \]
+This is the physical norm form used by Paper 4.
 
 \section{Closure interpretation}
-
 \begin{proposition}
 $P\bar P=0$ corresponds to null/open flow; $P\bar P>0$ corresponds to massive/closed invariant flow.
 \end{proposition}
 
 \begin{proof}
-Directly from $P\bar P=E^2/c^2-|\mathbf p|^2$, null propagation has zero Minkowski norm, while massive states have positive invariant norm $m^2c^2$.
+Directly from $P\bar P=E^2/c^2-|\mathbf p|^2$, null propagation has zero invariant norm while massive propagation has positive norm $m^2c^2$.
 \end{proof}
 
 \section{Compton closure scale}
-
 \[
-\bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{mc}{\hbar}.
+\bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{mc}{\hbar}=\bar\lambda_C^{-1}.
 \]
-$k_C$ is interpreted as the curvature scale of a massive closure mode.
+The reader should note this scale, because Paper 4 will match it against lifted closure eigenvalues.
 
-\section{Claims and non-claims}
+\section{Non-claim boundary and transition}
+No claim is made that known particle masses are derived in this paper, or that QFT is replaced.
 
-\textbf{Claims:}
-\begin{itemize}
-  \item The mass shell is expressible as a biquaternionic norm condition.
-  \item The null/massive split admits an open/closed interpretation.
-\end{itemize}
-
-\textbf{Non-claims:}
-\begin{itemize}
-  \item No derivation of electron/proton masses.
-  \item No replacement of QFT.
-  \item No proof all mass is electromagnetic.
-\end{itemize}
-
-\section{Bridge}
-Paper 4 will connect these invariant norms to zeta-closure eigenvalues through an operator lift.
+The mass shell gives the physical norm form that Paper 4 will connect to closure eigenvalues.
 
 \section*{References}
 \begin{enumerate}
   \item A. Einstein, \emph{Zur Elektrodynamik bewegter K"orper} (1905).
   \item W. R. Hamilton, \emph{Elements of Quaternions} (1866).
   \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, 1995.
-  \item W. Rindler, \emph{Introduction to Special Relativity}.
 \end{enumerate}
 
 \end{document}

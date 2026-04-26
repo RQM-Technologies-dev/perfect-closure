@@ -15,38 +15,38 @@
 \maketitle
 
 \begin{abstract}
-We formalize a zeta-specific notion of \emph{Perfect Closure} and isolate a rigorous local statement: for each prime route, the critical line $\Re(s)=\tfrac12$ is the unique amplitude-balance line. We then extend this to finite prime sets and define a global completed-zeta residual $C(t)=|\Xi(t)|^2$ with $\Xi(t)=\xi(\tfrac12+it)$. Zeros of $\Xi$ are interpreted as global closure events in this framework. No proof of the Riemann Hypothesis is claimed.
+We formalize a zeta-specific notion of \emph{Perfect Closure} and isolate a rigorous local statement: for each prime route, the critical line $\Re(s)=\tfrac12$ is the unique amplitude-balance line. We define $\Xi(t)=\xi(\tfrac12+it)$ and $C(t)=|\Xi(t)|^2$ as global residual language for the series. The main proved result remains local and finite-prime balance; no proof of RH is claimed.
 \end{abstract}
 
-\section{Introduction}
+\section*{Reader Guide}
+This paper introduces Perfect Closure in the safest setting: the zeta critical line. The main proven result is local prime-route balance, not RH. Later papers reinterpret this residual structure in quaternionic and mass-shell language.
 
-This note develops a constrained closure formalization for the zeta setting. The aim is to state clean local balance theorems while separating proven statements from interpretation.
+\section{Introduction}
+This note develops a constrained closure formalization for the zeta setting. The goal is to separate proven local balance theorems from interpretive language.
 
 \section{Perfect Closure in the zeta setting}
-
 \begin{definition}[Perfect Closure, zeta form]
-A \emph{Perfect Closure event} is a vanishing of a designated closure residual constructed from zeta data.
+A \emph{Perfect Closure event} is the vanishing of a designated closure residual built from zeta data.
 \end{definition}
 
-At local prime level we use imbalance functionals. At global level we use the completed-zeta residual $C(t)=|\Xi(t)|^2$.
+At local prime level we use imbalance functionals; at global level we use $C(t)=|\Xi(t)|^2$.
 
 \begin{remark}
-In this paper, Perfect Closure is a formalization device inside a research program, not a replacement for analytic number theory.
+This definition introduces workflow language and does not by itself prove RH or any global zero-distribution claim.
 \end{remark}
 
 \section{Three reflections in the critical strip}
-
-Let $s=\sigma+it$. Define
+Let $s=\sigma+it$ and define
 \[
 J(s)=\overline{s},\qquad F(s)=1-s,\qquad R(s)=1-\overline{s}=F\circ J=J\circ F.
 \]
-The map $R$ fixes the critical line:
+These involutions organize symmetry in the strip. In particular,
 \[
-R\!\left(\tfrac12+it\right)=\tfrac12+it.
+R\!\left(\tfrac12+it\right)=\tfrac12+it,
 \]
+so $\Re(s)=\tfrac12$ is the fixed-point set of $R$.
 
 \section{Prime routes and the square-root mirror}
-
 For prime $p>1$,
 \[
 p^{-s}=p^{-\sigma}e^{-it\log p}.
@@ -56,10 +56,9 @@ On $\sigma=\tfrac12$,
 p^{-(1/2+it)}=\frac{1}{\sqrt p}e^{-it\log p},\qquad
 p^{-(1/2-it)}=\frac{1}{\sqrt p}e^{+it\log p}.
 \]
-Both routes have magnitude $p^{-1/2}$ and opposite phase direction.
+The reader should notice equal amplitude and opposite phase direction (the square-root mirror). This is a local symmetry statement.
 
 \section{Local prime imbalance}
-
 Define
 \[
 B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
@@ -70,9 +69,10 @@ B_p\!\left(\tfrac12+\delta\right)
 &=\left|p^{-1/2-\delta}-p^{-1/2+\delta}\right|\\
 &=2p^{-1/2}\left|\sinh(\delta\log p)\right|.
 \end{align*}
+This reduction shows the balance question is equivalent to where $\sinh$ vanishes.
 
 \begin{proposition}
-For every $p>1$, $B_p(\sigma)=0$ if and only if $\sigma=\tfrac12$.
+For every $p>1$, $B_p(\sigma)=0$ iff $\sigma=\tfrac12$.
 \end{proposition}
 
 \begin{proof}
@@ -81,15 +81,15 @@ Since $p^{-1/2}>0$,
 B_p\!\left(\tfrac12+\delta\right)=0
 \iff \sinh(\delta\log p)=0.
 \]
-Because $\log p\neq 0$ and $\sinh x=0$ iff $x=0$, we obtain $\delta=0$, hence $\sigma=\tfrac12$. The converse is immediate.
+Because $\log p\neq 0$ and $\sinh x=0$ iff $x=0$, we get $\delta=0$, hence $\sigma=\tfrac12$.
 \end{proof}
 
 \section{Finite global imbalance}
-
 For primes $p_1<\cdots<p_N$, define
 \[
 B_N(\sigma)^2=\sum_{j=1}^{N}B_{p_j}(\sigma)^2.
 \]
+This aggregates local imbalance into a finite global residual.
 
 \begin{proposition}
 For every finite prime set with $p_j>1$,
@@ -99,71 +99,34 @@ B_N(\sigma)=0 \iff \sigma=\tfrac12.
 \end{proposition}
 
 \begin{proof}
-If $\sigma=\tfrac12$ then each summand is zero. Conversely, if $B_N(\sigma)=0$, all nonnegative summands vanish, so each $B_{p_j}(\sigma)=0$, and Proposition 5 yields $\sigma=\tfrac12$.
+If $\sigma=\tfrac12$, each summand vanishes. Conversely, if $B_N(\sigma)=0$, each nonnegative summand is zero, so Proposition 5 forces $\sigma=\tfrac12$.
 \end{proof}
 
 \begin{remark}
-This is a finite-prime result and does not prove RH.
+This is a finite-prime theorem and does not prove RH.
 \end{remark}
 
-\section{Prime-power echo field}
-
-For $\Re(s)>1$,
-\[
-\log\zeta(s)=\sum_p\sum_{k\ge 1}\frac{p^{-ks}}{k}.
-\]
-We call $k=1$ terms primitive routes and $k\ge 2$ terms echo routes. This is used only in the convergence domain.
-
 \section{Completed zeta and global closure residual}
-
+Define
 \[
-\xi(s)=\frac12 s(s-1)\pi^{-s/2}\Gamma\!\left(\frac s2\right)\zeta(s),
-\qquad
-\Xi(t)=\xi\!\left(\frac12+it\right),
+\Xi(t)=\xi\!\left(\frac12+it\right),\qquad C(t)=|\Xi(t)|^2.
 \]
+A global closure event is written as
 \[
-C(t)=|\Xi(t)|^2.
+\Xi(t_n)=0.
 \]
-A Perfect Closure event is $C(t)=0$.
+This notation prepares later operator work; it does not claim all nontrivial zeros lie on $\Re(s)=\tfrac12$.
 
-\section{Proven statements versus interpretation}
+\section{Interpretation boundary and transition}
+The zeta closure residual of this paper becomes one face of the later operator framework in Paper 4.
 
-\textbf{Proven:}
-\begin{itemize}
-  \item $\Re(s)=\tfrac12$ is the unique local prime-route amplitude-balance line.
-  \item For finite prime sets, $B_N(\sigma)=0$ only at $\sigma=\tfrac12$.
-\end{itemize}
-
-\textbf{Interpreted:}
-\begin{itemize}
-  \item Zeta zeros are global Perfect Closure events of the completed-zeta residual.
-\end{itemize}
-
-\textbf{Not claimed:}
-\begin{itemize}
-  \item No proof of RH.
-  \item No Euler-product convergence claim on $\Re(s)=\tfrac12$.
-  \item No single-prime cancellation claim.
-\end{itemize}
-
-\section{Short bridge to Paper 2}
-
-\[
-Q=e^{u\phi}=\cos\phi+u\sin\phi,\qquad u^2=-1.
-\]
-If $\Re(Q)=\tfrac12$, then $\phi=\pi/3$, so
-\[
-Q^3=-1,\qquad Q^6=1.
-\]
-Paper 2 studies this as quaternionic closure geometry.
+\textbf{Not claimed:} no proof of RH, no Euler-product convergence claim on $\Re(s)=\tfrac12$, and no single-prime cancellation claim.
 
 \section*{References}
 \begin{enumerate}
   \item B. Riemann, \emph{Ueber die Anzahl der Primzahlen unter einer gegebenen Gr"osse} (1859).
-  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., Oxford Univ. Press, 1986.
-  \item H. M. Edwards, \emph{Riemann's Zeta Function}, Dover, 2001.
-  \item B. Mazur and W. Stein, \emph{Prime Numbers and the Riemann Hypothesis}, Cambridge Univ. Press, 2016.
-  \item E. Bombieri, “The Riemann Hypothesis,” Clay Mathematics Institute.
+  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., 1986.
+  \item H. M. Edwards, \emph{Riemann's Zeta Function}, 2001.
 \end{enumerate}
 
 \end{document}
