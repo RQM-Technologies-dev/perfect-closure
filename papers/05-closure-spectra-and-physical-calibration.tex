@@ -1,34 +1,92 @@
 \documentclass[11pt]{article}
 \usepackage[a4paper,margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{hyperref}
+
 \title{Closure Spectra and Physical Calibration: From Eigenvalues to Testable Mass Scales}
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
+
 \newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
 \newtheorem{remark}{Remark}
+
 \begin{document}
 \maketitle
+
 \begin{abstract}
-This paper states the calibration problem for closure-spectrum models and defines evidence and falsification criteria.
+This paper provides the calibration and falsifiability layer for the Perfect Closure series. The formal bridge $m_n=\hbar|t_n|/(cL_*)$ becomes predictive only if $L_*$ is independently fixed or stably shared across a predeclared physical family. We define resolved closure triples, calibration regimes, ratio and stability tests, and falsification criteria.
 \end{abstract}
-\section{Calibration equation}
+
+\section{Introduction}
+Papers 1--4 established a formal bridge from zeta closure modes to mass-shell expressions. This paper asks when that bridge is predictive.
+
+\section{Recap of the formal bridge}
 \[
-m_n=\frac{\hbar}{cL_*}|t_n|.
+k_n=\frac{t_n}{L_*},\qquad k_C=\frac{mc}{\hbar},\qquad m_n=\frac{\hbar|t_n|}{cL_*}.
 \]
-Without a derived $L_*$, this remains a formal bridge.
-\section{Evidence criteria}
+
+\section{Derivation of \texorpdfstring{$L_*$}{L*}}
+From $t_n/L_*=mc/\hbar$,
 \[
-\frac{m_a}{m_b}\approx\frac{t_m}{t_n},
+L_*=\frac{t_n\hbar}{mc}=t_n\bar\lambda_C,
 \qquad
-L_*=\frac{\hbar t_n}{m_nc}
+\bar\lambda_C=\frac{\hbar}{mc}.
 \]
-should hold in physically justified assignments with stability across families.
-\section{Falsification criteria}
-No stable $L_*$, ad hoc reassignment, or absence of independent prediction counts against the program.
+
+\section{Resolved closure}
+\begin{definition}[Resolved closure triple]
+A triple $(t_n,L_*,m_n)$ is resolved if
+\begin{itemize}
+  \item $\Xi(t_n)=0$,
+  \item $A_u\chi_{t_n}=t_n\chi_{t_n}$,
+  \item $P\bar P=m_n^2c^2=(\hbar t_n/L_*)^2$.
+\end{itemize}
+\end{definition}
+
+\begin{remark}
+Resolved consistency is not yet predictive sufficiency.
+\end{remark}
+
+\section{Calibration regimes}
+\begin{enumerate}
+  \item Particle-specific $L_*$ (weak predictive content).
+  \item Family-specific $L_*$ (intermediate, testable).
+  \item Universal $L_*$ (strongest, most falsifiable).
+\end{enumerate}
+
+\section{Ratio tests}
+If $L_*$ is shared,
+\[
+\frac{m_a}{m_b}=\frac{t_m}{t_n}.
+\]
+Assignments must be predeclared and uncertainty-aware.
+
+\section{Scale-stability tests}
+Compute
+\[
+L_*(\mathrm{particle},n)=\frac{\hbar t_n}{m_{\mathrm{particle}}c}.
+\]
+Stability/clustering across a family is required for credibility.
+
+\section{Avoiding curve fitting}
+Failure modes: post hoc reassignment, many adjustable parameters, tolerance inflation, coincidence-only ratios.
+
+\section{Mechanism requirement}
+A predictive theory needs independent dynamics that explain subset choice and scale fixing, plus observables beyond mass fitting.
+
+\section{Evidence and falsification}
+\textbf{Evidence:} predeclared stable $L_*$, successful withheld-mass prediction, independent dynamical corroboration.\\
+\textbf{Falsification:} no stable $L_*$ in natural families, only post hoc fits, no independent mechanism, no new predictions.
+
+\section{Conclusion}
+Perfect Closure becomes physical only when closure eigenvalues map to stable Compton-scale curvature through independently justified $L_*$.
+
 \section*{References}
 \begin{enumerate}
-\item K. G. Wilson (1983).
-\item R. P. Feynman (1985).
-\item S. L. Adler (1995).
+  \item K. G. Wilson, “The renormalization group and critical phenomena,” \emph{Rev. Mod. Phys.} 55 (1983).
+  \item R. P. Feynman, \emph{QED: The Strange Theory of Light and Matter}, 1985.
+  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, 1995.
 \end{enumerate}
+
 \end{document}

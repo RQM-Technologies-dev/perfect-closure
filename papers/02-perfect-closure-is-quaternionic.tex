@@ -15,102 +15,109 @@
 \maketitle
 
 \begin{abstract}
-This paper advances the thesis that Perfect Closure is native to quaternionic geometry and that the classical critical line $\Re(s)=\tfrac12$ is its complex trace. We define quaternionic critical slices $q_u(t)=\tfrac12+ut$ across unit imaginary directions $u^2=-1$, distinguish affine slices from unit phase elements, and derive a six-step closure gate at real part $\tfrac12$ in phase form. We then formalize a slice-lifted completed zeta representation and a quaternionic closure residual. The proposal is interpretive and programmatic: it does not prove the Riemann Hypothesis and does not replace analytic number theory.
+We develop the quaternionic-geometry layer of the Perfect Closure program. The critical-line condition in $\mathbb C$ is interpreted as a slice of the quaternionic condition $\Re(q)=\tfrac12$. We separate affine slices from unit-phase closure, derive the six-step gate $Q^6=1$ at $\Re(Q)=\tfrac12$, and define a slice-lifted completed-zeta residual that agrees with the complex residual on each slice. No proof of RH is claimed.
 \end{abstract}
 
-\section{Thesis}
+\section{Introduction and thesis}
 
 \begin{quote}
-Perfect Closure is visible in complex phase, but native to quaternionic orientation space. The Riemann critical line is one complex shadow of the quaternionic closure slice $\Re(q)=\tfrac12$.
+Perfect Closure is visible in complex phase, but native to quaternionic orientation space.
 \end{quote}
 
-\section{Quaternionic and Complex Slices}
+\section{Quaternions and complex slices}
 
-Let $u$ be a unit imaginary quaternion with $u^2=-1$.
+A quaternion is $q=a+bi+cj+dk$ with $\Re(q)=a$. Let $u$ be unit imaginary ($u^2=-1$).
 
-\begin{definition}[Quaternionic critical slice]
+\begin{definition}[Complex slice]
+\[
+\mathbb C_u=\{a+ub:\;a,b\in\mathbb R\}.
+\]
+\end{definition}
+
+The ordinary complex plane is the special slice $u=i$.
+
+\section{Quaternionic critical slice}
+
+\begin{definition}[Critical hyperslice]
+\[
+\Sigma_{1/2}=\{q\in\mathbb H:\Re(q)=1/2\}.
+\]
+\end{definition}
+
+For fixed $u$, define
 \[
 q_u(t)=\frac12+ut,\qquad t\in\mathbb R.
 \]
-\end{definition}
+When $u=i$, this is $s=\tfrac12+it$. Hence the classical critical line is a complex trace of $\Sigma_{1/2}$.
 
-\begin{definition}[Complex slice associated to $u$]
+\section{Affine slice versus unit phase}
+
+Affine location and phase closure are distinct:
 \[
-\mathbb C_u=\{a+ub:\;a,b\in\mathbb R,\;u^2=-1\}.
+q=\frac12+ut \quad\text{vs}\quad Q=e^{u\phi}=\cos\phi+u\sin\phi.
 \]
-\end{definition}
 
-The usual critical line $s=\tfrac12+it$ is the special case $u=i$.
+\section{Six-step closure gate}
+
+\begin{proposition}
+If $\Re(Q)=\tfrac12$ for $Q=e^{u\phi}$, then $Q^3=-1$ and $Q^6=1$.
+\end{proposition}
+
+\begin{proof}
+$\Re(Q)=\cos\phi=\tfrac12$ implies $\phi=\pi/3$ modulo $2\pi$. Then
+\[
+Q^3=e^{u\pi}=-1,\qquad Q^6=e^{u2\pi}=1.
+\]
+\end{proof}
 
 \begin{remark}
-$\Re(s)=\tfrac12$ is not the whole closure geometry; it is the complex trace of the quaternionic hyperplane $\Re(q)=\tfrac12$.
+The same six-step closure appears on the complex unit circle. Quaternionic space generalizes it from one axis to an axis-free family over $u\in S^2$.
 \end{remark}
 
-\section{Affine Slice vs. Unit Phase Form}
+\section{Quaternionic prime phase}
 
-We distinguish:
-\begin{itemize}
-  \item Affine slice: $q=\tfrac12+ut$.
-  \item Unit phase form: $Q=e^{u\phi}=\cos\phi+u\sin\phi$.
-\end{itemize}
-
-\section{Six-Step Closure Gate}
-
-If $\Re(Q)=\tfrac12$, then $\cos\phi=\tfrac12$ and $\phi=\pi/3$. Hence
 \[
-Q=e^{u\pi/3},\qquad Q^3=e^{u\pi}=-1,\qquad Q^6=e^{u2\pi}=1.
+p^{-(1/2+ut)}=p^{-1/2}e^{-ut\log p},\qquad p^{-(1/2-ut)}=p^{-1/2}e^{+ut\log p}.
 \]
-So $\Re(q)=\tfrac12$ acts as a closure gate in quaternionic phase geometry. This six-step law is already visible on the ordinary complex unit circle; quaternionic space makes it axis-free across imaginary directions.
+This is the quaternionic square-root mirror.
 
-\section{Slice-Lifted Completed Zeta and Residual}
+\section{Slice-lifted completed zeta}
 
 Define
 \[
-\xi_H\!\left(\frac12+ut\right)
-=
-\Re\,\xi\!\left(\frac12+it\right)+u\Im\,\xi\!\left(\frac12+it\right),
+\xi_{\mathbb H}(1/2+ut)=\Re\,\xi(1/2+it)+u\Im\,\xi(1/2+it),
 \]
 and
 \[
-C_{H,u}(t)=\left\|\xi_H\!\left(\frac12+ut\right)\right\|^2.
+C_{\mathbb H,u}(t)=\|\xi_{\mathbb H}(1/2+ut)\|^2.
 \]
-A Perfect Closure event is $C_{H,u}(t)=0$.
+Then $C_{\mathbb H,u}(t)=|\xi(1/2+it)|^2$ on each slice.
 
-\begin{remark}
-The complex residual $|\xi(\tfrac12+it)|^2$ is one slice representation of this quaternionic residual.
-\end{remark}
+\section{Meaning and non-meaning}
 
-\section{Why the Complex Line Appears First Historically}
-
-Classical analytic number theory is formulated in $\mathbb C$, where $\xi$ and its functional equation are studied. The QSG/RQM research program lifts this structure into a family of quaternionic slices indexed by $u$; it does not replace the classical theory.
-
-\section{Relationship to Paper 1}
-
+\textbf{Claims:}
 \begin{itemize}
-  \item Paper 1 localizes the square-root mirror in the complex zeta setting.
-  \item Paper 2 lifts the closure geometry into quaternionic space.
-  \item The complex critical line is interpreted as the visible trace of the quaternionic closure slice.
+  \item The critical line has a quaternionic slice interpretation.
+  \item Perfect Closure is axis-free in quaternionic orientation space.
 \end{itemize}
 
-\section{What This Does and Does Not Claim}
-
-\textbf{Does not claim:}
+\textbf{Non-claims:}
 \begin{itemize}
-  \item A proof of the Riemann Hypothesis.
-  \item A replacement for analytic number theory.
-  \item That all quaternionic slice lifts are classical zeta functions.
+  \item No proof of RH.
+  \item No full quaternionic zeta function on all of $\mathbb H$.
+  \item No replacement of analytic number theory.
 \end{itemize}
 
-\textbf{Does claim:}
-\begin{itemize}
-  \item A quaternionic-native interpretation of why $\Re=\tfrac12$ appears as a closure condition.
-\end{itemize}
+\section{Bridge}
+Paper 1 provided complex prime-balance structure; Paper 3 will apply closure language to mass-shell geometry.
 
 \section*{References}
 \begin{enumerate}
-  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., Oxford Univ. Press, 1986.
-  \item H. M. Edwards, \emph{Riemann's Zeta Function}, Dover, 2001.
-  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, Oxford Univ. Press, 1995.
+  \item W. R. Hamilton, \emph{Elements of Quaternions}, 1866.
+  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, 1995.
+  \item J. C. Baez, “The Octonions,” \emph{Bull. Amer. Math. Soc.} 39 (2002).
+  \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 1986.
+  \item H. M. Edwards, \emph{Riemann's Zeta Function}, 2001.
 \end{enumerate}
 
 \end{document}

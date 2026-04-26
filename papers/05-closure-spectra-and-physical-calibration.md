@@ -5,61 +5,141 @@
 
 ## Abstract
 
-This paper defines the calibration layer of the Perfect Closure research program. Given the formal bridge
+This paper sets the calibration and falsifiability layer for the Perfect Closure research program. From Papers 1–4, the formal bridge is
 $$
-m_n=\frac{\hbar}{cL_*}|t_n|,
+m_n=\frac{\hbar|t_n|}{cL_*}.
 $$
-the key question is whether a physically justified and stable scale $L_*$ exists. We state test criteria, falsification conditions, and non-goals to distinguish predictive structure from curve fitting.
+The central question is whether $L_*$ is independently fixed or stably shared by a physical family. Without that, the bridge is calibration rather than prediction. We define resolved closure triples, calibration regimes, ratio and stability tests, failure modes, evidence standards, and falsification criteria.
 
-## 1. Program Goal
+## 1. Introduction
 
-Transform formal closure correspondences into testable statements.
+Papers 1–4 built a formal chain from zeta ordinates to closure eigenmodes and then to mass-shell expressions. This paper asks the scientific question: when does that chain become predictive rather than post hoc?
 
-## 2. Calibration Problem
+## 2. Recap of the formal bridge
 
-Given
+Let $t_n$ be a critical-line closure ordinate and define
 $$
-m_n=\frac{\hbar}{cL_*}|t_n|,
+k_n=\frac{t_n}{L_*},\qquad k_C=\frac{mc}{\hbar}.
 $$
-one must determine whether $L_*$ is:
-1. Compton-related,
-2. Planck-related,
-3. electromagnetic self-closure related,
-4. or family-dependent in a controlled way.
-
-Without such derivation, the bridge remains non-predictive.
-
-## 3. What Would Count as Evidence?
-
-Potential evidence classes:
-
-1. Ratio structure:
+Matching $k_n=k_C$ gives
 $$
-\frac{m_a}{m_b}\approx\frac{t_m}{t_n}
+m_n=\frac{\hbar|t_n|}{cL_*}.
 $$
-for physically justified assignments (not arbitrary selection).
 
-2. Scale stability:
+## 3. Deriving $L_*$ from resolved closure
+
+From
 $$
-L_*=\frac{\hbar t_n}{m_nc}
+\frac{t_n}{L_*}=\frac{mc}{\hbar},
 $$
-should stabilize across a defined closure family.
+one obtains
+$$
+L_*=\frac{t_n\hbar}{mc}=t_n\bar\lambda_C,
+$$
+where
+$$
+\bar\lambda_C=\frac{\hbar}{mc}
+$$
+is the reduced Compton length.
 
-3. Independent dynamics:
-A model should produce stable quaternionic closed-loop field solutions with independently measurable consequences.
+Interpretation: $L_*$ is a closure-conversion length from internal log-scale closure to physical curvature scale.
 
-## 4. What Would Falsify the Program?
+## 4. Resolved Perfect Closure
 
-- No stable or interpretable $L_*$ across any nontrivial particle family.
-- Systematic need for ad hoc reassignment of zeros to masses.
-- No independent predictions beyond post hoc fits.
+### Definition 4.1 (Resolved closure triple)
 
-## 5. Role in the Series
+A triple $(t_n,L_*,m_n)$ is a **resolved closure** if
+- $\Xi(t_n)=0$,
+- $A_u\chi_{t_n}=t_n\chi_{t_n}$,
+- $P\bar P=m_n^2c^2=(\hbar t_n/L_*)^2$.
 
-This paper is the caution-and-prediction layer: it keeps the research program disciplined, quantitative, and falsifiable.
+This is consistency, not yet predictive sufficiency.
+
+## 5. Calibration regimes
+
+### A. Particle-specific $L_*$
+Always fit-able; weakest predictive content.
+
+### B. Family-specific $L_*$
+Potentially meaningful if stability appears within predeclared families (e.g., leptons, selected hadrons).
+
+### C. Universal $L_*$
+Strongest and most falsifiable regime.
+
+## 6. Ratio tests
+
+If one $L_*$ is shared in a family, then
+$$
+\frac{m_a}{m_b}=\frac{t_m}{t_n}.
+$$
+Protocol requirements:
+- predeclare assignments;
+- forbid cherry-picking;
+- include measurement uncertainty and tolerance rules;
+- use enough points to penalize free choices.
+
+## 7. Scale-stability tests
+
+For assigned pairings $(\text{particle},n)$ compute
+$$
+L_*(\text{particle},n)=\frac{\hbar t_n}{m_{\text{particle}}c}.
+$$
+A credible family should exhibit clustering/stability in this inferred scale.
+
+### Proposed algorithm (pseudocode)
+
+1. Input zeta ordinates list $\{t_n\}$ and particle masses $\{m_j\}$.
+2. Predeclare assignment map $j\mapsto n(j)$.
+3. Compute inferred $L_*^{(j)}=\hbar t_{n(j)}/(m_jc)$.
+4. Report dispersion metrics (mean, median absolute deviation, robust CV).
+5. Hold out one or more masses and test out-of-sample prediction.
+
+No numerical claims are made here.
+
+## 8. Avoiding curve fitting
+
+Failure modes include:
+- arbitrary zero assignment after seeing data,
+- too many adjustable parameters,
+- tolerance inflation,
+- ratio coincidences without mechanism,
+- selective reporting.
+
+## 9. Physical mechanism requirement
+
+A predictive theory requires independent dynamics, including:
+- stable quaternionic closed-loop field solutions,
+- principled choice of zeta-zero subsets,
+- mechanism fixing $L_*$ (or family scales),
+- additional observables beyond fitted masses.
+
+## 10. Evidence standards
+
+Evidence would include:
+- predeclared assignment yielding stable $L_*$,
+- successful prediction of withheld masses,
+- additional predicted quantum numbers/selection rules,
+- independent field simulation recovering same scale.
+
+## 11. Falsification criteria
+
+The program is falsified (in current form) if:
+- no stable $L_*$ exists for any natural family,
+- only post hoc fits are possible,
+- no independent mechanism is found,
+- no predictions arise beyond re-expression of known masses.
+
+## 12. Conclusion
+
+The disciplined endpoint of the series is:
+
+> Perfect Closure becomes physically meaningful only when closure eigenvalues resolve into stable Compton-scale curvature through an independently justified $L_*$.
+
+Until then, the bridge remains a calibration framework, not a completed predictive theory.
 
 ## References
 
-1. K. G. Wilson, *The renormalization group and critical phenomena*, Rev. Mod. Phys. 55 (1983).
+1. K. G. Wilson, “The renormalization group and critical phenomena,” *Rev. Mod. Phys.* 55 (1983).
 2. R. P. Feynman, *QED: The Strange Theory of Light and Matter*, Princeton Univ. Press, 1985.
 3. S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields*, Oxford Univ. Press, 1995.
+4. A. M. Odlyzko, tables and computations of zeta zero ordinates (for future computational tests).
