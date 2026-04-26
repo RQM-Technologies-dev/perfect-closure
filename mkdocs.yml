@@ -1,0 +1,40 @@
+site_name: Perfect Closure
+site_description: "The Critical Line: The Square-Root Mirror Where Perfect Closure Becomes Possible"
+site_author: John Van Geem / RQM Technologies
+repo_url: https://github.com/RQM-Technologies-dev/perfect-closure
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: deep purple
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - Perfect Closure: perfect-closure.md
+  - Square-Root Mirror: square-root-mirror.md
+  - Quaternionic Closure: quaternionic-closure.md
+  - Faro Shuffle: faro-shuffle.md
+  - Cautions: cautions.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+docs_dir: docs
