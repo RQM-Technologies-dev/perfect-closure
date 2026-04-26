@@ -84,6 +84,12 @@ half-symmetry  +  conjugate routes  +  braided return  =  Perfect Closure
 - 🃏 **[Docs: Faro Shuffle](docs/faro-shuffle.md)**
 - ⚠️ **[Docs: Cautions](docs/cautions.md)**
 
+## Overleaf / LaTeX Version
+
+The Overleaf-ready manuscript is available at:
+
+`latex/main.tex`
+
 ---
 
 ## License
