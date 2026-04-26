@@ -16,105 +16,119 @@
 \maketitle
 
 \begin{abstract}
-We present the operator bridge of the Perfect Closure series. A quaternionic dilation generator $A_u=u(\rho\tfrac{d}{d\rho}+\tfrac12)$ has eigenmodes $\chi_t(\rho)=\rho^{-1/2-ut}$. Defining $Z_u=\Xi(A_u)$ with $\Xi(t)=\xi(\tfrac12+it)$, each critical-line ordinate $t_n$ gives a kernel mode $Z_u\chi_{t_n}=0$. A scale map then yields $m_n=\hbar|t_n|/(cL_*)$. The construction is formal and does not prove RH or derive Standard Model masses.
+We present the operator bridge of the Perfect Closure series. Define
+\[
+\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right),\qquad
+\chi_t(\rho)=\rho^{-1/2-\mathbf u t},
+\]
+with eigenvalue relation $\mathcal A_{\mathbf u}\chi_t=t\chi_t$. Let $\Xi(t)=\xi(\tfrac12+it)$ and $\mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u})$. If $\Xi(t_n)=0$, then $\mathcal Z_{\mathbf u}\chi_{t_n}=0$. After scale lift $L_*$, the same eigenvalue appears in mass-shell form,
+\[
+P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2,
+\qquad
+m_n=\frac{\hbar}{cL_*}|t_n|.
+\]
+Thus the critical line may be interpreted as a complex spectral slice of a broader quaternionic closure-mass-shell structure. This is a formal bridge, not a proof of RH or a particle-mass derivation.
 \end{abstract}
 
+\section*{Reader Guide}
+This paper is the bridge: it shows how one closure eigenvalue can appear both as a zeta-zero condition and as a mass-shell norm after scaling. Keep the non-claim boundary in view throughout.
+
 \section{Introduction}
-Papers 1--3 established zeta closure, quaternionic closure geometry, and mass-shell closure interpretation. This paper gives the operator coupling.
+Papers 1--3 prepared zeta residuals, quaternionic geometry, and mass-shell norm form. We now connect them through one operator pipeline.
 
 \section{Internal scale space}
-Let $\rho>0$ and $y=\log\rho$. Prime phases naturally involve $\log p$.
+Let $\rho>0$ and $y=\log\rho$. Prime phases depend on $\log p$, so dilation in $\rho$ is the natural variable.
 
-\section{Quaternionic dilation generator}
+\section{Quaternionic closure generator and eigenmodes}
 Define
 \[
-A_u=u\left(\rho\frac{d}{d\rho}+\frac12\right),\qquad u^2=-1.
+\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right).
 \]
 Set
 \[
-\chi_t(\rho)=\rho^{-1/2-ut}=\rho^{-1/2}e^{-ut\log\rho}.
+\chi_t(\rho)=\rho^{-1/2-\mathbf u t}.
 \]
 Then
 \[
-\left(\rho\frac{d}{d\rho}+\frac12\right)\chi_t=-ut\chi_t,
-\qquad
-A_u\chi_t=t\chi_t.
+\mathcal A_{\mathbf u}\chi_t=t\chi_t.
 \]
-
-\section{Prime evaluation}
-At $\rho=p$,
-\[
-\chi_t(p)=p^{-1/2-ut}=p^{-1/2}e^{-ut\log p}.
-\]
-For $u=i$, this recovers the complex square-root prime phase.
+This introduces closure eigenvalues in the internal scale space.
 
 \section{Zeta closure selector}
 Define
 \[
-\Xi(t)=\xi\!\left(\frac12+it\right),\qquad Z_u=\Xi(A_u)
+\Xi(t)=\xi\!\left(\frac12+it\right),
+\qquad
+\mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u}).
 \]
-(formal functional calculus on a suitable spectral domain).
 If $\Xi(t_n)=0$, then
 \[
-Z_u\chi_{t_n}=\Xi(A_u)\chi_{t_n}=\Xi(t_n)\chi_{t_n}=0.
+\mathcal Z_{\mathbf u}\chi_{t_n}=0.
 \]
+This is the kernel condition linking zeta-slice zeros to quaternionic closure modes.
 
-\section{Closure period in log-scale}
-Mode phase is $e^{-ut_n\log\rho}$. Full closure and six-step increment are
+\section{Mass-shell lift and resolved scale}
+With
 \[
-\Lambda_n=\frac{2\pi}{t_n},\qquad \Delta_n=\frac{\pi}{3t_n}.
+\log\rho=\frac{\ell}{L_*},
 \]
+we obtain
+\[
+m_n=\frac{\hbar}{cL_*}|t_n|,
+\qquad
+L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C.
+\]
+These formulas convert formal eigenvalue scale into physical curvature scale. Calibration remains external.
 
-\section{Mass-shell lift}
-Let
+\section{Biquaternionic mass-shell realization}
+Using
 \[
-\log\rho=\frac{\ell}{L_*},\qquad k_n=\frac{t_n}{L_*}.
+P\bar P=m^2c^2,
 \]
-Matching $k_C=mc/\hbar$ gives
-\[
-m_n=\frac{\hbar|t_n|}{cL_*}.
-\]
-With $P=E/c+I\mathbf p$,
+the lift is
 \[
 P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2.
 \]
+This gives the mass-shell face of the same eigenvalue $t_n$.
 
-\section{Coupled closure system}
-\[
-\Xi(A_u)\Psi=0,
-\qquad
-P\bar P\,\Psi=\frac{\hbar^2}{L_*^2}A_u^2\Psi.
-\]
+\section{Complex Spectral Slices of Quaternionic Mass Shells}
+The synthesis is encoded by three aligned conditions:
+\begin{align*}
+\Xi(t_n)&=0,\\
+\Xi(\mathcal A_{\mathbf u})\chi_{t_n}&=0,\\
+P\bar P&=\left(\frac{\hbar t_n}{L_*}\right)^2.
+\end{align*}
+So one eigenvalue has a zeta face and a mass-shell face within this framework.
+
+\begin{remark}
+This is a formal bridge. It does not claim that zeta zeros are particles or that known masses are already derived.
+\end{remark}
 
 \section{Main theorem}
-
 \begin{theorem}[Closure eigenvalue lift]
-If $A_u\chi_{t_n}=t_n\chi_{t_n}$ and $\Xi(t_n)=0$, then $\chi_{t_n}\in\ker\Xi(A_u)$. Under scale map $L_*$, the same eigenvalue defines
-\[
-m_n=\frac{\hbar|t_n|}{cL_*}.
-\]
+If $\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}$ and $\Xi(t_n)=0$, then
+\begin{enumerate}
+  \item $\chi_{t_n}\in\ker\Xi(\mathcal A_{\mathbf u})$;
+  \item under scale map $L_*$, $m_n=\hbar|t_n|/(cL_*)$.
+\end{enumerate}
 \end{theorem}
 
 \begin{proof}
 First,
 \[
-\Xi(A_u)\chi_{t_n}=\Xi(t_n)\chi_{t_n}=0.
+\Xi(\mathcal A_{\mathbf u})\chi_{t_n}=\Xi(t_n)\chi_{t_n}=0.
 \]
-Second, define $k_n=t_n/L_*$. Identifying $k_n$ with Compton curvature $k_C=mc/\hbar$ gives $m_n=\hbar|t_n|/(cL_*)$.
+Second, define $k_n=t_n/L_*$ and identify with $k_C=mc/\hbar$.
 \end{proof}
 
 \section{Non-claims}
-No proof of RH, no claim zeta zeros are particles, no derivation of $L_*$, no Standard Model spectrum derivation.
-
-\section{Bridge to Paper 5}
-Paper 5 addresses calibration, pre-registered testing, and falsifiability of $L_*$.
+No proof of RH, no claim that zeta zeros are particles, no fixed universal $L_*$ in this paper, and no Standard Model mass derivation.
 
 \section*{References}
 \begin{enumerate}
   \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 1986.
   \item H. M. Edwards, \emph{Riemann's Zeta Function}, 2001.
   \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, 1995.
-  \item M. V. Berry and J. P. Keating, “$H=xp$ and the Riemann zeros.”
 \end{enumerate}
 
 \end{document}

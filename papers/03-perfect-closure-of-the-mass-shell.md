@@ -13,13 +13,17 @@ is rewritten as a norm relation
 $$
 P\bar P=m^2c^2,
 $$
-with $P=E/c+I\mathbf p$ and commuting scalar imaginary $I^2=-1$. In this language, null modes satisfy $P\bar P=0$ (open propagation), while massive modes satisfy $P\bar P>0$ (closed invariant norm). This is proposed as a formal interpretation, not a derivation of Standard Model masses or a replacement for QFT.
+with \(P=E/c+I\mathbf p\) and commuting scalar imaginary \(I^2=-1\). In this language, null modes satisfy \(P\bar P=0\) (open propagation), while massive modes satisfy \(P\bar P>0\) (closed invariant norm). This is a formal interpretation, not a derivation of known particle masses.
+
+## Reader Guide
+
+This paper shifts from spectral closure to physical closure by writing the mass shell as a quaternionic norm. Read it as a translation layer: it does not yet connect masses to zeta eigenvalues, but it sets the physical norm form that Paper 4 will use.
 
 ## 1. Introduction
 
 Papers 1 and 2 developed closure ideas in zeta and quaternionic phase geometry. This paper makes the physical turn: can relativistic mass-shell structure be expressed as a closure condition?
 
-**Thesis.** Mass is not introduced as an added substance in this formalism; it is interpreted as invariant closure of light-like phase flow.
+**Thesis.** In this framework, mass is represented as an invariant norm closure condition rather than as a claim about microscopic mechanical orbits.
 
 ## 2. Standard relativistic mass shell
 
@@ -31,7 +35,9 @@ equivalently
 $$
 \frac{E^2}{c^2}-|\mathbf p|^2=m^2c^2.
 $$
-For $m=0$ one has null/lightlike propagation; for $m>0$ one has nonzero invariant norm.
+These equations are included to anchor the paper in familiar relativistic kinematics. They do not by themselves imply any zeta connection.
+
+For \(m=0\) one has null/lightlike propagation; for \(m>0\) one has nonzero invariant norm.
 
 ## 3. Biquaternionic spacetime
 
@@ -39,15 +45,15 @@ Let the spatial quaternion be
 $$
 \mathbf r=x\,i+y\,j+z\,k.
 $$
-Introduce a commuting scalar imaginary $I$ with $I^2=-1$ and define
+Introduce a commuting scalar imaginary \(I\) with \(I^2=-1\) and define
 $$
 X=ct+I\mathbf r.
 $$
-Using quaternionic conjugation $\overline{\mathbf r}=-\mathbf r$,
+Using quaternionic conjugation \(\overline{\mathbf r}=-\mathbf r\),
 $$
 X\bar X=(ct+I\mathbf r)(ct-I\mathbf r)=c^2t^2-|\mathbf r|^2.
 $$
-This realizes Minkowski signature in a biquaternionic/paravector-like form.
+This gives Minkowski signature in a compact algebraic form. It is a representation choice, not a new physical postulate.
 
 ## 4. Biquaternionic momentum
 
@@ -55,7 +61,7 @@ Define
 $$
 P=\frac{E}{c}+I\mathbf p,
 $$
-where $\mathbf p=p_x i+p_y j+p_z k$. Then
+where \(\mathbf p=p_x i+p_y j+p_z k\). Then
 $$
 P\bar P=\left(\frac{E}{c}\right)^2-|\mathbf p|^2.
 $$
@@ -63,19 +69,20 @@ Therefore,
 $$
 P\bar P=m^2c^2.
 $$
+This is the paper’s key norm identity. The reader should notice that it exactly repackages the standard mass shell.
 
 ## 5. Closure interpretation
 
-- $P\bar P=0$: open/null flow (lightlike).
-- $P\bar P>0$: closed invariant shell (massive).
+- \(P\bar P=0\): open/null flow (lightlike).
+- \(P\bar P>0\): closed invariant shell (massive).
 
-This should not be read as a literal tiny orbit model. The claim is topological/kinematic: mass corresponds to nonzero closure norm in orientation-bearing propagation space.
+This language is kinematic and structural. It does not claim that mass is already explained dynamically.
 
 ## 6. Quaternionic electromagnetic motivation
 
-Quaternionic variables naturally encode orientation, handedness, and phase rotation. We therefore propose them as a bookkeeping space for orientation-bearing wave closure.
+Quaternionic variables naturally encode orientation, handedness, and phase rotation. We therefore use them as a bookkeeping space for orientation-bearing closure.
 
-This paper does **not** present a complete Maxwell-to-mass derivation and does not claim to solve interacting field theory.
+This paper does **not** present a complete Maxwell-to-mass derivation and does not replace QFT.
 
 ## 7. Compton closure scale
 
@@ -83,16 +90,18 @@ Define reduced Compton length and curvature:
 $$
 \bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{mc}{\hbar}=\bar\lambda_C^{-1}.
 $$
-In this interpretation, $k_C$ is the curvature scale of a massive closure mode. This prepares the eigenvalue-lift map in Paper 4.
+This scale appears here because Paper 4 will match \(k_C\) to a lifted closure eigenvalue. The mass shell gives the physical norm form that Paper 4 will connect to closure eigenvalues.
 
 ## 8. Claims and non-claims
 
 ### Does claim
+
 - The relativistic mass shell can be written as a biquaternionic norm condition.
 - The null/massive distinction admits an open/closed closure interpretation.
 
 ### Does not claim
-- Derivation of electron, proton, or full hadron masses.
+
+- Derivation of electron, proton, or hadron masses.
 - Replacement of QFT.
 - Proof that all mass is electromagnetic.
 - Completion of the Standard Model.
