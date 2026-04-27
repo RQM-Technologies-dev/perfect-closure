@@ -1,88 +1,80 @@
-# Mass Shell Perfect Closure: Closed Quaternionic Light and Relativistic Norm Structure
+# Mass-Shell Perfect Closure: Closed Quaternionic Light and Relativistic Norm Structure
 
 **John Van Geem / RQM Technologies**  
-*Technical Manuscript - April 2026*
+*Preprint - April 2026*
 
 ## Abstract
 
-We reformulate the relativistic mass shell in conjugate-norm language suitable for the Perfect Closure program. Starting from \\(E^2=p^2c^2+m^2c^4\\), we define a biquaternionic momentum variable \\(P=E/c+I\mathbf p\\) and show that \\(P\bar P=m^2c^2\\) is exactly the invariant mass-shell statement. We distinguish null/open propagation (
-\\(P\bar P=0\\)) from massive/closed propagation (
-\\(P\bar P>0\\)). We then define Compton curvature \\(k_C=mc/\hbar\\) as the bridge variable for Paper 4, where spectral ordinates are mapped into physical scale. This paper does not derive Standard Model masses.
-
-## Keywords
-
-mass shell; relativistic invariant; biquaternions; conjugate norm; Compton curvature; perfect closure.
+This paper rewrites the relativistic mass shell in quaternion-compatible norm language and explains why that rewrite is useful for the closure series. Starting from \(E^2/c^2-|\mathbf p|^2=m^2c^2\), we define \(P=E/c+I\mathbf p\) and its conjugate \(\bar P=E/c-I\mathbf p\). The product \(P\bar P\) removes orientation data and returns the invariant scalar mass shell. This lets us distinguish null/open propagation \((P\bar P=0)\) from closed/massive norm structure \((P\bar P>0)\). We then introduce Compton curvature \(k_C=mc/\hbar\) as the conversion bridge used by the operator construction in Paper 4.
 
 ## 1. Introduction
 
-Paper 3 provides the physical norm target used by the later operator bridge. The objective is conservative: re-express standard relativistic invariants in a closure-compatible algebra without altering their content. We define what "closed" means in this context and why that language is tied to conjugate norms rather than metaphor.
+The standard mass shell is already a closure-like statement: many coordinate descriptions collapse to one scalar invariant. Paper 3 adopts that perspective directly. We are not changing relativity; we are teaching its invariant content in a norm language compatible with the earlier quaternionic lift.
 
-## 2. Contributions
+The phrase “light that has closure becomes mass” should be read cautiously. It is interpretive shorthand for the transition from null norm to positive invariant norm, not a full microscopic mechanism.
 
-1. We restate the standard relativistic mass shell and preserve its invariant content.
-2. We show that \\(P\bar P\\) is a conjugate norm statement equivalent to the scalar Minkowski invariant.
-3. We distinguish null/open and massive/closed regimes in norm terms.
-4. We define \\(k_C=mc/\hbar\\) as the explicit bridge variable for Paper 4.
+## 2. Relativistic invariant target
 
-## 3. Preliminaries: Standard Relativistic Mass Shell
-
-Start with
-\\[
+The basic equation is
+\[
 E^2=p^2c^2+m^2c^4,
-\\]
-so
-\\[
+\]
+which is equivalently
+\[
 \frac{E^2}{c^2}-|\mathbf p|^2=m^2c^2.
-\\]
-This is the invariant quantity preserved across inertial frames. Any quaternionic rewrite is acceptable only if it returns exactly this scalar invariant.
+\]
+This equation should be read as the invariant target. Any reformulation must return this same scalar.
 
-## 4. Formal Definition: Biquaternionic Norm Form
+## 3. Quaternionic momentum packaging
 
 Define
-\\[
-P=\frac{E}{c}+I\mathbf p,\qquad I^2=-1,\qquad \bar P=\frac{E}{c}-I\mathbf p.
-\\]
-Then
-\\[
+\[
+P=\frac{E}{c}+I\mathbf p,\qquad \bar P=\frac{E}{c}-I\mathbf p,
+\]
+with \(I^2=-1\). Multiplying gives
+\[
 \begin{aligned}
 P\bar P
 &=\left(\frac{E}{c}+I\mathbf p\right)\left(\frac{E}{c}-I\mathbf p\right)\\
-&=\left(\frac{E}{c}\right)^2-(I\mathbf p)^2\\
-&=\left(\frac{E}{c}\right)^2-|\mathbf p|^2
+&=\left(\frac{E}{c}\right)^2-(I\mathbf p)^2
+=\frac{E^2}{c^2}-|\mathbf p|^2
 = m^2c^2.
 \end{aligned}
-\\]
-So \\(P\bar P\\) is not decoration; it is the same relativistic invariant written as a conjugate norm.
+\]
+
+### Proposition 1
+The scalar \(P\bar P\) is exactly the relativistic mass-shell invariant.
+
+The reason for this proposition is conceptual: conjugation strips orientation and leaves invariant magnitude.
 
 ![Mass-shell norm diagram](../assets/figures/mass-shell-norm.svg)
 
-*Figure 1. Norm interpretation of null/open and massive/closed regimes in terms of \\(P\bar P\\).* 
+*Figure 1. Norm interpretation of null/open and massive/closed regimes.*
 
-## 5. Interpretation and Discussion
+## 4. Open and closed norm regimes
 
-We interpret the regimes as follows:
+- \(P\bar P=0\): null/open propagation (massless limit).
+- \(P\bar P>0\): closed/massive invariant norm.
 
-- \\(P\bar P=0\\): null/open propagation.
-- \\(P\bar P>0\\): massive/closed invariant norm.
+The important point is that closure language here is norm-based. It does not claim that photons literally convert by this equation alone; it marks how invariant structure distinguishes null and massive sectors.
 
-The phrase "light that has closure becomes mass" is interpretive shorthand for transition from null to positive invariant norm. It does not assert a microscopic derivation mechanism by itself.
+## 5. Compton curvature as bridge variable
 
-To prepare Paper 4, define reduced Compton quantities:
-\\[
-\bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{mc}{\hbar}=\bar\lambda_C^{-1}.
-\\]
-Here \\(k_C\\) is the bridge variable connecting invariant mass to inverse-length scale. This is the dimensional interface where spectral parameters from the closure operator can be compared with physical norms.
+Define reduced Compton wavelength and curvature:
+\[
+\bar\lambda_C=\frac{\hbar}{mc},\qquad k_C=\frac{1}{\bar\lambda_C}=\frac{mc}{\hbar}.
+\]
+This quantity prepares the next paper. Paper 4 compares spectral ordinates \(t_n\) with physical inverse-length scales through a conversion length \(L_*\).
 
-## 6. Interpretive Boundaries
+## 6. Discussion
 
-- We do **not** derive observed particle masses.
-- We do **not** replace QFT or the Standard Model.
-- We do **not** claim a dynamical mass-generation mechanism in this paper.
-- We do **not** claim zeta zeros are particles.
+This reformulation is intentionally conservative. It preserves the textbook invariant and only changes presentation. In that sense, quaternionic notation is a packaging device that makes the “remove orientation, keep scalar” principle transparent.
+
+What this does not show is a derivation of observed particle masses. It gives the invariant norm side of the bridge, nothing more.
 
 ## 7. Conclusion
 
-We established mass-shell Perfect Closure as a strict invariant-norm statement: \\(P\bar P=m^2c^2\\). We clarified the null/open versus massive/closed distinction and identified \\(k_C=mc/\hbar\\) as the bridge variable for operator coupling in Paper 4. This supplies the physical norm structure required for the cross-domain synthesis.
+Mass-shell Perfect Closure is the statement that \(P\bar P\) returns the invariant scalar \(m^2c^2\). Null and massive regimes are separated by whether this scalar vanishes or remains positive. With \(k_C=mc/\hbar\), the construction is ready for Paper 4, where zeta-side spectral labels are coupled to this norm structure through operator methods.
 
 ## References
 
