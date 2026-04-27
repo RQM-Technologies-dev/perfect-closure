@@ -2,160 +2,112 @@
 \usepackage[a4paper,margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage{graphicx}
-\usepackage[section]{placeins}
 \usepackage{hyperref}
-\usepackage{needspace}
-
-\title{Closure Spectra and Physical Calibration: From Eigenvalues to Testable Mass Scales}
-\author{John Van Geem / RQM Technologies}
-\date{April 2026}
+\usepackage{enumitem}
+\usepackage[section]{placeins}
 
 \newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+
+\title{Predictive Closure and the Conversion Scale: When Zeta-Mass Matching Becomes Testable}
+\author{John Van Geem / RQM Technologies}
+\date{April 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-This paper sets the predictive standard for the zeta-to-mass-shell bridge. From Paper 4,
+This paper studies the scientific status of the conversion scale $L_*$ in the zeta-mass bridge. From $m_n=(\hbar/(cL_*))|t_n|$, the bridge is descriptive if $L_*$ is tuned separately for each mass and predictive only when $L_*$ is fixed independently or stabilized over a predeclared family. We define four testing protocols---fixed-scale prediction, family-stabilized scale, out-of-sample matching, and null tests---and explain why these protocols are the decisive criterion for independent physical content.
+\end{abstract}
+
+\section{Introduction}
+Papers 1--4 established a coherent chain: zeta closure labels $t_n$, quaternionic representation, operator selection, and mass-shell realization. Paper 5 asks the methodological question: when does this chain predict anything new?
+
+The answer hinges on one number, $L_*$. If that scale can move freely for each target, agreement can be retrospective. If the scale is fixed before fitting, agreement can be tested.
+
+\section{Core calibration equation}
+From Paper 4,
 \[
 m_n=\frac{\hbar}{cL_*}|t_n|,
 \]
-so predictive content depends on whether $L_*$ is fixed independently or stabilizes across a predeclared physical family. To make that criterion operational, this paper defines resolved closure triples, calibration regimes, ratio tests, scale-stability tests, and falsification standards.
-\end{abstract}
-
-\Needspace{10\baselineskip}
-\Needspace{10\baselineskip}
-\section{Introduction}
-This paper asks when the bridge becomes predictive rather than merely interpretable. The short answer is: only when the conversion scale is constrained before fitting. If $L_*$ is allowed to float freely per datapoint, the map can remain descriptive but has little falsifiable power.
-
-\Needspace{10\baselineskip}
-\section{Contributions}
-\begin{enumerate}
-  \item We define a resolved closure triple across spectral, operator, and physical faces.
-  \item We classify calibration regimes by falsifiability strength.
-  \item We specify ratio tests and scale-stability diagnostics.
-  \item We state explicit falsification standards.
-\end{enumerate}
-
-\Needspace{10\baselineskip}
-\section{Core calibration relation}
-From the bridge equation
+or equivalently
 \[
-\frac{t_n}{L_*}=\frac{mc}{\hbar},
+L_*=t_n\frac{\hbar}{m_nc}.
 \]
-we solve for conversion length:
-\[
-L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C.
-\]
-This relation is central because it links three objects with different origins:
-\begin{itemize}
-  \item $t_n$: spectral ordinate from the closure trace,
-  \item $m$: physical mass measurement,
-  \item $L_*$: conversion scale between spectral and physical sectors.
-\end{itemize}
+This equation should be read in two directions. Forward direction predicts $m_n$ from $t_n$ and a pre-fixed $L_*$. Backward direction infers $L_*$ from assigned pairs.
 
-If $L_*$ is fixed in advance, the equation predicts $m$ from $t_n$. If $m$ and $t_n$ are both chosen post hoc and $L_*$ is fitted afterward, predictive strength is weak.
+The bridge becomes meaningful only when the forward direction survives predeclared tests.
 
-The theory is therefore predictive only when $L_*$ is independently fixed or demonstrably stable under predeclared assignment rules.
+\section{Descriptive versus predictive use of $L_*$}
+\begin{definition}[Descriptive scaling]
+A fit is descriptive if $L_*$ is chosen independently for each mass target.
+\end{definition}
 
-\Needspace{10\baselineskip}
-\section{Resolved closure triple}
-A triple $(t_n,L_*,m_n)$ is resolved when all three faces of the same value are satisfied:
-\begin{itemize}
-  \item $\Xi(t_n)=0$,
-  \item $\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}$,
-  \item $P\bar P=m_n^2c^2=(\hbar t_n/L_*)^2$.
-\end{itemize}
+\begin{definition}[Predictive scaling]
+A fit is predictive if $L_*$ is fixed independently of the target masses before comparison.
+\end{definition}
 
-This definition enforces cross-domain consistency. It prevents using only one face of the framework while ignoring the others.
-
-Interpretively:
-\begin{itemize}
-  \item the first condition anchors spectral closure,
-  \item the second anchors operator realization,
-  \item the third anchors physical norm realization.
-\end{itemize}
-
-A resolved triple is still not a proof of uniqueness or ontology. It is a consistency checkpoint.
-
-\Needspace{10\baselineskip}
-\section{Calibration regimes}
-Three regimes have different predictive strength:
-\begin{enumerate}
-  \item \textbf{Particle-specific $L_*$}: choose a separate $L_*$ for each target. This usually has low falsifiability.
-  \item \textbf{Family-specific $L_*$}: one $L_*$ per predeclared family. This can be meaningful if stability survives out-of-sample checks.
-  \item \textbf{Universal $L_*$}: one global $L_*$ for all targets. This is strongest and most falsifiable.
-\end{enumerate}
+\begin{definition}[Family-stabilized scaling]
+A fit is family-stabilized when a single predeclared $L_*$ is used for a predeclared class and remains stable under held-out checks.
+\end{definition}
+These definitions separate mathematical compatibility from empirical content.
 
 \begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.85\textwidth]{../assets/figures/calibration-regimes.svg}
-  \caption{Calibration hierarchy from particle-specific $L_\ast$ (weakest), to family-specific $L_\ast$ (potentially predictive), to universal $L_\ast$ (strongest and most falsifiable). This is a methodological guide, not a fit result.}
+\centering
+\includegraphics[width=0.83\textwidth]{../assets/figures/calibration-regimes.svg}
+\caption{Predictive strength increases as freedom in $L_*$ decreases.}
 \end{figure}
 
-The regimes should be predeclared before numerical comparison. Changing regime definitions after seeing results weakens evidential value.
+\section{Testing protocols}
+\paragraph{Protocol A: Fixed-scale prediction.}
+Choose $L_*$ from external criteria before any mass matching. Predict masses for assigned $t_n$ values. Evaluate residuals without retuning $L_*$.
 
-\Needspace{10\baselineskip}
-\section{Ratio and scale-stability tests}
-If one $L_*$ is shared in a family, then
+\paragraph{Protocol B: Family-stabilized scale.}
+Predeclare a family and pairing rule. Estimate one $L_*$ on a training subset, then test on a held-out subset from the same family.
+
+\paragraph{Protocol C: Out-of-sample mass matching.}
+After fixing $L_*$, predict masses for a second family not used in calibration. This is the strongest practical check against hidden overfitting.
+
+\paragraph{Protocol D: Null tests.}
+Apply random or deliberately mismatched pairings under the same scoring rule. A viable bridge should outperform null baselines by a clear margin.
+
+\section{Quantitative diagnostics}
+Useful diagnostics include
 \[
-\frac{m_a}{m_b}\approx\frac{t_m}{t_n}.
+\text{CV}(L_*)=\frac{\text{std}(L_*^{(j)})}{\text{mean}(L_*^{(j)})},
 \]
-This equation removes $L_*$ and tests internal proportionality. It is useful because it asks whether relative structure survives without direct scale tuning.
-
-For assigned pairings, compute inferred scales:
+for family stability, and held-out prediction error
 \[
-L_*(\text{particle},n)=\frac{\hbar t_n}{m_{\text{particle}}c}.
+\varepsilon_{\text{test}}=\frac{1}{N}\sum_{j=1}^N\frac{|m_j^{\text{pred}}-m_j^{\text{obs}}|}{m_j^{\text{obs}}}.
 \]
-A predictive family should show tight clustering of these inferred $L_*$ values under rules fixed before fitting.
-
-Recommended diagnostics include:
-\begin{itemize}
-  \item within-family coefficient of variation of inferred $L_*$,
-  \item held-out prediction error when $L_*$ is trained on one subset and tested on another,
-  \item permutation checks against random reassignment baselines.
-\end{itemize}
+For ratio checks with shared $L_*$,
+\[
+\frac{m_a}{m_b}\approx\frac{t_{n_a}}{t_{n_b}}.
+\]
+This removes $L_*$ and tests internal proportionality directly.
 
 \begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.90\textwidth]{../assets/figures/mass-to-zeta-inverse-test.svg}
-  \caption{Inverse test pipeline $P\bar P=m^2c^2 \rightarrow k_C=mc/\hbar \rightarrow \tau=mcL_\ast/\hbar \rightarrow R_\zeta(m;L_\ast)=|\Xi(\tau)|^2$. This supports falsifiability workflow and does not imply that zeta zeros are particles.}
+\centering
+\includegraphics[width=0.86\textwidth]{../assets/figures/mass-to-zeta-inverse-test.svg}
+\caption{Inverse evaluation pipeline for null and out-of-sample testing.}
 \end{figure}
 
-\Needspace{10\baselineskip}
-\section{Falsification standards}
-The bridge fails as a predictive law in its present form if one or more of the following persist:
-\begin{itemize}
-  \item no stable $L_*$ appears in natural predeclared families,
-  \item only post hoc assignments succeed,
-  \item tolerance inflation is required to preserve apparent fits,
-  \item out-of-sample predictive performance is absent.
-\end{itemize}
+\section{Discussion}
+The scientific criterion for this series is not whether one can write a bridge equation; that part is easy. The criterion is whether $L_*$ carries independent constraint. If not, the bridge remains a descriptive identity.
 
-These standards matter because they separate structural coherence from predictive content. A coherent map can still fail as a forecasting model.
+What this does not show is a proof of RH or a derivation of the Standard Model spectrum. It shows how to ask a falsifiable question about independent physical content.
 
-\Needspace{10\baselineskip}
-\section{Possible Future Selection Mechanism (supporting)}
-AGQF or dressed-factorial constructions may be studied as future candidate selection mechanisms, for example as node-gating prefactors that pre-screen candidate pairings. This remains optional support and is not required for the core zeta-to-mass-shell bridge.
+\section{Conclusion}
+The role of $L_*$ is decisive. Per-target $L_*$ is descriptive; independently fixed $L_*$ is predictive; stable $L_*$ over predeclared families is testable. Paper 5 therefore closes the series by turning methodological discipline into part of the mathematical claim itself.
 
-Any such mechanism must be fixed before comparison and must not be used as an adjustable curve-fitting device. In other words, mechanism complexity is acceptable only if it increases out-of-sample predictive power under predeclared protocols.
-
-\Needspace{10\baselineskip}
-\section{Non-claims and conclusion}
-\begin{itemize}
-  \item No proof of RH.
-  \item No claim that zeta zeros are particles.
-  \item No established derivation of Standard Model masses.
-\end{itemize}
-
-Conclusion: the framework is structurally coherent across spectral, operator, and norm faces, but predictive status depends on independent or stable determination of $L_*$. Paper 5 therefore treats calibration discipline as part of the theory itself, not as a secondary implementation detail.
-
-\Needspace{10\baselineskip}
 \section*{References}
 \begin{enumerate}
-  \item K. G. Wilson, ``The renormalization group and critical phenomena,'' \emph{Rev. Mod. Phys.} 55 (1983).
-  \item R. P. Feynman, \emph{QED: The Strange Theory of Light and Matter}, Princeton Univ. Press, 1985.
-  \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, Oxford Univ. Press, 1995.
+\item K. G. Wilson, ``The renormalization group and critical phenomena,'' \emph{Rev. Mod. Phys.} 55 (1983).
+\item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., Oxford Univ. Press, 1986.
+\item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, Oxford Univ. Press, 1995.
 \end{enumerate}
 
 \end{document}

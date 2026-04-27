@@ -1,119 +1,95 @@
-# Zeta-Mass Closure Operator: Perfect Closure as a Shared Spectral Eigenvalue Law
+# The Zeta-Mass Closure Operator: Perfect Closure as a Shared Spectral Eigenvalue Law
 
 **John Van Geem / RQM Technologies**  
-*Technical Manuscript - April 2026*
+*Preprint - April 2026*
 
 ## Abstract
 
-We formulate a compatibility operator that transports closure labels between zeta residual language and mass-shell norm language. We define \\(\mathcal A_{\mathbf u}=\mathbf u(\rho\,d/d\rho+1/2)\\), identify eigenmodes \\(\chi_t(\rho)=\rho^{-1/2-\mathbf u t}\\), and show \\(\mathcal A_{\mathbf u}\chi_t=t\chi_t\\). We then apply the completed residual through \\(\Xi(\mathcal A_{\mathbf u})\\), so that \\(\Xi(t_n)=0\\) implies kernel selection \\(\Xi(\mathcal A_{\mathbf u})\chi_{t_n}=0\\). Finally, with conversion scale \\(L_*\\), we write \\(m_n=(\hbar/(cL_*))|t_n|\\) and \\(P\bar P=(\hbar t_n/L_*)^2\\). This establishes a bridge of compatibility, not an identity between zeta zeros and particles.
-
-## Keywords
-
-closure operator; dilation generator; completed zeta; spectral eigenmode; mass shell; scale conversion.
+This paper builds the operator bridge between zeta closure labels and mass-shell norm structure. We define a dilation-based generator \(A_u=u(\rho\,d/d\rho+1/2)\), show that \(\chi_t(\rho)=\rho^{-1/2-ut}\) is an eigenmode with eigenvalue \(t\), and use \(\Xi(A_u)\) as a spectral selector. Thus \(\Xi(t_n)=0\) implies \(\Xi(A_u)\chi_{t_n}=0\). With conversion scale \(L_*\), the same label gives \(P\bar P=(\hbar t_n/L_*)^2\). The paper emphasizes interpretation: this is a compatibility law, and its physical content depends on whether \(L_*\) is independently fixed.
 
 ## 1. Introduction
 
-Paper 4 is the synthesis step. We keep one spectral label \\(t_n\\) and track how it appears in three settings: completed residual vanishing, operator eigenmodes, and mass-shell norms. The intent is to show formal transport consistency, not physical equivalence.
+Paper 1 provided scalar closure \(\Xi(t)\), Paper 2 provided quaternionic slice representation, and Paper 3 provided relativistic norm structure. Paper 4 asks how to carry one spectral label through all three contexts without changing its mathematical role.
 
-## 2. Contributions
+The reason a dilation operator appears is that the variable \(\rho\) is a scale variable. Differentiation in \(\log\rho\) naturally measures scale frequency.
 
-1. We define a quaternionic-oriented dilation generator \\(\mathcal A_{\mathbf u}\\).
-2. We show why the \\( +1/2 \\) shift is required for clean eigenvalue extraction on \\(\chi_t\\).
-3. We define the selector \\(\Xi(\mathcal A_{\mathbf u})\\) and derive the kernel condition induced by \\(\Xi(t_n)=0\\).
-4. We give the scale map from dimensionless ordinates to mass-shell norm and isolate the role of \\(L_*\\) in predictive vs descriptive use.
+## 2. Main construction
 
-![Main zeta-to-mass-shell pipeline](../assets/figures/zeta-to-mass-shell-pipeline.svg)
-
-*Figure 1. Compatibility map from scalar closure condition to operator kernel and mass-shell norm realization.*
-
-## 3. Mathematical Setup and Formal Result
+Let \(u^2=-1\) and \(\rho>0\). Define
+\[
+A_u=u\left(\rho\frac{d}{d\rho}+\frac12\right).
+\]
+The \(+1/2\) shift should be read as centering the mode exponents around the critical-line half shift.
 
 Define
-\\[
-\mathcal A_{\mathbf u}=\mathbf u\left(\rho\frac{d}{d\rho}+\frac12\right),\qquad \mathbf u^2=-1,\qquad \rho>0.
-\\]
-The term \\(\rho\,d/d\rho\\) is a dilation generator. The \\(1/2\\) shift is inserted so that power-mode exponents centered at \\(-1/2\\) map to pure \\(t\\)-eigenvalues.
+\[
+\chi_t(\rho)=\rho^{-1/2-ut}.
+\]
+Then step by step,
+\[
+\rho\frac{d}{d\rho}\chi_t=\left(-\frac12-ut\right)\chi_t,
+\]
+\[
+\left(\rho\frac{d}{d\rho}+\frac12\right)\chi_t=-ut\chi_t,
+\]
+\[
+A_u\chi_t=u(-ut)\chi_t=t\chi_t.
+\]
+So \(\chi_t\) is an eigenmode of \(A_u\) with eigenvalue \(t\).
+
+## 3. Spectral selection by \(\Xi(A_u)\)
 
 Set
-\\[
-\chi_t(\rho)=\rho^{-1/2-\mathbf u t}.
-\\]
-Then
-\\[
-\rho\frac{d}{d\rho}\chi_t=\left(-\frac12-\mathbf u t\right)\chi_t,
-\\]
-hence
-\\[
-\left(\rho\frac{d}{d\rho}+\frac12\right)\chi_t=-\mathbf u t\,\chi_t,
-\\]
-and therefore
-\\[
-\mathcal A_{\mathbf u}\chi_t=t\chi_t.
-\\]
+\[
+\Xi(t)=\xi\!\left(\frac12+it\right).
+\]
+Using functional calculus on eigenmodes,
+\[
+\Xi(A_u)\chi_t=\Xi(t)\chi_t.
+\]
+Therefore if \(\Xi(t_n)=0\), then
+\[
+\Xi(A_u)\chi_{t_n}=0.
+\]
 
-Now define
-\\[
-\Xi(t)=\xi\!\left(\frac12+it\right),\qquad \mathcal Z_{\mathbf u}=\Xi(\mathcal A_{\mathbf u}).
-\\]
-Functional calculus on the eigenmode gives
-\\[
-\Xi(\mathcal A_{\mathbf u})\chi_t=\Xi(t)\chi_t.
-\\]
-So if \\(\Xi(t_n)=0\\), then
-\\[
-\Xi(\mathcal A_{\mathbf u})\chi_{t_n}=0.
-\\]
-This is the formal operator-kernel transport statement.
+This equation should be read as a selector statement: the operator kills exactly those eigenmodes whose labels lie at completed-residual zeros.
 
 ![Closure operator bridge](../assets/figures/closure-operator-bridge.svg)
 
-*Figure 2. Operator pathway from scale modes to kernel selection under \\(\Xi(\mathcal A_{\mathbf u})\\).* 
+*Figure 1. From eigenmodes to kernel selection under \(\Xi(A_u)\).* 
 
-## 4. Mass-Shell Realization and Scale Law
+## 4. Mass-shell realization with conversion scale
 
-Use the physical invariant
-\\[
-P\bar P=m^2c^2.
-\\]
-Introduce conversion length \\(L_*\\) by \\(\log\rho=\ell/L_*\\), and define
-\\[
+Paper 3 gave \(P\bar P=m^2c^2\). Introduce a conversion length \(L_*\) and define
+\[
 m_n=\frac{\hbar}{cL_*}|t_n|.
-\\]
-Equivalent norm form:
-\\[
-P\bar P=\left(\frac{\hbar t_n}{L_*}\right)^2.
-\\]
-Equivalent inversion:
-\\[
-L_*=t_n\frac{\hbar}{mc}=t_n\bar\lambda_C.
-\\]
+\]
+Then
+\[
+P\bar P=(m_nc)^2=\left(\frac{\hbar t_n}{L_*}\right)^2.
+\]
 
-Interpretation: fixed \\(L_*\\) yields predictive structure, while freely varying \\(L_*\\) yields descriptive fits. This distinction controls empirical strength and is the central calibration question of Paper 5.
+The important point is the role of \(L_*\). If it is chosen freely for each target, the relation is descriptive. If it is fixed independently, the relation becomes predictive.
 
 ![Two faces of \(t_n\)](../assets/figures/tn-two-faces-bridge.svg)
 
-*Figure 3. The same ordinate \\(t_n\\) seen as closure trace (
-\\(\Xi(t_n)=0\\)) and mass-shell norm realization.* 
+*Figure 2. The same \(t_n\) appears as a zeta label and as a mass-shell scale label.*
 
-## 5. Interpretation and Discussion
+## 5. Discussion
 
-We define this map as a **compatibility bridge**. It aligns scalar closure labels with operator kernels and norm equations, but it does not identify zeta zeros with particles. The operator law establishes transport of constraints, not ontological equivalence.
+The bridge is mathematically clean: one label \(t_n\) appears as
+- a zero label in \(\Xi(t)\),
+- an eigenvalue label of \(A_u\),
+- a scale label in \(P\bar P\).
 
-The role of the \\( +1/2 \\) shift is especially important: it aligns mode exponents with the half-line structure inherited from Papers 1 and 2. Removing it introduces offsets that weaken the direct \\(t\\)-label correspondence.
+What this does not show is ontological identity between zeta zeros and particles. It shows compatibility of labeling under stated assumptions.
 
-## 6. Interpretive Boundaries
+## 6. Conclusion
 
-- We do **not** claim a proof of RH.
-- We do **not** claim zeta zeros are particles.
-- We do **not** claim universal \\(L_*\\) has been established here.
-- We do **not** claim derivation of Standard Model masses.
-
-## 7. Conclusion
-
-We constructed the zeta-mass closure operator bridge in three steps: eigenmode definition, completed-residual kernel transport, and scale-converted mass-shell realization. The framework shows shared spectral labeling under explicit assumptions and preserves non-claim boundaries. Paper 5 determines whether \\(L_*\\) can be fixed independently enough for out-of-sample predictive tests.
+The zeta-mass closure operator is a shared spectral-eigenvalue law: \(A_u\chi_t=t\chi_t\), \(\Xi(A_u)\chi_t=\Xi(t)\chi_t\), and zero labels are carried into the operator kernel. Combined with \(L_*\), the same labels produce a mass-shell realization. The decisive scientific question now becomes calibration discipline for \(L_*\), which is taken up in Paper 5.
 
 ## References
 
-[1] E. C. Titchmarsh and D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, 1986.  
-[2] H. M. Edwards, *Riemann's Zeta Function*, 2001.  
-[3] S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields*, 1995.
+[1] E. C. Titchmarsh and D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, 2nd ed., Oxford Univ. Press, 1986.  
+[2] H. M. Edwards, *Riemann's Zeta Function*, Dover, 2001.  
+[3] S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields*, Oxford Univ. Press, 1995.
