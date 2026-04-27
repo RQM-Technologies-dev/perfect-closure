@@ -12,7 +12,7 @@
 \newtheorem{lemma}{Lemma}
 \newtheorem{theorem}{Theorem}
 
-\title{Predictive Closure and the Conversion Scale: When Zeta-Mass Matching Becomes Testable}
+\title{Closure Spectra and Physical Calibration: When Zeta-Mass Matching Becomes Testable}
 \author{John Van Geem / RQM Technologies}
 \date{April 2026}
 
@@ -20,92 +20,101 @@
 \maketitle
 
 \begin{abstract}
-This paper studies the scientific status of the conversion scale $L_*$ in the zeta-mass bridge. From $m_n=(\hbar/(cL_*))|t_n|$, the bridge is descriptive if $L_*$ is tuned separately for each mass and predictive only when $L_*$ is fixed independently or stabilized over a predeclared family. We define four testing protocols---fixed-scale prediction, family-stabilized scale, out-of-sample matching, and null tests---and explain why these protocols are the decisive criterion for independent physical content.
+This paper treats calibration as the decisive scientific step in the closure program. The mathematical bridge from selected spectral values to mass-shell values is easy to write, but scientific content appears only when the conversion scale is constrained independently of the targets being matched. The paper distinguishes descriptive fitting from predictive testing, introduces family-stabilized calibration as an intermediate regime, and proposes out-of-sample protocols with explicit failure criteria. The goal is to ensure that spectral-mass matching is evaluated as a falsifiable research program rather than as symbolic pattern matching.
 \end{abstract}
 
 \section{Introduction}
-Papers 1--4 established a coherent chain: zeta closure labels $t_n$, quaternionic representation, operator selection, and mass-shell realization. Paper 5 asks the methodological question: when does this chain predict anything new?
+The previous papers built a formal chain from completed residual selection to mass-shell compatibility. Paper 5 asks the methodological question that determines whether the chain has empirical force: can the scale parameter be fixed independently enough to make failures possible?
 
-The answer hinges on one number, $L_*$. If that scale can move freely for each target, agreement can be retrospective. If the scale is fixed before fitting, agreement can be tested.
+Without this step, one can always retune parameters and recover agreement retrospectively. With this step, the framework becomes testable.
 
-\section{Core calibration equation}
-From Paper 4,
+For that reason, this paper is not an appendix to the mathematics; it is the methodological center of physical interpretation. Calibration decides whether the proposed bridge can ever be wrong in a meaningful way.
+
+\section{Mathematical Background}
+The bridge equation from Paper 4 is
 \[
-m_n=\frac{\hbar}{cL_*}|t_n|,
+m_n=\frac{\hbar}{cL_*}|t_n|.
 \]
-or equivalently
+Equivalently,
 \[
 L_*=t_n\frac{\hbar}{m_nc}.
 \]
-This equation should be read in two directions. Forward direction predicts $m_n$ from $t_n$ and a pre-fixed $L_*$. Backward direction infers $L_*$ from assigned pairs.
+The same formula can be used in two opposite ways. Forward use predicts mass from a predeclared scale. Backward use infers scale from known mass. Only the first route carries predictive risk.
 
-The bridge becomes meaningful only when the forward direction survives predeclared tests.
+\section{Main Construction}
+Calibration regimes can be ordered by decreasing parameter freedom.
 
-\section{Descriptive versus predictive use of $L_*$}
-\begin{definition}[Descriptive scaling]
-A fit is descriptive if $L_*$ is chosen independently for each mass target.
-\end{definition}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Per-target scaling:} a different scale is chosen for each target; this is descriptive.
+\item \textbf{Family-stabilized scaling:} one scale is fixed for a predeclared class and tested on held-out members.
+\item \textbf{Global predeclared scaling:} a single externally motivated scale is fixed before all comparisons.
+\end{enumerate}
 
-\begin{definition}[Predictive scaling]
-A fit is predictive if $L_*$ is fixed independently of the target masses before comparison.
-\end{definition}
+The scientific value increases as freedom decreases.
 
-\begin{definition}[Family-stabilized scaling]
-A fit is family-stabilized when a single predeclared $L_*$ is used for a predeclared class and remains stable under held-out checks.
-\end{definition}
-These definitions separate mathematical compatibility from empirical content.
+The ordering above should be read as a hierarchy of evidential strength, not merely as a list of computational options. A method that cannot fail under independent tests cannot supply physical support, even if it produces visually impressive matches.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.83\textwidth]{../assets/figures/calibration-regimes.svg}
-\caption{Predictive strength increases as freedom in $L_*$ decreases.}
+\includegraphics[width=0.83\textwidth]{../assets/figures/calibration-regimes.pdf}
+\caption{Predictive strength rises as the number of free calibration choices falls.}
 \end{figure}
 
-\section{Testing protocols}
-\paragraph{Protocol A: Fixed-scale prediction.}
-Choose $L_*$ from external criteria before any mass matching. Predict masses for assigned $t_n$ values. Evaluate residuals without retuning $L_*$.
+\section{Formal Definitions and Results}
+\begin{definition}[Descriptive match]
+A match is descriptive if $L_*$ is tuned separately for each mass target.
+\end{definition}
 
-\paragraph{Protocol B: Family-stabilized scale.}
-Predeclare a family and pairing rule. Estimate one $L_*$ on a training subset, then test on a held-out subset from the same family.
+\begin{definition}[Predictive match]
+A match is predictive if $L_*$ is fixed independently of the target data before scoring.
+\end{definition}
 
-\paragraph{Protocol C: Out-of-sample mass matching.}
-After fixing $L_*$, predict masses for a second family not used in calibration. This is the strongest practical check against hidden overfitting.
+\begin{definition}[Family stabilization]
+A family is stabilized when one predeclared $L_*$ remains within a narrow tolerance under held-out tests in that same family.
+\end{definition}
 
-\paragraph{Protocol D: Null tests.}
-Apply random or deliberately mismatched pairings under the same scoring rule. A viable bridge should outperform null baselines by a clear margin.
+\begin{proposition}[Falsifiability criterion]
+The bridge has empirical content only when the calibration protocol allows potential rejection under predeclared error thresholds.
+\end{proposition}
 
-\section{Quantitative diagnostics}
-Useful diagnostics include
+\paragraph{Protocol recommendations.}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Pre-registration:} declare pairing rules, admissible spectral indices, and score functions before fitting.
+\item \textbf{Split design:} reserve a held-out subset that is never used during scale selection.
+\item \textbf{Null benchmarking:} compare against shuffled assignments and random baselines under the same metric.
+\item \textbf{Sensitivity audit:} report how predictions vary under small perturbations of the declared protocol.
+\end{itemize}
+
+\paragraph{Diagnostic quantities.}
+A useful stability index is
 \[
-\text{CV}(L_*)=\frac{\text{std}(L_*^{(j)})}{\text{mean}(L_*^{(j)})},
+\mathrm{CV}(L_*)=\frac{\mathrm{std}(L_*^{(j)})}{\mathrm{mean}(L_*^{(j)})}.
 \]
-for family stability, and held-out prediction error
+A useful held-out error is
 \[
-\varepsilon_{\text{test}}=\frac{1}{N}\sum_{j=1}^N\frac{|m_j^{\text{pred}}-m_j^{\text{obs}}|}{m_j^{\text{obs}}}.
+\varepsilon_{\mathrm{test}}=\frac{1}{N}\sum_{j=1}^N\frac{|m_j^{\mathrm{pred}}-m_j^{\mathrm{obs}}|}{m_j^{\mathrm{obs}}}.
 \]
-For ratio checks with shared $L_*$,
-\[
-\frac{m_a}{m_b}\approx\frac{t_{n_a}}{t_{n_b}}.
-\]
-This removes $L_*$ and tests internal proportionality directly.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.86\textwidth]{../assets/figures/mass-to-zeta-inverse-test.svg}
-\caption{Inverse evaluation pipeline for null and out-of-sample testing.}
-\end{figure}
+\section{Interpretation}
+Calibration is where descriptive mathematics either becomes predictive science or remains a compatibility map. If a new scale can be chosen for every target, apparent success carries little evidential value. If the scale is fixed first and still performs well on new data, the result becomes informative.
 
-\section{Discussion}
-The scientific criterion for this series is not whether one can write a bridge equation; that part is easy. The criterion is whether $L_*$ carries independent constraint. If not, the bridge remains a descriptive identity.
+Out-of-sample design is therefore mandatory. It should include null pairings, shuffled assignments, and predeclared acceptance thresholds. Failure should be counted as informative, not as a nuisance to be tuned away.
 
-What this does not show is a proof of RH or a derivation of the Standard Model spectrum. It shows how to ask a falsifiable question about independent physical content.
+Clear failure criteria are essential. Examples include unstable calibrated scale values across adjacent data splits, held-out error that is not distinguishable from null baselines, or sensitivity so high that minor protocol edits reverse conclusions. Any of these outcomes should be treated as evidence against predictive status.
+
+\section{Relation to the Series}
+Paper 5 closes the logical arc: Paper 1 supplied completed residual selection, Paper 2 supplied conservative slice lifting, Paper 3 supplied invariant mass-shell norm structure, Paper 4 supplied operator mapping, and Paper 5 supplies the calibration discipline required for testability.
+
+Without this final step, the series risks remaining symbolic.
 
 \section{Conclusion}
-The role of $L_*$ is decisive. Per-target $L_*$ is descriptive; independently fixed $L_*$ is predictive; stable $L_*$ over predeclared families is testable. Paper 5 therefore closes the series by turning methodological discipline into part of the mathematical claim itself.
+The central methodological claim is simple: calibration discipline determines scientific status. Per-target scales are descriptive, independently fixed scales are predictive, and family-stable behavior under held-out tests is candidate evidence. The closure program therefore stands or falls on out-of-sample performance under predeclared rules.
+
+In that sense, Paper 5 is the guardrail paper of the series. It prevents the earlier operator bridge from being interpreted as a guaranteed discovery pipeline and recasts it as a testable proposal with explicit criteria for success and failure.
 
 \section*{References}
 \begin{enumerate}
-\item K. G. Wilson, ``The renormalization group and critical phenomena,'' \emph{Rev. Mod. Phys.} 55 (1983).
+\item K. G. Wilson, ``The renormalization group and critical phenomena,'' \emph{Rev. Mod. Phys.}, 1983.
 \item E. C. Titchmarsh and D. R. Heath-Brown, \emph{The Theory of the Riemann Zeta-Function}, 2nd ed., Oxford Univ. Press, 1986.
 \item S. L. Adler, \emph{Quaternionic Quantum Mechanics and Quantum Fields}, Oxford Univ. Press, 1995.
 \end{enumerate}

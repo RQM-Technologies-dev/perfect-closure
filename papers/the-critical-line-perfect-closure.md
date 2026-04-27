@@ -7,9 +7,7 @@
 
 ## Abstract
 
-This paper proposes *Perfect Closure* as a structural principle that may illuminate why the nontrivial zeros of the Riemann zeta function appear on the critical line Re(s) = 1/2. Perfect Closure is defined as the condition in which conjugate displacement fully resolves, leaving no unresolved residue. On the critical line, every prime is square-rooted into equal-magnitude conjugate phase routes: `p^{-(1/2+it)} = (1/sqrt(p)) * e^{-it log p}` and its conjugate `p^{-(1/2-it)} = (1/sqrt(p)) * e^{+it log p}`. This paper does not claim a proof of the Riemann Hypothesis. Rather, it proposes a conceptual and structural interpretation: that zeta zeros may be understood as global Perfect Closure events of the analytically continued prime-generated phase structure. Analogies are drawn to quaternionic closure (q^6 = 1), Pauli antisymmetric cancellation (ψ(a,a) = 0), matter/antimatter annihilation, and the Faro shuffle return (S^8 = I). These analogies are interpretive and structural; they are not proofs.
-
-**Source-manuscript metadata (retained for completeness):** Draft v0.1; Working author: John Van Geem / RQM Technologies; Framework orientation: Resonant Quantum Mechanics (RQM) / Quaternionic Spectral Geometry (QSG).
+This note introduces Perfect Closure as a structural way to discuss the critical line in zeta analysis. The claim is not that the Riemann Hypothesis has been proved. The claim is that the critical line plays a local mirror role: prime routes reflected across it carry equal size while reversing phase direction. The note separates this local balance picture from the global analytic condition needed for completed cancellation, and it presents the broader analogy program as interpretive guidance rather than as proof.
 
 ---
 
