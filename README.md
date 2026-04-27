@@ -61,12 +61,12 @@ This completion layer is supportive context for the series, not a separate proof
 - LaTeX: [`papers/01-perfect-closure-and-zeta-zeros.tex`](papers/01-perfect-closure-and-zeta-zeros.tex)
 
 ### Paper 2
-**Quaternionic Closure Slices: The Critical Line as a Complex Trace of Re(q)=1/2 Geometry**
+**The Quaternionic Lift of the Critical Line: Complex Planes at Every Slice**
 - Markdown: [`papers/02-perfect-closure-is-quaternionic.md`](papers/02-perfect-closure-is-quaternionic.md)
 - LaTeX: [`papers/02-perfect-closure-is-quaternionic.tex`](papers/02-perfect-closure-is-quaternionic.tex)
 
 ### Paper 3
-**Mass Shell Perfect Closure: Closed Quaternionic Light and Relativistic Norm Structure**
+**Mass-Shell Perfect Closure: Closed Quaternionic Light and Relativistic Norm Structure**
 - Markdown: [`papers/03-perfect-closure-of-the-mass-shell.md`](papers/03-perfect-closure-of-the-mass-shell.md)
 - LaTeX: [`papers/03-perfect-closure-of-the-mass-shell.tex`](papers/03-perfect-closure-of-the-mass-shell.tex)
 
@@ -76,7 +76,7 @@ This completion layer is supportive context for the series, not a separate proof
 - LaTeX: [`papers/04-zeta-mass-closure-operator.tex`](papers/04-zeta-mass-closure-operator.tex)
 
 ### Paper 5
-**Closure Spectra and Physical Calibration: From Eigenvalues to Testable Mass Scales**
+**Closure Spectra and Physical Calibration: When Zeta-Mass Matching Becomes Testable**
 - Markdown: [`papers/05-closure-spectra-and-physical-calibration.md`](papers/05-closure-spectra-and-physical-calibration.md)
 - LaTeX: [`papers/05-closure-spectra-and-physical-calibration.tex`](papers/05-closure-spectra-and-physical-calibration.tex)
 

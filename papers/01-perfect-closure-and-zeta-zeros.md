@@ -5,104 +5,96 @@
 
 ## Abstract
 
-This paper develops the zeta-side notion of Perfect Closure in two layers. The first layer is local: for each prime route, the factors in \(p^{-s}=p^{-\sigma}e^{-it\log p}\) separate amplitude from phase, and the conjugate amplitudes are equally weighted only at \(\sigma=1/2\), where both have size \(1/\sqrt p\). The second layer is global: closure is recorded by the completed residual \(\Xi(t)=\xi(1/2+it)\), with closure events \(\Xi(t_n)=0\). We prove that the local imbalance functional \(B_p(\sigma)=|p^{-\sigma}-p^{-(1-\sigma)}|\) vanishes exactly on the critical line. This supports the geometric role of \(\sigma=1/2\), while also clarifying what it does not prove: local balance is not a proof of the Riemann Hypothesis, and global closure still depends on the analytic structure of the completed zeta function.
+This paper presents a two-level account of Perfect Closure on the prime-spectrum side. At the local level, each prime route splits into a size component and a rotational component, and the critical line is the unique location where reflected routes have equal size. At the global level, closure is defined by vanishing of the completed residual rather than by local route matching alone. The paper shows how a prime-route imbalance quantity detects departure from mirror balance, explains why local balance should not be read as a proof of the Riemann Hypothesis, and clarifies that Perfect Closure means completed return or completed cancellation rather than emptiness.
 
 ## 1. Introduction
 
-The reason to begin the series with the zeta function is pedagogical as much as technical. The decomposition
-\[
-p^{-s}=p^{-\sigma}e^{-it\log p},\qquad s=\sigma+it,
-\]
-lets us discuss two different effects in clean language. The factor \(p^{-\sigma}\) controls magnitude. The phase factor \(e^{-it\log p}\) controls rotation in the complex plane. This equation should be read as a separation principle: amplitude and phase travel together, but they are not the same mechanism.
+The first paper in this series begins with a simple pedagogical principle: one should separate what is locally visible from what is globally decisive. The local picture comes from individual prime routes. The global picture comes from the completed analytic object that combines all routes into one function. Many misunderstandings arise when these two levels are mixed too early.
 
-At \(\sigma=1/2\), the two conjugate routes \(1/2\pm it\) both carry amplitude \(1/\sqrt p\). Off the critical line, the pair is no longer equally weighted. The important point is that this is a local route-by-route statement, not yet a statement about global vanishing of \(\zeta\) or \(\xi\).
+The central claim is intentionally modest. The critical line is distinguished because reflected prime routes are equally weighted there. This statement should not be read as a proof of the Riemann Hypothesis. It is a structural observation about local balancing geometry. The actual zero condition remains global.
 
-## 2. Overview of the argument
+## 2. Mathematical Background
 
-Our argument is organized in a deliberately conservative order:
-
-1. Define local prime-route imbalance and identify its unique zero.
-2. Explain why this local zero is geometrically meaningful.
-3. Separate local balance from global closure.
-4. Define Perfect Closure globally through the completed residual \(\Xi(t)\).
-
-The construction preserves caution. What this does not show is a proof of RH. It shows why \(\sigma=1/2\) is the unique local mirror for conjugate prime amplitudes.
-
-## 3. Amplitude and phase on prime routes
-
-For each prime \(p\),
+For a complex variable written as \(s=\sigma+it\), each prime contribution can be written in the split form
 \[
 p^{-s}=p^{-\sigma}e^{-it\log p}.
 \]
-The amplitude is \(p^{-\sigma}\). The phase is \(-t\log p\). On conjugate routes,
+The first factor controls amplitude. The second controls phase rotation. This separation is not cosmetic; it explains why the critical line behaves as a mirror.
+
+When one reflects \(s\) across the critical line, the amplitude weights become \(p^{-\sigma}\) and \(p^{-(1-\sigma)}\). Equal weighting requires \(\sigma=1-\sigma\), hence \(\sigma=1/2\). The critical line is therefore the square-root line for every prime route.
+
+## 3. Main Construction
+
+On the critical line one obtains
 \[
-p^{-(\sigma+it)}=p^{-\sigma}e^{-it\log p},\qquad p^{-(1-\sigma-it)}=p^{-(1-\sigma)}e^{it\log p}.
+p^{-(1/2\pm it)}=\frac{1}{\sqrt p}e^{\mp it\log p},
 \]
-Thus the route phases are opposite, while the amplitudes are equal only when \(\sigma=1-\sigma\), i.e. \(\sigma=1/2\).
+so both reflected routes carry the same square-root amplitude and opposite phase direction. Off the line, one route is weighted more heavily than the other. This local asymmetry is what motivates an explicit imbalance diagnostic.
 
-On the critical line,
-\[
-p^{-(1/2\pm it)}=\frac{1}{\sqrt p}e^{\mp it\log p}.
-\]
-The square-root factor is the local mirror weight.
-
-![Square-root mirror prime routes](../assets/figures/square-root-mirror-prime-routes.svg)
-
-*Figure 1. Equal square-root amplitudes and opposite phases at \(\sigma=1/2\).* 
-
-## 4. A local imbalance functional
-
-Define
+To measure this, define
 \[
 B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
 \]
 Write \(\sigma=1/2+\delta\). Then
 \[
-\begin{aligned}
-B_p(1/2+\delta)
-&=\left|p^{-1/2-\delta}-p^{-1/2+\delta}\right|\\
-&=p^{-1/2}\left|p^{-\delta}-p^{\delta}\right|\\
-&=2p^{-1/2}\,|\sinh(\delta\log p)|.
-\end{aligned}
+B_p(1/2+\delta)=2p^{-1/2}|\sinh(\delta\log p)|.
+\]
+This formula makes interpretation immediate: the hyperbolic factor measures signed departure from mirror location, while the square-root prefactor rescales by the prime size.
+
+![Square-root mirror prime routes](../assets/figures/square-root-mirror-prime-routes.svg)
+
+*Figure 1. Equal square-root amplitudes and opposite phases at the critical line.*
+
+## 4. Formal Definitions and Results
+
+### Definition 1 (Prime-route mirror balance)
+For a fixed prime \(p\), mirror balance at \(\sigma\) means equality of reflected amplitudes:
+\[
+p^{-\sigma}=p^{-(1-\sigma)}.
 \]
 
 ### Proposition 1
-For each prime \(p>1\),
+For each prime \(p>1\), mirror balance holds if and only if \(\sigma=1/2\).
+
+**Proof.** By definition, mirror balance is equivalent to \(p^{-\sigma}=p^{-(1-\sigma)}\). Taking logarithms gives \(-\sigma\log p=-(1-\sigma)\log p\). Since \(\log p\neq 0\), we obtain \(\sigma=1/2\). The converse is immediate. \(\square\)
+
+### Definition 2 (Local imbalance)
+The local imbalance at prime \(p\) and real part \(\sigma\) is the nonnegative quantity
 \[
-B_p(\sigma)=0 \iff \sigma=1/2.
+B_p(\sigma)=\left|p^{-\sigma}-p^{-(1-\sigma)}\right|.
 \]
 
-**Proof.** Since \(p^{-1/2}>0\), vanishing of \(B_p\) is equivalent to \(\sinh(\delta\log p)=0\). Because \(\log p\neq 0\), this happens only at \(\delta=0\), hence \(\sigma=1/2\). The converse is immediate. \(\square\)
+### Proposition 2
+For each prime \(p>1\), \(B_p(\sigma)=0\) exactly at \(\sigma=1/2\).
+
+**Interpretation.** Proposition 2 should be read as a local uniqueness statement. It says that each prime has one mirror location. It does not say that global cancellation has occurred.
 
 ![Prime imbalance curve](../assets/figures/prime-imbalance-curve.svg)
 
-*Figure 2. The local imbalance has its unique zero at \(\sigma=1/2\).* 
+*Figure 2. The prime-route imbalance vanishes only at the critical line.*
 
-## 5. From local mirror balance to global closure
+## 5. Interpretation
 
-Local amplitude balance is useful, but not sufficient. Global closure is encoded by the completed residual
+The completed residual
 \[
-\Xi(t)=\xi\!\left(\frac12+it\right),\qquad C(t)=|\Xi(t)|^2.
+\Xi(t)=\xi\!\left(\frac12+it\right)
 \]
-A closure event is
-\[
-\Xi(t_n)=0 \iff C(t_n)=0.
-\]
+encodes global closure. A closure event is \(\Xi(t_n)=0\), equivalently \(|\Xi(t_n)|^2=0\). The crucial methodological point is that local balance and global vanishing answer different questions. Local balance identifies where reflected routes are equally weighted. Global vanishing determines whether all contributions complete to zero.
 
-This equation should be read as a global analytic criterion. It is not empty cancellation and not a term-by-term argument on Euler factors.
+This distinction is where caution belongs. Local mirror balance is strong geometric evidence for the special role of the critical line. It is not by itself a zero-placement theorem.
 
-## 6. Discussion
+## 6. Relation to the Series
 
-The key teaching point is a distinction of scope:
+Paper 1 establishes the base language for the series:
+- local mirror geometry from prime routes,
+- global closure through the completed residual,
+- and a conservative boundary between geometric motivation and analytic proof.
 
-- \(B_p(\sigma)=0\) is local and prime-indexed.
-- \(\Xi(t_n)=0\) is global and completed.
-
-Local mirror balance motivates why the critical line is structurally special. It does not force global zeros by itself. The bridge becomes meaningful only when both levels are kept in view.
+Paper 2 will keep the same scalar height parameter and lift the critical line into quaternionic slice families. The present results are therefore foundational rather than terminal.
 
 ## 7. Conclusion
 
-Perfect Closure on the zeta side means completed residual vanishing, with local square-root mirror balance as supporting geometry. We proved that each prime route has a unique mirror point at \(\sigma=1/2\), and we clarified that RH is not proved by this local fact alone. This prepares Paper 2, where the same critical-line variable is lifted into quaternionic slice space without changing the scalar closure score.
+Perfect Closure on the prime-spectrum side should be understood as completed return, not as symbolic emptiness. The critical line is the unique square-root mirror for local prime amplitudes. This local structure motivates, but does not replace, the global completed-zero condition. In that sense, the paper provides a disciplined starting point: it explains why the line is special while preserving the difference between structural plausibility and full proof.
 
 ## References
 
