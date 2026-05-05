@@ -1,103 +1,88 @@
-# Perfect Closure Paper Series
+# Perfect Closure
 
-## Series Thesis
+**Perfect Closure** is the thesis that stable structure emerges when free phase closes.
 
-> **Perfect Closure is the condition where conjugate displacement resolves into a zero-residual, identity-return, or invariant norm. Across zeta zeros, quaternionic phase, and mass shells, the recurring structure is represented as an eigenvalue or kernel condition of a closure operator.**
+In physical terms:
 
-### Central Synthesis
+> **It is all light; light that has closure becomes mass.**
 
-Zeta zeros may be interpreted as complex spectral traces of quaternionic Perfect Closure eigenmodes. When such eigenmodes are lifted into biquaternionic spacetime through a physical scale \(L_\ast\), they take the form of mass-shell norms. Thus, the Riemann critical line may be understood as a complex spectral slice of a broader quaternionic closure-mass-shell structure.
+Free light is non-closing phase propagation. It travels at the speed-of-light limit because its phase does not self-close into a rest-frame structure. Mass is light-like phase that has achieved stable quaternionic closure: a standing-wave resonance on \(S^3 \times \mathbb R_s\).
 
-This is a research-program claim about formal structure. It is **not** a proof of the Riemann Hypothesis and **not** a derivation of known particle masses.
+This repository develops Perfect Closure as a structural framework for understanding the transition:
 
-**One-line map:** zeta zero \(\to\) complex spectral trace \(\to\) quaternionic closure eigenmode \(\to\) mass-shell norm after scaling.
+\[
+\text{free light} \longrightarrow \text{closed phase} \longrightarrow \text{mass shell} \longrightarrow \text{atomic spectrum}.
+\]
 
-## Visual Guide
+The Riemann-zeta / critical-line material formerly central to this repository is now treated as an archived mathematical analogy for perfect cancellation, not as the main research claim and not as a proof program.
 
-These figures are visual guides to the structure of the paper series. They are not additional claims.
+## Core Bridge Equations
 
-![Perfect Closure series architecture](assets/figures/perfect-closure-series-arc.svg)
+The current physical bridge is the hydrogen shell-locking architecture on
+\[
+M = S^3 \times \mathbb R_s.
+\]
 
-*Figure: Series architecture across Papers 1–5, from complex trace to calibration tests. This supports the narrative ordering of the program and does not by itself establish any operator or physical result.*
+With
+\[
+\hat N = \sqrt{-\Delta_{S^3}+1},
+\]
+\[
+\hat N Y_K = (K+1)Y_K,
+\]
+\[
+-\Delta_{S^3}Y_K = K(K+2)Y_K,
+\]
+shell-locking is expressed as
+\[
+\hat N = \frac{s^2}{2}.
+\]
 
-![Zeta-to-mass-shell synthesis pipeline](assets/figures/zeta-to-mass-shell-pipeline.svg)
+Then
+\[
+n = K+1 = \frac{s^2}{2},
+\]
+\[
+J(s)=\hbar\frac{s^2}{2},
+\]
+\[
+E(s)= -\frac{4\mathrm{Ry}}{s^4},
+\]
+and at shell lock \(s^2=2n\),
+\[
+E_n = -\frac{\mathrm{Ry}}{n^2}.
+\]
 
-*Figure: Core synthesis map \(\Xi(t_n)=0 \rightarrow \mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n} \rightarrow P\bar P=(\hbar t_n/L_\ast)^2\). This visual supports the shared-eigenvalue interpretation and does not claim RH or particle-mass derivation.*
+Degeneracy is
+\[
+\dim \mathcal H_K(S^3) = (K+1)^2 = n^2.
+\]
 
-![Two faces of the shared ordinate](assets/figures/tn-two-faces-bridge.svg)
+## Program Structure
 
-*Figure: The same ordinate \(t_n\) appears as a complex spectral trace face \(\Xi(t_n)=0\) and a mass-shell face \(P\bar P=(\hbar t_n/L_\ast)^2\). This is an interpretive aid, not a proof claim.*
+- **Ontology:** free light vs closed light
+- **Geometry:** quaternionic phase closure and standing-wave return
+- **Spectral bridge:** shell-number operator and shell locking on \(S^3\times\mathbb R_s\)
+- **Calibration:** hydrogen as first calibrated closure-shell example
 
-## Clean Spine
+## Claim Boundaries
 
-$$
-\Xi(t_n)=0
-\rightarrow
-\mathcal A_{\mathbf u}\chi_{t_n}=t_n\chi_{t_n}
-\rightarrow
-P\bar P=\left(\frac{\hbar t_n}{L_\ast}\right)^2.
-$$
+This repository:
 
-Paper 1 establishes zeta-zero Perfect Closure through the square-root mirror and the completed residual condition $\Xi(t_n)=0$. Paper 2 lifts the trace into quaternionic closure geometry. Paper 3 defines the mass-shell norm. Paper 4 connects them through a shared eigenvalue. Paper 5 asks whether the scale \(L_\ast\) can be fixed well enough to make predictions.
+- does **not** claim to prove RH;
+- does **not** treat zeta-zero matching as primary evidence for mass;
+- does **not** derive all physical constants from first principles at this stage;
+- does **not** replace standard quantum/relativistic physics.
 
-## Completion Layer (supporting)
+Hydrogen currently serves as a **calibrated bridge architecture** (using \(\mathrm{Ry}\) as calibration), not as a final first-principles derivation of all constants.
 
-Perfect Closure can also be viewed in three layers:
+## Repository Map
 
-$$
-\text{phase} \rightarrow \text{completion} \rightarrow \text{norm},
-$$
-$$
-p^{-q} \rightarrow ◎(q) \rightarrow P\bar P.
-$$
-
-This completion layer is supportive context for the series, not a separate proof mechanism.
-
-## Current Series Order
-
-### Paper 1 (entry / safest)
-**Zeta-Zero Perfect Closure: The Critical Line as a Square-Root Mirror**
-- Markdown: [`papers/01-perfect-closure-and-zeta-zeros.md`](papers/01-perfect-closure-and-zeta-zeros.md)
-- LaTeX: [`papers/01-perfect-closure-and-zeta-zeros.tex`](papers/01-perfect-closure-and-zeta-zeros.tex)
-
-### Paper 2
-**The Quaternionic Lift of the Critical Line: Complex Planes at Every Slice**
-- Markdown: [`papers/02-perfect-closure-is-quaternionic.md`](papers/02-perfect-closure-is-quaternionic.md)
-- LaTeX: [`papers/02-perfect-closure-is-quaternionic.tex`](papers/02-perfect-closure-is-quaternionic.tex)
-
-### Paper 3
-**Mass-Shell Perfect Closure: Closed Quaternionic Light and Relativistic Norm Structure**
-- Markdown: [`papers/03-perfect-closure-of-the-mass-shell.md`](papers/03-perfect-closure-of-the-mass-shell.md)
-- LaTeX: [`papers/03-perfect-closure-of-the-mass-shell.tex`](papers/03-perfect-closure-of-the-mass-shell.tex)
-
-### Paper 4
-**Zeta-Mass Closure Operator: Perfect Closure as a Shared Spectral Eigenvalue Law**
-- Markdown: [`papers/04-zeta-mass-closure-operator.md`](papers/04-zeta-mass-closure-operator.md)
-- LaTeX: [`papers/04-zeta-mass-closure-operator.tex`](papers/04-zeta-mass-closure-operator.tex)
-
-### Paper 5
-**Closure Spectra and Physical Calibration: When Zeta-Mass Matching Becomes Testable**
-- Markdown: [`papers/05-closure-spectra-and-physical-calibration.md`](papers/05-closure-spectra-and-physical-calibration.md)
-- LaTeX: [`papers/05-closure-spectra-and-physical-calibration.tex`](papers/05-closure-spectra-and-physical-calibration.tex)
-
-## Experiments
-
-- `zeta_mass_calibration`: fixed rank-lock calibration test
-- `spectral_slice_matching`: direct anchor-scan spectral slice matching test
-
-## Supporting Documentation
-
-- Glossary: [`docs/glossary.md`](docs/glossary.md)
-
-## Future Separate Notes (not in the main sequence)
-
-- [`future/pauli-exclusion-as-perfect-antisymmetric-closure.md`](future/pauli-exclusion-as-perfect-antisymmetric-closure.md)
-- [`future/antimatter-as-conjugate-closure-direction.md`](future/antimatter-as-conjugate-closure-direction.md)
-- [`future/faro-shuffle-as-finite-braid-closure.md`](future/faro-shuffle-as-finite-braid-closure.md)
-
-## Important Disclaimer
-
-This repository **does not claim to prove the Riemann Hypothesis**. The series presents a formalization framework and research program, with explicit non-claim boundaries in each paper.
+- `docs/` - thesis, geometry, bridge, and boundaries
+- `papers/` - current light-to-mass paper sequence
+- `archive/zeta-critical-line-program/` - previous RH/critical-line-centered material (historical/analogy)
+- `future/` - forward-looking speculative notes
+- `assets/figures/` - diagrams and generated visuals
 
 ## License
 

@@ -1,5 +1,5 @@
 site_name: Perfect Closure
-site_description: "The Critical Line: The Square-Root Mirror Where Perfect Closure Becomes Possible"
+site_description: "It is all light; light that has closure becomes mass."
 site_author: John Van Geem / RQM Technologies
 repo_url: https://github.com/RQM-Technologies-dev/perfect-closure
 
@@ -17,14 +17,14 @@ theme:
 
 nav:
   - Home: index.md
-  - Visual Guide: visual-guide.md
   - Perfect Closure: perfect-closure.md
-  - Square-Root Mirror: square-root-mirror.md
-  - Quaternionic Closure: quaternionic-closure.md
-  - Faro Shuffle: faro-shuffle.md
-  - Cautions: cautions.md
+  - Light-Mass Thesis: light-mass-thesis.md
+  - Free Light vs Closed Light: free-light-vs-closed-light.md
+  - Quaternionic Standing Waves: quaternionic-standing-waves.md
+  - Hydrogen Closure Bridge: hydrogen-closure-bridge.md
+  - Claim Boundaries: claim-boundaries.md
+  - Archived Zeta Program: archive-zeta-critical-line-program.md
   - Glossary: glossary.md
-  - Quaternionic Factorial Kernel: quaternionic-factorial-completion-kernel.md
 
 markdown_extensions:
   - admonition
