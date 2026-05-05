@@ -1,28 +1,44 @@
-# Perfect Closure Series Glossary
+# Glossary
 
-## complex spectral trace
-A zero of the completed critical-line residual, written as \(\Xi(t_n)=0\). In the series, this is the complex face of a closure eigenvalue.  
-See visual: [Main synthesis pipeline](visual-guide.md#main-synthesis-pipeline) and [two faces of the shared ordinate](visual-guide.md#main-synthesis-pipeline).
+## Perfect Closure
+Completed phase return/cancellation/identity in a given domain.
 
-## quaternionic closure eigenvalue
-A value \(t\) satisfying \(\mathcal A_{\mathbf u}\chi_t=t\chi_t\), where \(\mathcal A_{\mathbf u}=\mathbf u(\rho\,d/d\rho+1/2)\).  
-See visual: [Main synthesis pipeline](visual-guide.md#main-synthesis-pipeline) and [Paper-by-paper figure map](visual-guide.md#paper-by-paper-figure-map).
+## free light
+Non-closing null phase propagation; no stable rest-frame closure.
 
-## mass-shell norm realization
-The physical norm face of the same eigenvalue after scale conversion, typically
-\(P\bar P=(\hbar t_n/L_\ast)^2\), with baseline invariant form \(P\bar P=m^2c^2\).  
-See visual: [Paper-by-paper figure map](visual-guide.md#paper-by-paper-figure-map) (Paper 3 mass-shell norm) and [two faces of the shared ordinate](visual-guide.md#main-synthesis-pipeline).
+## closed light
+Light-like phase that self-closes into a stable standing-wave structure.
 
-## closure-conversion length \(L_\ast\)
-The scale that maps closure eigenvalue units to physical curvature/mass units:
-\(L_\ast=t_n\hbar/(mc)=t_n\bar\lambda_C\).  
-See visual: [Paper-by-paper figure map](visual-guide.md#paper-by-paper-figure-map) (Paper 5 calibration and inverse-test figures).
+## mass shell
+Invariant closed state with \(P\bar P=m^2c^2>0\), interpreted here as stable closure.
 
-## optional bridge device
-A geometric or analytic aid used for intuition (for example closure cadence formulas), not required for the core zeta-to-mass-shell bridge.
+## quaternionic standing-wave resonance
+A stable periodic closure in quaternionic phase geometry, represented by
+\[
+q=\cos\phi+\mathbf u\sin\phi,\quad \mathbf u^2=-1.
+\]
 
-## supporting mechanism
-An additional layer that may help calibration or selection (for example AGQF), but is not required for the main operator spine.
+## shell-number operator
+\[
+\hat N=\sqrt{-\Delta_{S^3}+1}.
+\]
+Acts on \(S^3\) harmonics to index spectral shells.
 
-## non-claim boundary
-The explicit limits of the program: no proof of RH, no claim that zeta zeros are particles, and no established Standard Model mass derivation from the current framework.
+## shell locking
+Constraint
+\[
+\hat N=\frac{s^2}{2},
+\]
+tying shell number to closure-scale coordinate \(s\).
+
+## hydrogen closure bridge
+The calibrated mapping from closure-shell geometry to hydrogen energy levels.
+
+## calibration constant
+An empirically fixed constant (for example \(\mathrm{Ry}\)) used to connect formal structure to measured data.
+
+## claim boundary
+Explicit statement of what is not claimed (for example no RH proof, no full first-principles constant derivation).
+
+## zeta analogy
+Use of zeta/critical-line cancellation as optional mathematical analogy, not as central evidence.

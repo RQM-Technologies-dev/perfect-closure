@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate curated visuals for the Perfect Closure paper series.
+"""Generate curated visuals for the Perfect Closure thesis.
 
 Outputs SVG (Markdown), PNG (LaTeX), and PDF (optional print workflows).
 """
@@ -55,6 +55,110 @@ def rounded_box(ax, x, y, w, h, text, fontsize=10):
     )
     ax.add_patch(patch)
     ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=fontsize)
+
+
+def figure_light_to_mass_closure():
+    fig, ax = plt.subplots(figsize=(11.8, 4.6))
+    ax.axis("off")
+
+    rounded_box(ax, 0.04, 0.35, 0.22, 0.30, "free light\nnon-closing phase", fontsize=11)
+    rounded_box(ax, 0.31, 0.35, 0.22, 0.30, "phase closure\nself-return", fontsize=11)
+    rounded_box(ax, 0.58, 0.35, 0.22, 0.30, "mass shell\nstanding resonance", fontsize=11)
+    rounded_box(ax, 0.85, 0.35, 0.11, 0.30, "atomic\nspectrum", fontsize=10.5)
+
+    for start, end in [
+        ((0.26, 0.50), (0.31, 0.50)),
+        ((0.53, 0.50), (0.58, 0.50)),
+        ((0.80, 0.50), (0.85, 0.50)),
+    ]:
+        ax.add_patch(
+            FancyArrowPatch(
+                start,
+                end,
+                arrowstyle="-|>",
+                mutation_scale=15,
+                linewidth=1.4,
+                color="black",
+            )
+        )
+
+    ax.text(
+        0.5,
+        0.16,
+        "Core thesis map: free propagation -> closure -> mass shell -> spectrum.",
+        ha="center",
+        fontsize=10.8,
+    )
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    save_figure(fig, "light-to-mass-closure")
+
+
+def figure_free_vs_closed_phase():
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.8, 5.0))
+    style_axes(ax1)
+    style_axes(ax2)
+
+    t = np.linspace(0, 7.5, 450)
+    ax1.plot(t, np.sin(3.0 * t), linewidth=1.8, color="black")
+    ax1.plot(t, np.sin(3.0 * t + np.pi / 3), linewidth=1.2, linestyle="--", color="black", alpha=0.6)
+    ax1.set_title("Free light: non-closing phase transport")
+    ax1.set_xlabel("propagation coordinate")
+    ax1.set_ylabel("phase amplitude")
+    ax1.text(0.3, 1.18, r"$P\bar P=0$", fontsize=10)
+
+    theta = np.linspace(0, 2 * np.pi, 500)
+    r = 1.0 + 0.14 * np.cos(4 * theta)
+    ax2.plot(r * np.cos(theta), r * np.sin(theta), linewidth=2.0, color="black")
+    for angle in [0.2, 1.5, 2.8, 4.0, 5.2]:
+        ax2.add_patch(
+            FancyArrowPatch(
+                (0.72 * np.cos(angle), 0.72 * np.sin(angle)),
+                (0.72 * np.cos(angle + 0.4), 0.72 * np.sin(angle + 0.4)),
+                arrowstyle="-|>",
+                mutation_scale=11,
+                linewidth=1.1,
+                color="black",
+            )
+        )
+    ax2.set_aspect("equal", adjustable="box")
+    ax2.set_title("Closed light: standing-wave closure")
+    ax2.set_xlabel("closure axis 1")
+    ax2.set_ylabel("closure axis 2")
+    ax2.text(-1.35, 1.28, r"$P\bar P=m^2c^2$", fontsize=10)
+    ax2.set_xlim(-1.55, 1.55)
+    ax2.set_ylim(-1.55, 1.55)
+
+    fig.suptitle("Phase regimes: free propagation vs stable closure", fontsize=12)
+    save_figure(fig, "free-vs-closed-phase")
+
+
+def figure_hydrogen_shell_locking():
+    fig, ax = plt.subplots(figsize=(9.8, 5.4))
+    style_axes(ax)
+
+    n = np.arange(1, 9)
+    s = np.sqrt(2 * n)
+    energy = -13.605693 / (n**2)
+
+    ax2 = ax.twinx()
+    ax.plot(n, s**2 / 2, marker="o", linewidth=1.8, color="black", label=r"$n=s^2/2$")
+    ax2.plot(n, energy, marker="s", linewidth=1.6, linestyle="--", color="black", alpha=0.75, label=r"$E_n=-\mathrm{Ry}/n^2$")
+
+    ax.set_xlabel("shell index n")
+    ax.set_ylabel(r"shell-lock value $s^2/2$")
+    ax2.set_ylabel(r"energy (eV)")
+    ax.set_title("Hydrogen shell locking on S^3 x R_s")
+
+    ax.text(1.15, 7.4, r"$\hat N=\sqrt{-\Delta_{S^3}+1}$", fontsize=10)
+    ax.text(1.15, 6.6, r"$\hat N=s^2/2$", fontsize=10)
+    ax2.text(4.3, -10.2, r"$E(s)=-4\mathrm{Ry}/s^4$", fontsize=10)
+
+    lines1, labels1 = ax.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax.legend(lines1 + lines2, labels1 + labels2, loc="upper right")
+
+    save_figure(fig, "hydrogen-shell-locking")
 
 
 def figure_series_arc():
@@ -418,6 +522,9 @@ def figure_inverse_test():
 
 def main():
     FIG_DIR.mkdir(parents=True, exist_ok=True)
+    figure_light_to_mass_closure()
+    figure_free_vs_closed_phase()
+    figure_hydrogen_shell_locking()
     figure_series_arc()
     figure_main_pipeline()
     figure_square_root_mirror()
