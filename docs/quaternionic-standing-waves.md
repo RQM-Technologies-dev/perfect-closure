@@ -30,6 +30,37 @@ That is why the thesis uses:
 
 The phrase means "stable self-closed phase architecture," not "literal trapped photons in a classical cavity model."
 
+## Conjugate quaternionic routes and relativistic closure
+
+To connect quaternionic closure directly to the minimal relativistic bridge, define conjugate phase routes
+\[
+q_+(\phi)=e^{\mathbf u\phi},
+\qquad
+q_-(\phi)=e^{-\mathbf u\phi},
+\]
+with \(\mathbf u^2=-1\). Their product is
+\[
+q_+q_-=1.
+\]
+
+This identity-return condition is the quaternionic encoding of directional closure: conjugate routes close displacement under composition.
+
+The corresponding two-route kinematic model is
+\[
+p_+^\mu=\left(\frac{E}{c},+\mathbf p\right),
+\qquad
+p_-^\mu=\left(\frac{E}{c},-\mathbf p\right),
+\]
+so each route is null (\(E^2-p^2c^2=0\)), while the total is
+\[
+P^\mu=\left(\frac{2E}{c},0\right),
+\]
+with invariant mass \(M=2E/c^2\).
+
+Interpretation:
+
+The conjugate phase routes close to identity. Directional displacement cancels, but the enclosed phase energy remains as invariant rest mass.
+
 ## Link to shell locking
 
 Quaternionic closure gets operationalized through spectral shells on

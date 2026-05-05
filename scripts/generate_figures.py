@@ -133,6 +133,91 @@ def figure_free_vs_closed_phase():
     save_figure(fig, "free-vs-closed-phase")
 
 
+def figure_null_routes_to_mass_shell():
+    fig, axes = plt.subplots(1, 3, figsize=(12.0, 4.6))
+    fig.suptitle("Null routes close into mass shell", fontsize=12)
+
+    # Left: free light route.
+    ax = axes[0]
+    ax.axis("off")
+    ax.add_patch(
+        FancyArrowPatch(
+            (0.15, 0.52),
+            (0.85, 0.52),
+            arrowstyle="-|>",
+            mutation_scale=17,
+            linewidth=1.8,
+            color="black",
+        )
+    )
+    ax.text(0.50, 0.68, "free light", ha="center", fontsize=11)
+    ax.text(0.50, 0.39, r"$p^2=0$", ha="center", fontsize=11)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+
+    # Middle: two opposite null routes.
+    ax = axes[1]
+    ax.axis("off")
+    ax.add_patch(
+        FancyArrowPatch(
+            (0.18, 0.60),
+            (0.82, 0.60),
+            arrowstyle="-|>",
+            mutation_scale=15,
+            linewidth=1.6,
+            color="black",
+        )
+    )
+    ax.add_patch(
+        FancyArrowPatch(
+            (0.82, 0.42),
+            (0.18, 0.42),
+            arrowstyle="-|>",
+            mutation_scale=15,
+            linewidth=1.6,
+            color="black",
+        )
+    )
+    ax.text(0.50, 0.74, "conjugate null routes", ha="center", fontsize=11)
+    ax.text(0.50, 0.26, r"$p_+^2=0,\ p_-^2=0$", ha="center", fontsize=10.8)
+    ax.text(0.50, 0.14, r"$p_+ + p_- = (2E/c,\ 0)$", ha="center", fontsize=10.8)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+
+    # Right: closed loop / mass shell.
+    ax = axes[2]
+    ax.axis("off")
+    theta = np.linspace(0, 2 * np.pi, 400)
+    r = 0.33
+    x0, y0 = 0.5, 0.52
+    ax.plot(x0 + r * np.cos(theta), y0 + r * np.sin(theta), linewidth=2.0, color="black")
+    for angle in [0.2, 1.9, 3.8]:
+        ax.add_patch(
+            FancyArrowPatch(
+                (x0 + 0.33 * np.cos(angle), y0 + 0.33 * np.sin(angle)),
+                (x0 + 0.33 * np.cos(angle + 0.45), y0 + 0.33 * np.sin(angle + 0.45)),
+                arrowstyle="-|>",
+                mutation_scale=12,
+                linewidth=1.1,
+                color="black",
+            )
+        )
+    ax.text(0.50, 0.90, "closed standing loop", ha="center", fontsize=11)
+    ax.text(0.50, 0.18, r"$P^2>0$", ha="center", fontsize=11)
+    ax.text(0.50, 0.08, r"$M=E_{\mathrm{closed}}/c^2$", ha="center", fontsize=10.8)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+
+    fig.text(
+        0.5,
+        0.02,
+        "Each route is individually lightlike. Closure cancels net spatial momentum while preserving energy, producing nonzero invariant mass.",
+        ha="center",
+        fontsize=10.4,
+    )
+    save_figure(fig, "null-routes-to-mass-shell")
+
+
 def figure_hydrogen_shell_locking():
     fig, ax = plt.subplots(figsize=(9.8, 5.4))
     style_axes(ax)
@@ -524,6 +609,7 @@ def main():
     FIG_DIR.mkdir(parents=True, exist_ok=True)
     figure_light_to_mass_closure()
     figure_free_vs_closed_phase()
+    figure_null_routes_to_mass_shell()
     figure_hydrogen_shell_locking()
     figure_series_arc()
     figure_main_pipeline()

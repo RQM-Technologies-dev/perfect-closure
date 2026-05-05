@@ -18,7 +18,47 @@ The Riemann-zeta / critical-line material formerly central to this repository is
 
 ## Core Bridge Equations
 
-The current physical bridge is the hydrogen shell-locking architecture on
+### Minimal Mass-from-Closure Bridge
+
+A free lightlike route has null invariant:
+
+\[
+p^\mu p_\mu=0.
+\]
+
+A closed lightlike configuration has total four-momentum:
+
+\[
+P^\mu_{\rm closed}=\sum_i p_i^\mu.
+\]
+
+If closure cancels net spatial momentum,
+
+\[
+\sum_i\mathbf p_i=0,
+\]
+
+while energy remains positive, then
+
+\[
+M^2c^4=
+\left(\sum_i E_i\right)^2
+-c^2\left|\sum_i\mathbf p_i\right|^2
+\]
+
+reduces to
+
+\[
+Mc^2=\sum_i E_i.
+\]
+
+Thus mass appears as the invariant norm of closed lightlike phase.
+
+### Hydrogen Shell Locking: First Calibrated Architecture
+
+Hydrogen is the first calibrated shell model showing how closed phase can organize into spectral shells.
+
+The hydrogen shell-locking architecture is defined on
 \[
 M = S^3 \times \mathbb R_s.
 \]

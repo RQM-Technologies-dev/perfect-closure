@@ -17,6 +17,8 @@ The repository is organized around one transition:
 - [Perfect Closure](perfect-closure.md): concise definition of closure across domains.
 - [Light-Mass Thesis](light-mass-thesis.md): ontological framing and rationale.
 - [Free Light vs Closed Light](free-light-vs-closed-light.md): propagation versus self-closure.
+- [Invariant Mass from Closed Lightlike Routes](invariant-mass-from-closed-light.md): minimal relativistic closure-to-mass bridge.
+- [Two-Route Closure Model](two-route-closure-model.md): simplest conjugate null-route mass demonstration.
 - [Quaternionic Standing Waves](quaternionic-standing-waves.md): closure geometry.
 - [Hydrogen Closure Bridge](hydrogen-closure-bridge.md): calibrated shell-locking equations.
 - [Claim Boundaries](claim-boundaries.md): explicit non-claims and falsifiability discipline.
