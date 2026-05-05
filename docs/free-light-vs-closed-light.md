@@ -58,4 +58,8 @@ The free-vs-closed split gives the minimal ontology needed for the bridge:
 \text{phase propagation} \rightarrow \text{phase closure} \rightarrow \text{mass shell}.
 \]
 
+The explicit relativistic mechanism is developed in
+[Invariant Mass from Closed Lightlike Routes](invariant-mass-from-closed-light.md):
+null routes can close with momentum cancellation and produce a nonzero invariant mass.
+
 Hydrogen provides the first calibrated example where closure shells are mapped to measured spectral structure.

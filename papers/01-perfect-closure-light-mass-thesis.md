@@ -52,7 +52,57 @@ Closure language separates three regimes:
 
 The research target is regime (3): stable shell closure with spectral consequences.
 
-## 4. Mathematical Posture
+## 4. Minimal Relativistic Demonstration: Closed Null Routes Have Mass
+
+The thesis bridge can be stated in standard relativistic form.
+
+For a free lightlike route:
+\[
+p_\gamma^\mu p_{\gamma\mu}=0.
+\]
+
+For a closed configuration of lightlike routes:
+\[
+P_{\rm closed}^\mu=\sum_i p_i^\mu.
+\]
+
+The invariant mass of the total closed system satisfies:
+\[
+M^2c^4=
+\left(\sum_i E_i\right)^2
+-c^2\left|\sum_i\mathbf p_i\right|^2.
+\]
+
+Under perfect directional closure,
+\[
+\sum_i\mathbf p_i=0,
+\]
+so:
+\[
+Mc^2=\sum_i E_i.
+\]
+
+This is the minimal mechanism required for the light-to-mass thesis:
+
+> each route can remain lightlike, while the closed total has nonzero invariant mass because momentum cancels and energy remains.
+
+A two-route demonstration makes this explicit:
+\[
+p_+^\mu=\left(\frac{E}{c},+\mathbf p\right),\qquad
+p_-^\mu=\left(\frac{E}{c},-\mathbf p\right),
+\]
+with each route null (\(E^2-p^2c^2=0\)), but total
+\[
+P^\mu=\left(\frac{2E}{c},0\right),
+\]
+so
+\[
+M=\frac{2E}{c^2}.
+\]
+
+This supports the closure thesis structurally without claiming a replacement of QED/QM/relativity or a complete microphysical construction.
+
+## 5. Mathematical Posture
 
 This paper does not attempt a full dynamical derivation from fundamental field equations. Instead it sets a constrained scaffold:
 
@@ -62,7 +112,7 @@ This paper does not attempt a full dynamical derivation from fundamental field e
 
 In this scaffold, hydrogen is introduced in later papers as the first calibrated closure-shell example.
 
-## 5. Claim Boundaries
+## 6. Claim Boundaries
 
 The current thesis explicitly does **not** claim:
 
@@ -73,7 +123,7 @@ The current thesis explicitly does **not** claim:
 
 It does claim that closure-shell language can be formulated rigorously enough to build falsifiable bridge models.
 
-## 6. Relation to the Series
+## 7. Relation to the Series
 
 Paper sequence:
 
@@ -82,7 +132,7 @@ Paper sequence:
 - **Paper 3:** Hydrogen shell-locking bridge on \(S^3\times\mathbb R_s\).
 - **Paper 4:** From closure shells to atomic spectra with calibration/falsifiability discipline.
 
-## 7. Conclusion
+## 8. Conclusion
 
 Perfect Closure is recentered as a light-to-mass thesis: free light is non-closing phase propagation; mass is stable closed phase. The contribution of Paper 1 is conceptual precision plus claim discipline, preparing a geometric and spectral bridge rather than a proof-theoretic claim.
 
