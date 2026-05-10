@@ -1,20 +1,34 @@
 # Perfect Closure
 
-**Perfect Closure** is the thesis that stable structure emerges when free phase closes.
+## The Breakthrough in One Sentence
 
-In physical terms:
+> **Mass is what light becomes when phase closes.**
+
+Perfect Closure is a proposal about structure, not a replacement for established physics. Free light is non-closing phase propagation: it travels without forming a rest-frame standing structure. Mass appears when light-like phase routes close into a stable standing configuration whose net spatial momentum cancels while energy remains. In this view, matter is not a separate substance from light, but a different regime of phase organization. Hydrogen shell-locking is presented here as the first calibrated bridge from that closure thesis to measured spectral structure.
 
 > **It is all light; light that has closure becomes mass.**
 
-Free light is non-closing phase propagation. It travels at the speed-of-light limit because its phase does not self-close into a rest-frame structure. Mass is light-like phase that has achieved stable closure.
+## Why this matters
 
-This repository develops Perfect Closure as a structural framework for understanding the transition:
+If this framework continues to hold, it offers a clean geometric language for how stability and invariant mass can emerge from null/lightlike components. It also provides a disciplined bridge from wave-closure ideas to observable spectra, starting with hydrogen and extending through a test program rather than broad first-principles claims.
 
-$$
-\text{free light} \longrightarrow \text{closed phase} \longrightarrow \text{mass shell} \longrightarrow \text{atomic spectrum}.
-$$
+## What is new here
 
-The Riemann-zeta / critical-line material formerly central to this repository is now treated as an archived mathematical analogy for perfect cancellation, not as the main research claim and not as a physical proof.
+- The front-facing claim is explicitly the light-to-mass closure thesis.
+- The conservative bridge is explicit: individually null routes can sum to a closed configuration with canceled net spatial momentum and nonzero invariant mass.
+- Hydrogen is treated as a calibrated shell-locking architecture on \(S^3 \times \mathbb{R}_s\), not as a complete theory of all atoms.
+- RH/zeta material is retained as archived analogy, not the central evidence path.
+
+## What this repo is not claiming
+
+For explicit non-claims and falsifiability discipline, see [Claim Boundaries](docs/claim-boundaries.md).
+
+## Start here
+
+1. [docs/perfect-closure.md](docs/perfect-closure.md)
+2. [docs/invariant-mass-from-closed-light.md](docs/invariant-mass-from-closed-light.md)
+3. [docs/hydrogen-closure-bridge.md](docs/hydrogen-closure-bridge.md)
+4. [docs/claim-boundaries.md](docs/claim-boundaries.md)
 
 ## Core Bridge Equations
 
@@ -96,7 +110,7 @@ $$
 E(s) = -\frac{4\mathrm{Ry}}{s^4},
 $$
 
-and at shell lock $s^2 = 2n$,
+and at shell lock \(s^2 = 2n\),
 
 $$
 E_n = -\frac{\mathrm{Ry}}{n^2}.
@@ -112,19 +126,8 @@ $$
 
 - **Ontology:** free light vs closed light
 - **Geometry:** quaternionic phase closure and standing-wave return
-- **Spectral bridge:** shell-number operator and shell locking on $S^3 \times \mathbb{R}_s$
+- **Spectral bridge:** shell-number operator and shell locking on \(S^3 \times \mathbb{R}_s\)
 - **Calibration:** hydrogen as first calibrated closure-shell example
-
-## Claim Boundaries
-
-This repository:
-
-- does **not** claim to prove RH;
-- does **not** treat zeta-zero matching as primary evidence for mass;
-- does **not** derive all physical constants from first principles at this stage;
-- does **not** replace standard quantum/relativistic physics.
-
-Hydrogen currently serves as a **calibrated bridge architecture** (using $\mathrm{Ry}$ as calibration), not as a final first-principles derivation of all constants.
 
 ## Repository Map
 

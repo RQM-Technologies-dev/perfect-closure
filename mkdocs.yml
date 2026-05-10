@@ -17,6 +17,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Public Breakthrough: public-breakthrough.md
   - Perfect Closure: perfect-closure.md
   - Light-Mass Thesis: light-mass-thesis.md
   - Free Light vs Closed Light: free-light-vs-closed-light.md
