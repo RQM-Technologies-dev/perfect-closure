@@ -1,33 +1,42 @@
 # Perfect Closure Documentation
 
-Welcome to the documentation for the **Perfect Closure light-to-mass thesis**.
+> **Mass is what light becomes when phase closes.**
 
-## Central Statement
+Perfect Closure is organized as a four-step narrative:
 
-> **It is all light; light that has closure becomes mass.**
+1. **Free light:** non-closing phase propagation on null/lightlike routes.
+2. **Closed phase:** phase routes self-return into stable standing closure.
+3. **Mass shell:** net spatial momentum cancels while energy remains, producing nonzero invariant mass.
+4. **Atomic spectrum:** shell-locked closure architecture is calibrated first on hydrogen.
 
-The repository is organized around one transition:
+## Reader map
 
-\[
-\text{free light} \rightarrow \text{closed phase} \rightarrow \text{mass shell} \rightarrow \text{atomic spectrum}.
-\]
+### Conceptual core
 
-## What is front-facing now
+- [Public Breakthrough](public-breakthrough.md)
+- [Perfect Closure](perfect-closure.md)
+- [Light-Mass Thesis](light-mass-thesis.md)
+- [Free Light vs Closed Light](free-light-vs-closed-light.md)
 
-- [Perfect Closure](perfect-closure.md): concise definition of closure across domains.
-- [Light-Mass Thesis](light-mass-thesis.md): ontological framing and rationale.
-- [Free Light vs Closed Light](free-light-vs-closed-light.md): propagation versus self-closure.
-- [Invariant Mass from Closed Lightlike Routes](invariant-mass-from-closed-light.md): minimal relativistic closure-to-mass bridge.
-- [Two-Route Closure Model](two-route-closure-model.md): simplest conjugate null-route mass demonstration.
-- [Quaternionic Standing Waves](quaternionic-standing-waves.md): closure geometry.
-- [Hydrogen Closure Bridge](hydrogen-closure-bridge.md): calibrated shell-locking equations.
-- [Claim Boundaries](claim-boundaries.md): explicit non-claims and falsifiability discipline.
-- [Glossary](glossary.md): terminology for the current program.
+### Relativistic bridge
 
-## Status of zeta/critical-line material
+- [Invariant Mass from Closed Lightlike Routes](invariant-mass-from-closed-light.md)
+- [Two-Route Closure Model](two-route-closure-model.md)
 
-The former RH/critical-line-centered program is preserved as archive material:
+### Quaternionic geometry
 
+- [Quaternionic Standing Waves](quaternionic-standing-waves.md)
+
+### Hydrogen calibration
+
+- [Hydrogen Closure Bridge](hydrogen-closure-bridge.md)
+
+### Boundaries and archive
+
+- [Claim Boundaries](claim-boundaries.md)
 - [Archive overview](archive-zeta-critical-line-program.md)
+- [Glossary](glossary.md)
 
-It remains relevant as a possible mathematical analogy for perfect cancellation, but it is no longer the center of this repository.
+## Positioning note
+
+The RH/critical-line material is archived as mathematical analogy, not the main front-facing claim of this repository.

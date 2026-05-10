@@ -42,6 +42,16 @@ Any proposed bridge extension should state:
 
 Without this, results should be interpreted as descriptive compatibility rather than predictive support.
 
+
+## What would count as progress?
+
+Progress in this program would look like:
+
+1. clearer calibrated reproduction of known spectra,
+2. out-of-sample predictions for spectral shifts or degeneracies,
+3. extension from hydrogen to helium-like or multi-electron systems with fixed assumptions,
+4. numerical simulations where closure parameters are fixed before comparison.
+
 ## Position of Zeta Material
 
 Critical-line and zeta-zero closure papers remain available in:

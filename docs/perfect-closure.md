@@ -1,5 +1,9 @@
 # Perfect Closure
 
+## Public Summary
+
+Perfect Closure is the proposal that stable matter is closed light-like phase. Free light propagates because it does not close into a rest-frame structure. Mass appears when phase closes into a standing configuration whose net spatial momentum cancels while energy remains.
+
 ## Definition
 
 **Perfect Closure** is the transition from free phase propagation to stable self-closed standing resonance.
