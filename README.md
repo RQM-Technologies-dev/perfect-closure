@@ -28,7 +28,8 @@ For explicit non-claims and falsifiability discipline, see [Claim Boundaries](do
 1. [docs/perfect-closure.md](docs/perfect-closure.md)
 2. [docs/invariant-mass-from-closed-light.md](docs/invariant-mass-from-closed-light.md)
 3. [docs/hydrogen-closure-bridge.md](docs/hydrogen-closure-bridge.md)
-4. [docs/claim-boundaries.md](docs/claim-boundaries.md)
+4. [docs/spectral-core-transition.md](docs/spectral-core-transition.md)
+5. [docs/claim-boundaries.md](docs/claim-boundaries.md)
 
 ## Core Bridge Equations
 

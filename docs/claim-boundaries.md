@@ -50,7 +50,8 @@ Progress in this program would look like:
 1. clearer calibrated reproduction of known spectra,
 2. out-of-sample predictions for spectral shifts or degeneracies,
 3. extension from hydrogen to helium-like or multi-electron systems with fixed assumptions,
-4. numerical simulations where closure parameters are fixed before comparison.
+4. numerical simulations where closure parameters are fixed before comparison,
+5. a clearer handoff from closure-action theory into reusable operator libraries such as spectral-core.
 
 ## Position of Zeta Material
 
