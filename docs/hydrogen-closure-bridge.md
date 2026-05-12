@@ -87,3 +87,8 @@ Current status:
 - It does not yet derive every physical constant from closure alone.
 
 See [Claim Boundaries](claim-boundaries.md) for non-claims and guardrails.
+
+## Handoff to spectral-core
+
+The Hydrogen bridge identifies the chain from closure count to action and energy. spectral-core is the reusable repository that implements the S³/SU(2) shell operators, projected sectors, benchmark fixtures, and transition machinery.
+
